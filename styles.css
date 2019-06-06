@@ -16,6 +16,11 @@ html, body {
 .header {
   background-color: silver;
   opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .topnav ul {
@@ -41,9 +46,13 @@ html, body {
   opacity: 1;
 }
 
+.intro-section {
+  text-align: center;
+}
+
 .profile-pic {
-  position: relative;
   box-shadow: inset 0 0 60px #4F4F4F, 0 0 20px #000;
+  height: 100vh;
 }
 
 .background {
