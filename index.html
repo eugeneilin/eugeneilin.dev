@@ -2,79 +2,60 @@
 <html>
 <head>
   <title>Eugene Ilin</title>
-  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="myLoader()">
 
-<div class="wrapper">
+<div id="loader"></div>
+
+<div class="main">
   <header class="header">
-    <nav class="topnav">
-      <ul>
-        <li>
-          <a class="navigation-link" href="#bio">Bio</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="#resume">Resume</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
+    <div class="navbar">
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="navigation-link active" href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="intro-section">
-    <img src="profile-pic.jpg" alt="profile-pic" class="profile-pic">
+  <!--<img src="/img/background.jpg" alt="header" class="header-img">-->
+
+  <div class="animate-bottom" id="intro">
+    <h1>Eugene Ilin</h1>
+    <h3>Front-End Developer</h3>
   </div>
 
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
+  <div class="background">
+    <section class="info-tiles about-me" id="about-me">
+      <h2>About Me</h2>
+    </section>
 
+    <section class="info-tiles portfolio" id="portfolio">
+      <h2>Portfolio</h2>
+    </section>
 
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
+    <section class="info-tiles contact" id="contact">
+      <h2>Contact</h2>
+    </section>
+  </div>
 
+  <footer class="footer">
+    <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by Eugene Ilin.</div>
+  </footer>
 
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
-
-
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
-
-
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
-
-
-  <br><br><br>
-  <br><br><br>
-  <br><br><br>
-  sdfds;fmkm
-
-</div>
-
-
-<footer>
-
-</footer>
+  <script src="app.js"></script>
 
 </body>
 
