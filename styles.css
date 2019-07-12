@@ -1,16 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-.main {
-  display: grid;
+  font-family: 'Lato', sans-serif;
 }
 
 #loader {
@@ -36,17 +34,10 @@ html, body {
   }
 }
 
-.header {
-  /*background-image: url(/img/header.jpg);*/
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
-
 .navbar {
   background-color: #0000007a;
+  position: fixed;
+  width: 100%;
 }
 
 .navigation ul {
@@ -56,6 +47,7 @@ html, body {
   list-style: none;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  z-index: 15;
 }
 
 .navigation a {
@@ -76,12 +68,8 @@ html, body {
   font-weight: bold;
 }
 
-.header-img {
-  height: 100vh;
-}
-
 .background {
-  background-color: #e8e8e8;
+  background-image: url(./img/background.jpg);
   position: absolute;
   width: 100%;
   height: 430vh;
@@ -90,31 +78,54 @@ html, body {
   z-index: -10;
 }
 
-.animate-bottom {
+#intro {
+  display: none;
+  font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  z-index: -1;
+}
+
+.name {
   color: white;
-  width: 400px;
-  height: 175px;
-  margin: 100px auto;
+  text-shadow: 1px 1px 0 #00023e;
+  font-size: 4rem;
+  width: 100%;
+  margin: 180px 180px 0;
   position: relative;
-  padding: 30px;
   animation-name: animatebottom;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 @keyframes animatebottom {
   from {
-    bottom: -100px;
+    left: -100px;
     opacity: 0
   }
   to {
-    bottom: 0;
+    left: 0;
     opacity: 1;
   }
 }
 
-#intro {
-  display: none;
-  text-align: center;
+.title {
+  color: white;
+  text-shadow: 1px 1px 0 #00023e;
+  position: relative;
+  margin: 37px 229px;
+  animation-name: animatebottom;
+  animation-duration: 3s;
+  font-size: 1.5rem;
+}
+
+@keyframes animatebottom {
+  from {
+    left: -200px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .info-tiles {
@@ -140,13 +151,9 @@ html, body {
   top: 300vh;
 }
 
-h1, h3 {
-  color: #00023e;
-}
-
 .footer {
   text-align: center;
-  background: rgba(192, 192, 192, 0.54);
+  background: rgba(0, 0, 0, 0.54);
   height: 116px;
   position: absolute;
   top: 2735px;
@@ -155,6 +162,7 @@ h1, h3 {
 
 .copyright {
   font-size: 13px;
-  color: #00023e;
+  color: white;
+  text-shadow: 1px 1px 0 #00023e;
   padding: 50px;
 }
