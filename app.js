@@ -9,6 +9,7 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("intro").style.display = "block";
   document.getElementById("navbar").style.display = "block";
+  document.getElementById("main").style.display = "block";
 }
 
 // Shrink "navbar" when user scrolls down 663px from the top of the document

@@ -8,12 +8,10 @@
 </head>
 
 <body onload="myLoader()">
+<div class="background">
 
-<div class="background"></div>
+  <div id="loader"></div>
 
-<div id="loader"></div>
-
-<div class="main">
   <header>
     <div id="navbar">
       <nav class="navigation">
@@ -37,52 +35,59 @@
     </div>
   </header>
 
-  <div>
-    <section class="tile about" id="about">
-      <h2 class="tile-header">About</h2>
-      <p class="tile-headline">Front-end developer with a passion for creation and innovation.</p>
-      <p class="tile-body">As a web developer, I constantly seek for opportunities to use my passion to help others
-        and solve problems. Regardless of the magnitude of the project, I find much joy in synthesizing my love for
-        creating something meaningful with my obsessive attention to the smallest details.</p>
+  <div id="main">
+    <section class="tile-wrapper" id="about">
+      <div class="tile">
+        <h2 class="tile-header">About</h2>
+        <p class="tile-headline">Front-end developer with a passion for creation and innovation.</p>
+        <p class="tile-body">As a web developer, I constantly seek for opportunities to use my passion to help others
+          and solve problems. Regardless of the magnitude of the project, I find much joy in synthesizing my love for
+          creating something meaningful with my obsessive attention to the smallest details.</p>
+      </div>
     </section>
 
-    <section class="tile portfolio" id="portfolio">
-      <h2 class="tile-header">Portfolio</h2>
-      <div class="projects">
-        <div class="temp-converter">
-          <div class="showcase"></div>
-          <div class="showcase-description">
-            <h3>Temperature Converter</h3>
-            <p>asdfasdfasdf</p>
+    <section class="tile-wrapper" id="portfolio">
+      <div class="tile">
+        <h2 class="tile-header">Portfolio</h2>
+        <div class="projects">
+          <div class="temp-converter">
+            <div class="showcase"></div>
+            <div class="showcase-description">
+              <h3>Temperature Converter</h3>
+              <p>asdfasdfasdf</p>
+            </div>
           </div>
-        </div>
-        <div class="digital-clock">
-          <div class="showcase"></div>
-          <div class="showcase-description">
-            <h3>Digital Clock</h3>
-            <p>asdfasdfasdf</p>
+          <div class="digital-clock">
+            <div class="showcase"></div>
+            <div class="showcase-description">
+              <h3>Digital Clock</h3>
+              <p>asdfasdfasdf</p>
+            </div>
           </div>
-        </div>
-        <div class="weather-app">
-          <div class="showcase"></div>
-          <div class="showcase-description">
-            <h3>Current Weather</h3>
-            <p>asdfasdfasdf</p>
+          <div class="weather-app">
+            <div class="showcase"></div>
+            <div class="showcase-description">
+              <h3>Current Weather</h3>
+              <p>asdfasdfasdf</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="tile contact" id="contact">
-      <h2 class="tile-header">Contact</h2>
+    <section class="tile-wrapper" id="contact">
+      <div class="tile">
+        <h2 class="tile-header">Contact</h2>
+      </div>
     </section>
+
+    <footer class="footer">
+      <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by Eugene Ilin.</div>
+    </footer>
   </div>
+</div>
 
-  <footer class="footer">
-    <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by Eugene Ilin.</div>
-  </footer>
-
-  <script src="app.js"></script>
+<script src="app.js"></script>
 
 </body>
 
