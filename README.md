@@ -1,2 +1,2 @@
 # eugeneilin.dev
-Portfolio and resume
+Portfolio website
