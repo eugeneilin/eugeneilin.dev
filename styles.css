@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 * {
@@ -8,14 +9,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #loader {
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 1;
   margin: -40px 0 0 -40px;
   border: 8px solid #f3f3f3;
   border-radius: 50%;
@@ -45,14 +45,28 @@ html, body {
 
 #navbar {
   position: fixed;
-  font-size: 25px;
+  font-size: 21px;
   width: 100%;
-  height: 120px;
-  line-height: 120px;
+  height: 110px;
+  line-height: 110px;
   padding: 0 18% 0 18%;
   z-index: 1;
-  background-color: #0000007a;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.22);
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    top: -100px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .navigation ul {
@@ -61,18 +75,20 @@ html, body {
   list-style: none;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  z-index: 15;
   padding: 0;
 }
 
 .navigation a {
-  color: #F4F4F4;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #00023e;
   text-decoration: none;
   display: grid;
+  text-transform: uppercase;
 }
 
 .navigation a:hover {
-  background-color: rgba(55, 55, 55, 0.48);
+  background-color: rgba(255, 255, 255, 0.32);
+  /*transition: 0.4s ease-in-out;*/
 }
 
 .active {
@@ -100,15 +116,15 @@ html, body {
 
 .name {
   color: white;
-  text-shadow: 1px 1px 0 #00023e;
+  text-shadow: 2px 2px 0 #00023e;
   font-size: 4rem;
-  /*width: 100%;*/
   margin: 230px 190px 0;
   position: relative;
   animation-name: animatebottom;
   animation-duration: 1.5s;
 }
 
+/* Animate the name */
 @keyframes animatebottom {
   from {
     left: -100px;
@@ -122,7 +138,7 @@ html, body {
 
 .title {
   color: white;
-  text-shadow: 1px 1px 0 #00023e;
+  text-shadow: 2px 2px 0 #00023e;
   position: relative;
   margin: 37px 229px;
   animation-name: animatebottom;
@@ -130,6 +146,7 @@ html, body {
   font-size: 1.5rem;
 }
 
+/* Animate the title */
 @keyframes animatebottom {
   from {
     left: -200px;
@@ -141,24 +158,81 @@ html, body {
   }
 }
 
-.info-tiles {
+/* General Tile Descriptions */
+.tile {
   background: #fff;
-  height: 95vh;
+  height: 92vh;
   width: 70%;
   position: absolute;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 6em;
+  margin-left: 14%;
+  margin-right: 14%;
   border-radius: 10px;
-  font-family: 'Source Code Pro', monospace;
 }
 
-.about-me {
+.tile-header {
+  padding: .5em 3em;
+  color: #00000080;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+
+.tile-body {
+  padding: 0 3em;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-indent: 1.5em;
+}
+
+/* Specific Tile Descriptions */
+
+/* About*/
+.about {
   top: 100vh;
+}
+
+.tile-headline {
+  font-size: 1.6em;
+  position: relative;
+  padding: .3em 1em;
+  color: #00023e;
+  border-left: 6px solid #00023e;;
 }
 
 .portfolio {
   top: 200vh;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-left: 9%;
+  margin-right: 9%;
+  text-align: center;
+  text-decoration: none;
+  height: 60vh;
+}
+
+.showcase {
+  height: 70%;
+}
+
+.showcase-description {
+  background-color: floralwhite;
+  height: 30%;
+}
+
+.temp-converter {
+  background-color: darkblue;
+}
+
+.digital-clock {
+  background-color: darkslategrey;
+}
+
+.weather-app {
+  background-color: darkviolet;
 }
 
 .contact {
@@ -167,7 +241,7 @@ html, body {
 
 .footer {
   text-align: center;
-  background: rgba(0, 0, 0, 0.54);
+  background: rgba(0, 2, 30, 0.9);
   height: 116px;
   position: absolute;
   top: 2735px;
