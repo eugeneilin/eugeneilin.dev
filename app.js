@@ -1,8 +1,8 @@
-// Show "loader' for 3 seconds, and then show "intro" and "navbar"
+// Show "loader' for # seconds, and then show "intro" and "navbar"
 let myVar;
 
 function myLoader() {
-  myVar = setTimeout(showPage, 1000);
+  myVar = setTimeout(showPage, 1500);
 }
 
 function showPage() {
@@ -17,14 +17,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("navbar").style.fontSize = "17px";
+    document.getElementById("navbar").style.fontSize = "15px";
     document.getElementById("navbar").style.height = "60px";
     document.getElementById("navbar").style.lineHeight = "60px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(0, 2, 30, .9)";
+    document.getElementById("navbar").style.backgroundColor = "white";
   } else {
-    document.getElementById("navbar").style.fontSize = "22px";
+    document.getElementById("navbar").style.fontSize = "20px";
     document.getElementById("navbar").style.lineHeight = "110px";
     document.getElementById("navbar").style.height = "110px";
-    document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, 0.22)";
+    document.getElementById("navbar").style.backgroundColor = "white";
   }
 }
