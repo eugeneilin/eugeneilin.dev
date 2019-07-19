@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,17 +11,30 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.background {
+  /*background-image: url(./img/stars.jpg);*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-color: #ebf1ef;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
 #loader {
   position: absolute;
   left: 50%;
   top: 50%;
   margin: -40px 0 0 -40px;
-  border: 8px solid #f3f3f3;
+  border: 8px solid transparent;
   border-radius: 50%;
-  border-top: 8px solid #7d7d7d;
+  border-top: 5px solid #571f70;
   width: 90px;
   height: 90px;
-  animation: spin 3s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
@@ -33,7 +45,7 @@ html, body {
   20% {
     opacity: 1;
   }
-  90% {
+  85% {
     opacity: 1;
   }
 
@@ -45,17 +57,20 @@ html, body {
 
 #navbar {
   position: fixed;
-  font-size: 21px;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 110px;
-  line-height: 110px;
+  font-size: 20px;
+  line-height: 90px;
+  height: 90px;
   padding: 0 18% 0 18%;
   z-index: 1;
   transition: 0.4s ease-in-out;
   display: none;
-  background-color: rgba(255, 255, 255, 0.22);
+  background-color: white;
   animation-name: fade-in;
   animation-duration: 1s;
+  box-shadow: 0 0 4px;
 }
 
 @keyframes fade-in {
@@ -79,46 +94,37 @@ html, body {
 }
 
 .navigation a {
-  color: #ffffff;
-  text-shadow: 1px 1px 3px #00023e;
+  color: #571f70;
+  background-color: transparent;
+  transition: 0.4s ease-in-out background-color;
+  text-shadow: 1px 1px 2px rgba(0, 2, 62, 0.47);
   text-decoration: none;
   display: grid;
   text-transform: uppercase;
 }
 
 .navigation a:hover {
-  background-color: rgba(255, 255, 255, 0.32);
-  /*transition: 0.4s ease-in-out;*/
+  background-color: #571f7017;
+  /*font-size: 22px;*/
 }
 
-.active {
-  background-color: rgba(255, 255, 255, 0.6);
-  font-weight: bold;
-}
-
-.background {
-  background-image: url(./img/background.jpg);
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  filter: blur(4px);
-  position: absolute;
-  width: 100%;
-  height: 430vh;
-  top: 0;
-  left: 0;
-}
+/*.active {*/
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+  /*font-weight: bold;*/
+/*}*/
 
 #intro {
   display: none;
-  font-family: 'Source Code Pro', monospace;
-  position: absolute;
+  height: 100vh;
+  margin-left: 14%;
+  color: #571f70;
 }
 
 .name {
-  color: white;
-  text-shadow: 2px 2px 0 #00023e;
+  text-shadow: 2px 2px 0 rgba(0, 2, 62, 0.27);
   font-size: 4rem;
-  margin: 230px 190px 0;
+  padding: 230px 0 0;
+  margin: 0;
   position: relative;
   animation-name: animatebottom;
   animation-duration: 1.5s;
@@ -137,10 +143,9 @@ html, body {
 }
 
 .title {
-  color: white;
-  text-shadow: 2px 2px 0 #00023e;
+  text-shadow: 2px 2px 0 rgba(0, 2, 62, 0.27);
   position: relative;
-  margin: 37px 229px;
+  margin: 4% 0 0 4%;
   animation-name: animatebottom;
   animation-duration: 3s;
   font-size: 1.5rem;
@@ -158,49 +163,46 @@ html, body {
   }
 }
 
-/* General Tile Descriptions */
+#main {
+  display: none;
+}
+
+.tile-wrapper {
+  padding-top: 65px;
+}
+
 .tile {
   background: #fff;
-  height: 92vh;
+  height: 90vh;
   width: 70%;
-  position: absolute;
   margin-left: 14%;
   margin-right: 14%;
+  margin-bottom: 70px;
   border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 0 2px;
 }
 
 .tile-header {
   padding: .5em 3em;
-  color: #00000080;
+  color: #1f70575c;
   text-transform: uppercase;
   font-style: italic;
-}
-
-
-.tile-body {
-  padding: 0 3em;
-  font-size: 1.1em;
-  line-height: 2em;
-  text-indent: 1.5em;
-}
-
-/* Specific Tile Descriptions */
-
-/* About*/
-.about {
-  top: 100vh;
 }
 
 .tile-headline {
   font-size: 1.6em;
   position: relative;
   padding: .3em 1em;
-  color: #00023e;
-  border-left: 6px solid #00023e;;
+  color: #70571F;
+  border-left: 6px solid #70571F;;
 }
 
-.portfolio {
-  top: 200vh;
+.tile-body {
+  padding: 0 3em;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-indent: 1.5em;
 }
 
 .projects {
@@ -218,33 +220,31 @@ html, body {
   height: 70%;
 }
 
+.showcase:hover {
+  background-color: silver;
+  transition: 1s ease-in-out;
+}
+
 .showcase-description {
   background-color: floralwhite;
   height: 30%;
 }
 
 .temp-converter {
-  background-color: darkblue;
+  background-color: black;
 }
 
 .digital-clock {
-  background-color: darkslategrey;
+  background-color: tan;
 }
 
 .weather-app {
-  background-color: darkviolet;
-}
-
-.contact {
-  top: 300vh;
+  background-color: royalblue;
 }
 
 .footer {
   text-align: center;
-  background: rgba(0, 2, 30, 0.9);
-  height: 116px;
-  position: absolute;
-  top: 2735px;
+  background: #270f33;
   width: 100%;
 }
 
