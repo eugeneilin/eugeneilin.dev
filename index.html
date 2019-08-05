@@ -15,17 +15,10 @@
   <header>
     <div id="navbar">
       <nav class="navigation">
-        <ul>
-          <li>
-            <a class="navigation-link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="navigation-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a class="navigation-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <a class="navigation-link" href="#about">About</a>
+        <a class="navigation-link" href="#portfolio">Portfolio</a>
+        <a class="navigation-link" href="#contact">Contact</a>
+        <div class="line" id="line"></div>
       </nav>
     </div>
 
@@ -40,9 +33,9 @@
       <div class="tile">
         <h2 class="tile-header">About</h2>
         <p class="tile-headline">Front-end developer with a passion for creation and innovation.</p>
-        <p class="tile-body">As a web developer, I constantly seek for opportunities to use my passion to help others
-          and solve problems. Regardless of the magnitude of the project, I find much joy in synthesizing my love for
-          creating something meaningful with my obsessive attention to the smallest details.</p>
+        <p class="tile-body">As a web developer, I'm constantly on the lookout for opportunities where I can use my
+          coding skills to help others and solve problems. Regardless of any task's scope, I find much joy in
+          synthesizing my love for creating meaningful things with my obsessive attention to the smallest detail.</p>
       </div>
     </section>
 
@@ -50,27 +43,52 @@
       <div class="tile">
         <h2 class="tile-header">Portfolio</h2>
         <div class="projects">
-          <div class="temp-converter">
-            <div class="showcase"></div>
-            <div class="showcase-description">
+
+          <div class="project temp-converter" id="open-tc-modal">
+            <div class="project-logo"></div>
+            <div class="project-description">
               <h3>Temperature Converter</h3>
-              <p>Description</p>
             </div>
           </div>
-          <div class="digital-clock">
-            <div class="showcase"></div>
-            <div class="showcase-description">
+
+          <div class="project digital-clock" id="open-dc-modal">
+            <div class="project-logo"></div>
+            <div class="project-description">
               <h3>Digital Clock</h3>
-              <p>Description</p>
             </div>
           </div>
-          <div class="weather-app">
-            <div class="showcase"></div>
-            <div class="showcase-description">
+
+          <div class="project weather-app" id="open-wa-modal">
+            <div class="project-logo"></div>
+            <div class="project-description">
               <h3>Current Weather</h3>
-              <p>Description</p>
             </div>
           </div>
+        </div>
+
+        <div>
+
+          <div id="temp-converter-modal">
+            <div class="temp-converter-modal-content">
+              <span class="close">&times;</span>
+              <h1>Temperature Converter</h1>
+            </div>
+          </div>
+
+          <div id="digital-clock-modal">
+            <div class="digital-clock-modal-content">
+              <span class="close">&times;</span>
+              <h1>Digital Clock</h1>
+            </div>
+          </div>
+
+          <div id="weather-app-modal">
+            <div class="weather-app-modal-content">
+              <span class="close">&times;</span>
+              <h1>Weather App</h1>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -78,11 +96,30 @@
     <section class="tile-wrapper" id="contact">
       <div class="tile">
         <h2 class="tile-header">Contact</h2>
+        <div class="contact-heading">
+          <h3 class="contact-heading-1">Hi there!</h3>
+          <h4 class="contact-heading-2">Can't wait to hear from you!</h4>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form" method="post" action="">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+            <br>
+            <textarea name="message" class="form-control" placeholder="Enter message here..." rows="4"
+                      required></textarea>
+            <br>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+          </form>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by Eugene Ilin.</div>
+      <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by <a href="#">Eugene
+        Ilin</a>.
+      </div>
     </footer>
   </div>
 </div>
