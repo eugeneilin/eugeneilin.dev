@@ -390,7 +390,6 @@ h1 {
 
 .contact-heading {
   text-align: center;
-  text-transform: uppercase;
   transition: all .4s ease-in-out;
 }
 
@@ -400,6 +399,7 @@ h1 {
 
 .contact-heading-2 {
   font-size: 1em;
+  text-transform: uppercase;
 }
 
 .contact-form {
