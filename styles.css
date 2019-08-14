@@ -157,12 +157,11 @@ h1 {
 .name {
   color: #feda6a;
   font-size: 3rem;
-  padding: 230px 0 0;
+  padding: 230px 0 0 5%;
   margin: 0;
   position: relative;
   animation-name: animatebottom;
   animation-duration: 1.5s;
-  text-align: center;
 }
 
 /* Animate the name */
@@ -436,14 +435,8 @@ h1 {
     padding: 0 2%;
   }
   .name {
-      color: #feda6a;
-      font-size: 3.5rem;
-      padding: 230px 0 0;
-      margin: 0;
-      position: relative;
-      animation-name: animatebottom;
-      animation-duration: 1.5s;
-      text-align: center;
+    font-size: 3.5rem;
+    padding-left: 4%;
   }
   .title {
     font-size: 1.5rem;
@@ -476,45 +469,14 @@ h1 {
 
 /* for iPhone 6/7/8/X*/
 @media screen and (min-width: 375px) {
-  #navbar {
-    padding: 0 2%;
-  }
   .name {
-      color: #feda6a;
-      font-size: 3.5rem;
-      padding: 230px 0 0;
-      margin: 0;
-      position: relative;
-      animation-name: animatebottom;
-      animation-duration: 1.5s;
-      text-align: center;
-  }
-  .title {
-    font-size: 1.5rem;
+    padding-left: 5%;
   }
   .tile {
     height: 91vh;
   }
-  .tile-headline {
-    margin-top: 1.6em;
-    font-size: 1.4em;
-  }
-  .tile-body {
-    padding: 1.9em 10%;
-    line-height: 2em;
-  }
   .projects {
     margin: 7% 10% 0;
-  }
-  .form-control {
-    margin-bottom: 1.9em;
-  }
-  .contact-heading {
-    padding: 2em 0;
-  }
-  .submit {
-    padding: .7em 0;
-    margin: 1.4em 0 0;
   }
 }
 
@@ -525,9 +487,11 @@ h1 {
   }
   .name {
     font-size: 4rem;
+    padding-left: 4%;
   }
   .title {
     font-size: 1.6rem;
+    padding-top: 2em;
   }
   .tile-headline {
     margin-top: 1.9em;
