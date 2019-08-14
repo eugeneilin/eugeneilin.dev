@@ -112,11 +112,11 @@ h1 {
 
 .line {
   width: 100%;
+  top: -3px;
   height: 3px;
   background-color: #feda6a;
   transition: all .4s ease-in-out;
   position: relative;
-  top: -3px;
 }
 
 .navigation-link:hover {
@@ -131,7 +131,7 @@ h1 {
   transform: translate(100%);
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
-  --ms-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -144,7 +144,7 @@ h1 {
   transform: translate(200%);
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
-  --ms-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -394,7 +394,7 @@ h1 {
   font-size: 1.2em;
   letter-spacing: 2px;
   margin: 1em 0 0;
-  padding: .5em 0;
+  padding: .5em .5em;
 }
 
 .submit:hover {
@@ -427,7 +427,7 @@ h1 {
   transition: .4s ease-in-out;
 }
 
-/* MEDIA QUERIES */
+/* --- MEDIA QUERIES --- */
 
 /* for Galaxy S5 */
 @media screen and (min-width: 360px) {
@@ -455,15 +455,15 @@ h1 {
   .projects {
     margin: 6% 10% 0;
   }
-  .form-control {
-    margin-bottom: 1.9em;
-  }
   .contact-heading {
     padding: 2em 0;
   }
+  .form-control {
+    margin-bottom: 1.9em;
+  }
   .submit {
     padding: .7em 0;
-    margin: 1.4em 0 0;
+    margin-top: 1.4em;
   }
 }
 
@@ -503,12 +503,12 @@ h1 {
     line-height: 2.3em;
     font-size: 1.1em;
   }
+  .contact-heading {
+    padding: 2.5em 0;
+  }
   .form-control {
     margin-bottom: 2em;
     margin-top: .5em;
-  }
-  .contact-heading {
-    padding: 2.5em 0;
   }
 }
 
@@ -552,7 +552,6 @@ h1 {
   }
   .form-control {
     width: 80%;
-    margin-bottom: 2em;
     margin-top: .8em;
     text-align: left;
   }
@@ -597,7 +596,6 @@ h1 {
     margin: 0.6em 0 0;
     padding: 0 3em;
     font-size: 1.5em;
-    border-left: 4px solid #836D39;
   }
   .projects {
     margin: 1em 9%;
@@ -617,7 +615,6 @@ h1 {
   .form-control {
     width: 50vw;
     border-bottom: 1px solid #836d39;
-    color: #533a01;
     font-size: .9em;
     margin-bottom: 0.8em;
     padding: 0.3em;
