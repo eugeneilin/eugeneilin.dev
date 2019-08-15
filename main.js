@@ -13,55 +13,23 @@ function showPage() {
 }
 
 // Shrink "navbar" when user scrolls down # pixels from the top of the document
-// function moreThan0 {
-//   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-//     document.getElementById("navbar").style.fontSize = "15px";
-//     document.getElementById("navbar").style.height = "60px";
-//     document.getElementById("navbar").style.lineHeight = "60px";
-//     document.getElementById("line").style.height = "2px";
-//     document.getElementById("line").style.top = "-2px";
-//   } else {
-//     document.getElementById("navbar").style.fontSize = "20px";
-//     document.getElementById("navbar").style.lineHeight = "90px";
-//     document.getElementById("navbar").style.height = "90px";
-//     document.getElementById("line").style.height = "3px";
-//     document.getElementById("line").style.top = "-3px";
-//   }
-// }
-
-function moreThan800() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("navbar").style.fontSize = "1.1em";
-    document.getElementById("navbar").style.height = "60px";
-    document.getElementById("navbar").style.lineHeight = "60px";
-    document.getElementById("line").style.height = "2px";
-    document.getElementById("line").style.top = "-2px";
-  } else {
-    document.getElementById("navbar").style.fontSize = "1.3em";
-    document.getElementById("navbar").style.lineHeight = "90px";
-    document.getElementById("navbar").style.height = "90px";
-    document.getElementById("line").style.height = "3px";
-    document.getElementById("line").style.top = "-3px";
-  }
-}
-
 window.onscroll = function () {
   scrollFunction()
 };
 
 function scrollFunction() {
-  if (screen.window > 0) {
-    return moreThan0();
-  } else if (screen.window >= 360px) {
-    return moreThan360();
-  } else if (screen.width >= 375px) {
-    return moreThan375();
-  } else if (screen.width >= 411px) {
-    return moreThan411();
-  } else if (screen.width >= 760px) {
-    return moreThan760();
-  } else if (screen.width >= 800px) {
-    return moreThan800();
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navbar").style.fontSize = "1em";
+    document.getElementById("navbar").style.height = "60px";
+    document.getElementById("navbar").style.lineHeight = "60px";
+    document.getElementById("line").style.height = "2px";
+    document.getElementById("line").style.top = "-2px";
+  } else {
+    document.getElementById("navbar").style.fontSize = "";
+    document.getElementById("navbar").style.lineHeight = "";
+    document.getElementById("navbar").style.height = "";
+    document.getElementById("line").style.height = "";
+    document.getElementById("line").style.top = "";
   }
 }
 
@@ -92,7 +60,7 @@ const closeModal = document.getElementsByClassName("close");
 let i;
 
 for (i = 0; i < closeModal.length; i++) {
-  closeModal[i].addEventListener("click", function() {
+  closeModal[i].addEventListener("click", function () {
     this.parentElement.parentElement.style.display = 'none';
   });
 }
