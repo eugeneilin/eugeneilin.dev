@@ -13,11 +13,7 @@ function showPage() {
 }
 
 // Shrink "navbar" when user scrolls down # pixels from the top of the document
-window.onscroll = function () {
-  scrollFunction()
-};
-
-function scrollFunction() {
+function shrinkNavbar() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("navbar").style.fontSize = "1em";
     document.getElementById("navbar").style.height = "60px";
@@ -65,9 +61,29 @@ for (i = 0; i < closeModal.length; i++) {
   });
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
+
+// Back to top Button
+function backToTop() {
+  document.documentElement.scrollTop = 0;
+  document.getElementById('back-to-top-btn').style.display = '';
+}
+
+function toggleBtnDisplay() {
+  if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
+    document.getElementById("back-to-top-btn").style.display = "block";
+  } else {
+    document.getElementById("back-to-top-btn").style.display = "none";
   }
+}
+
+// when user scrolls, trigger the following functions
+window.onscroll = function () {
+  shrinkNavbar();
+  toggleBtnDisplay();
 };
