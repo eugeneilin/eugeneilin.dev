@@ -1,15 +1,9 @@
 $(document).ready(function () {
 
-  // smooth scrolling
+  // smooth scrolling for nav-links
   const scrollLink = $('.scroll');
-  scrollLink.click(function (e) {
-    e.preventDefault();
-    $('body, html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 800);
-  });
 
-  // active link switching
+  // 'active' class switching
   $(window).scroll(function () {
     let scrollbarLocation = $(this).scrollTop();
 
@@ -23,9 +17,10 @@ $(document).ready(function () {
       }
     });
 
+    // remove 'active' class when not inside any #id
     if (scrollbarLocation <= 350) {
       $(this).removeClass('active');
     }
-  })
+  });
 
 });
