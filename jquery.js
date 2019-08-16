@@ -1,9 +1,8 @@
 $(document).ready(function () {
 
-  // smooth scrolling for nav-links
+  // 'active' class switching
   const scrollLink = $('.scroll');
 
-  // 'active' class switching
   $(window).scroll(function () {
     let scrollbarLocation = $(this).scrollTop();
 
@@ -17,9 +16,12 @@ $(document).ready(function () {
       }
     });
 
-    // remove 'active' class when not inside any #id
-    if (scrollbarLocation <= 350) {
-      $(this).removeClass('active');
+  });
+
+  $(window).scroll(function() {
+
+    if ($(this).scrollTop() < 300) {
+      $('.navigation-link').removeClass('active');
     }
   });
 
