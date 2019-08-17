@@ -39,17 +39,20 @@ const openTCModal = document.getElementById("open-tc-modal");
 const openDCModal = document.getElementById("open-dc-modal");
 const openWAModal = document.getElementById("open-wa-modal");
 
-// When the user click each project, open the modal for each one
+// When the user clicks each project, open the modal for each one
 openTCModal.onclick = function () {
   tCModal.style.display = "block";
+  document.body.style.position = 'fixed';
 };
 
 openDCModal.onclick = function () {
   dCModal.style.display = "block";
+  document.body.style.position = 'fixed';
 };
 
 openWAModal.onclick = function () {
   wAModal.style.display = "block";
+  document.body.style.position = 'fixed';
 };
 
 const closeModal = document.getElementsByClassName("close");
@@ -58,6 +61,7 @@ let i;
 for (i = 0; i < closeModal.length; i++) {
   closeModal[i].addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.style.display = 'none';
+    document.body.style.position = '';
   });
 }
 
@@ -87,3 +91,27 @@ window.onscroll = function () {
   shrinkNavbar();
   toggleBtnDisplay();
 };
+
+// use escape key to hide projects modal
+window.onkeyup = function (event) {
+  if (event.key = 27) {
+    document.getElementById('temp-converter-modal').style.display = 'none';
+    document.getElementById('digital-clock-modal').style.display = 'none';
+    document.getElementById('weather-app-modal').style.display = 'none';
+    document.body.style.position = '';
+  } else {
+    document.getElementById('temp-converter-modal').style.display = '.';
+    document.getElementById('digital-clock-modal').style.display = '.';
+    document.getElementById('weather-app-modal').style.display = '.';
+  }
+};
+
+// no scroll when modal is open
+// function noScroll() {
+//   if (document.getElementById('temp-converter-modal').style.display = 'block') {
+//     document.body.style.position = 'fixed';
+//     document.body.style.top = `-${window.scrollY}px`;
+//   }
+// }
+//
+// noScroll();
