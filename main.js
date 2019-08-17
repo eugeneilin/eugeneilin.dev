@@ -57,7 +57,7 @@ let i;
 
 for (i = 0; i < closeModal.length; i++) {
   closeModal[i].addEventListener("click", function () {
-    this.parentElement.parentElement.style.display = 'none';
+    this.parentElement.parentElement.parentElement.style.display = 'none';
   });
 }
 
