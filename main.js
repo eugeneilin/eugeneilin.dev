@@ -44,21 +44,21 @@ openTCModal.onclick = function () {
   tCModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navbar').style.paddingRight = '15.5%';
+  document.getElementById('navigation').style.paddingRight = '16px';
 };
 
 openDCModal.onclick = function () {
   dCModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navbar').style.paddingRight = '15.5%';
+  document.getElementById('navigation').style.paddingRight = '16px';
 };
 
 openWAModal.onclick = function () {
   wAModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navbar').style.paddingRight = '15.5%';
+  document.getElementById('navigation').style.paddingRight = '16px';
 };
 
 // close the modal for each project and resume body scrolling
@@ -70,7 +70,7 @@ for (i = 0; i < closeModal.length; i++) {
     this.parentElement.parentElement.parentElement.style.display = 'none';
     document.body.style.overflowY = '';
     document.body.style.paddingRight = '';
-    document.getElementById('navbar').style.paddingRight = '';
+    document.getElementById('navigation').style.paddingRight = '';
   });
 }
 
