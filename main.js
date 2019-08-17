@@ -29,7 +29,7 @@ function shrinkNavbar() {
   }
 }
 
-// Get each modal
+// Get each project modal
 const tCModal = document.getElementById("temp-converter-modal");
 const dCModal = document.getElementById("digital-clock-modal");
 const wAModal = document.getElementById("weather-app-modal");
