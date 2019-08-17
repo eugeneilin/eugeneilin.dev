@@ -39,29 +39,38 @@ const openTCModal = document.getElementById("open-tc-modal");
 const openDCModal = document.getElementById("open-dc-modal");
 const openWAModal = document.getElementById("open-wa-modal");
 
-// When the user clicks each project, open the modal for each one
+// When the user clicks each project, open the modal for each one, prevent scrolling of the body, and add padding-right to body
 openTCModal.onclick = function () {
   tCModal.style.display = "block";
-  document.body.style.position = 'fixed';
+  document.body.style.overflowY = 'hidden';
+  document.body.style.paddingRight = '15px';
+  document.getElementById('navbar').style.paddingRight = '15.5%';
 };
 
 openDCModal.onclick = function () {
   dCModal.style.display = "block";
-  document.body.style.position = 'fixed';
+  document.body.style.overflowY = 'hidden';
+  document.body.style.paddingRight = '15px';
+  document.getElementById('navbar').style.paddingRight = '15.5%';
 };
 
 openWAModal.onclick = function () {
   wAModal.style.display = "block";
-  document.body.style.position = 'fixed';
+  document.body.style.overflowY = 'hidden';
+  document.body.style.paddingRight = '15px';
+  document.getElementById('navbar').style.paddingRight = '15.5%';
 };
 
+// close the modal for each project and resume body scrolling
 const closeModal = document.getElementsByClassName("close");
 let i;
 
 for (i = 0; i < closeModal.length; i++) {
   closeModal[i].addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.style.display = 'none';
-    document.body.style.position = '';
+    document.body.style.overflowY = '';
+    document.body.style.paddingRight = '';
+    document.getElementById('navbar').style.paddingRight = '';
   });
 }
 
@@ -94,7 +103,7 @@ window.onscroll = function () {
 
 // use escape key to hide projects modal
 window.onkeyup = function (event) {
-  if (event.key = 27) {
+  if (event.key === 27) {
     document.getElementById('temp-converter-modal').style.display = 'none';
     document.getElementById('digital-clock-modal').style.display = 'none';
     document.getElementById('weather-app-modal').style.display = 'none';
@@ -105,13 +114,3 @@ window.onkeyup = function (event) {
     document.getElementById('weather-app-modal').style.display = '.';
   }
 };
-
-// no scroll when modal is open
-// function noScroll() {
-//   if (document.getElementById('temp-converter-modal').style.display = 'block') {
-//     document.body.style.position = 'fixed';
-//     document.body.style.top = `-${window.scrollY}px`;
-//   }
-// }
-//
-// noScroll();
