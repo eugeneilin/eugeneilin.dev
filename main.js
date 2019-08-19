@@ -103,7 +103,7 @@ window.onscroll = function () {
 
 // use escape key to hide projects modal
 window.onkeyup = function (event) {
-  if (event.key === 27) {
+  if (event.key = 27) {
     document.getElementById('temp-converter-modal').style.display = 'none';
     document.getElementById('digital-clock-modal').style.display = 'none';
     document.getElementById('weather-app-modal').style.display = 'none';

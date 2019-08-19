@@ -24,15 +24,15 @@ $(document).ready(function () {
       $('.navigation-link').removeClass('active');
     }
   });
-
+  //
   // // close project info with esc key and off click
   // const project = $('#project-info')[0];
-  // //
-  // // $(document).on('click', function (e) {
-  // //   if ($(e.target).closest(project).length === 0) {
-  // //     $(project).hide();
-  // //   }
-  // // });
+  //
+  // $(document).on('click', function (e) {
+  //   if ($(e.target).closest(project).length === 0) {
+  //     $(project).hide();
+  //   }
+  // });
   //
   // $(document).on('keydown', function (e) {
   //   if (e.key === 27) {
