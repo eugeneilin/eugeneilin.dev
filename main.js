@@ -1,3 +1,17 @@
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAUurcDE43sFoXhuNJFKm4E6vZmn7iwYJU",
+  authDomain: "portfolio-website-ad519.firebaseapp.com",
+  databaseURL: "https://portfolio-website-ad519.firebaseio.com",
+  projectId: "portfolio-website-ad519",
+  storageBucket: "gs://portfolio-website-ad519.appspot.com",
+  messagingSenderId: "735375370557",
+  appId: "1:735375370557:web:f3cd6e2593b81d03"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 // Show "loader' for # seconds, and then show "intro" and "navbar"
 let loader;
 
@@ -114,3 +128,49 @@ window.onkeyup = function (event) {
     document.getElementById('weather-app-modal').style.display = '.';
   }
 };
+
+// Firebase
+// Reference messages collection
+const messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contact-form').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e) {
+  e.preventDefault();
+
+  // Get values
+  const name = getInputVal('name');
+  const email = getInputVal('email');
+  const message = getInputVal('message');
+
+  // Save message
+  saveMessage(name, email, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert in 10 seconds
+  setTimeout(function () {
+    document.querySelector('.alert').style.display = 'none';
+  }, 10000);
+
+  // Reset form
+  document.getElementById('contact-form').reset();
+}
+
+// Function to get form values
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, message) {
+  const newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}
