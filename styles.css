@@ -457,6 +457,14 @@ h1 {
   transition: .4s ease-in-out;
 }
 
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #836d39;
+  margin-bottom: 10px;
+  display: none;
+}
+
 .footer {
   text-align: center;
   background: #393f4d;
