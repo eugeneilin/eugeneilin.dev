@@ -464,8 +464,7 @@ h1 {
   margin: -1.5em auto .5em;
   width: 80vw;
   font-size: .9em;
-  display: block;
-  /*display: none;*/
+  display: none;
 }
 
 .footer {
