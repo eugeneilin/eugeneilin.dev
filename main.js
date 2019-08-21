@@ -1,3 +1,17 @@
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAUurcDE43sFoXhuNJFKm4E6vZmn7iwYJU",
+  authDomain: "portfolio-website-ad519.firebaseapp.com",
+  databaseURL: "https://portfolio-website-ad519.firebaseio.com",
+  projectId: "portfolio-website-ad519",
+  storageBucket: "gs://portfolio-website-ad519.appspot.com",
+  messagingSenderId: "735375370557",
+  appId: "1:735375370557:web:f3cd6e2593b81d03"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 // Show "loader' for # seconds, and then show "intro" and "navbar"
 let loader;
 
@@ -115,20 +129,7 @@ window.onkeyup = function (event) {
   }
 };
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAUurcDE43sFoXhuNJFKm4E6vZmn7iwYJU",
-  authDomain: "portfolio-website-ad519.firebaseapp.com",
-  databaseURL: "https://portfolio-website-ad519.firebaseio.com",
-  projectId: "portfolio-website-ad519",
-  storageBucket: "",
-  messagingSenderId: "735375370557",
-  appId: "1:735375370557:web:f3cd6e2593b81d03"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
+// Firebase
 // Reference messages collection
 const messagesRef = firebase.database().ref('messages');
 
@@ -150,10 +151,10 @@ function submitForm(e) {
   // Show alert
   document.querySelector('.alert').style.display = 'block';
 
-  // Hide alert
+  // Hide alert in 10 seconds
   setTimeout(function () {
     document.querySelector('.alert').style.display = 'none';
-  }, 3000);
+  }, 10000);
 
   // Reset form
   document.getElementById('contact-form').reset();
