@@ -34,6 +34,28 @@ h1 {
   min-width: 100vw;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1d1e22;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #2b2f33;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #656e82;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #feda6a;
+}
+
 #loader {
   position: absolute;
   left: 50%;
