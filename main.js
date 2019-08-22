@@ -58,21 +58,21 @@ openTCModal.onclick = function () {
   tCModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navigation').style.paddingRight = '16px';
+  document.getElementById('navigation').style.paddingRight = '15px';
 };
 
 openDCModal.onclick = function () {
   dCModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navigation').style.paddingRight = '16px';
+  document.getElementById('navigation').style.paddingRight = '15px';
 };
 
 openWAModal.onclick = function () {
   wAModal.style.display = "block";
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '15px';
-  document.getElementById('navigation').style.paddingRight = '16px';
+  document.getElementById('navigation').style.paddingRight = '15px';
 };
 
 // close the modal for each project and resume body scrolling
@@ -121,11 +121,14 @@ window.onkeyup = function (event) {
     document.getElementById('temp-converter-modal').style.display = 'none';
     document.getElementById('digital-clock-modal').style.display = 'none';
     document.getElementById('weather-app-modal').style.display = 'none';
-    document.body.style.position = '';
+    document.body.style.overflowY = '';
+    document.body.style.paddingRight = '';
+    document.getElementById('navigation').style.paddingRight = '';
+
   } else {
-    document.getElementById('temp-converter-modal').style.display = '.';
-    document.getElementById('digital-clock-modal').style.display = '.';
-    document.getElementById('weather-app-modal').style.display = '.';
+    document.getElementById('temp-converter-modal').style.display = '';
+    document.getElementById('digital-clock-modal').style.display = '';
+    document.getElementById('weather-app-modal').style.display = '';
   }
 };
 
