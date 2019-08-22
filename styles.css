@@ -226,8 +226,8 @@ h1 {
   font-size: 1.3em;
   position: relative;
   padding: 0 10%;
-  color: #836d39;
-  border-left: 3px solid #836D39;
+  color: #6b592e;
+  border-left: 3px solid #6b592e;
 }
 
 .tile-body {
@@ -250,7 +250,7 @@ h1 {
 .project {
   cursor: pointer;
   color: #393f4d;
-  border: 1px solid #836d39;
+  border: 1px solid #6b592e;
 }
 
 .project:hover {
@@ -286,7 +286,7 @@ h1 {
 .modal-content {
   background-color: white;
   padding: 1.2em 1.5em;
-  border: 2px solid #836d39;
+  border: 2px solid #6b592e;
   width: 90vw;
   top: 4em;
   position: fixed;
@@ -399,26 +399,17 @@ h1 {
 }
 
 .close:hover {
-  color: #836d39;
+  color: #feda6a;
   text-decoration: none;
   cursor: pointer;
 }
 
 .contact-heading {
   text-align: center;
-  transition: all .4s ease-in-out;
+  font-size: 1.5em;
   padding: 1.4em 0;
-}
-
-.contact-heading-1 {
-  font-size: 2em;
-  padding: 0 0 0.4em;
   text-transform: uppercase;
-}
-
-.contact-heading-2 {
-  font-size: 1em;
-  margin: 0 0 0.7em;
+  color: #6b592e;
 }
 
 .contact-form {
@@ -430,7 +421,7 @@ h1 {
   background: rgba(255, 250, 240, 0.3);
   border: none;
   outline: none;
-  border-bottom: 1px solid #836d39;
+  border-bottom: 1px solid #6b592e;
   color: #533a01;
   font-size: 1em;
   margin-bottom: 0.9em;
@@ -441,7 +432,7 @@ h1 {
 }
 
 .submit {
-  background: #836d39;
+  background: #6b592e;
   border: none !important;
   color: white;
   font-size: 1.2em;
@@ -454,6 +445,7 @@ h1 {
   cursor: pointer;
   background: #feda6a;
   border: none;
+  color: #393f4d;
 }
 
 .alert {
@@ -560,7 +552,7 @@ h1 {
   }
 
   .contact-heading {
-    padding: 2em 0;
+    padding: 2em 0 1em;
   }
 
   .form-control {
@@ -574,6 +566,7 @@ h1 {
 
   .alert {
     font-size: 1em;
+    padding-top: -0.5em;
   }
 }
 
@@ -597,7 +590,7 @@ h1 {
   }
 
   .alert {
-    margin: -1em auto 1em;
+    margin: 0 auto 1em;
   }
 }
 
@@ -638,7 +631,8 @@ h1 {
   }
 
   .contact-heading {
-    padding: 2.5em 0;
+    padding: 2.5em 0 1em;
+    font-size: 1.6em;
   }
 
   .form-control {
@@ -694,10 +688,11 @@ h1 {
 
   .projects {
     margin: 0 10%;
+    height: 73vh;
   }
 
   .project-description {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .modal-content {
@@ -719,8 +714,9 @@ h1 {
     font-size: 1.2em;
   }
 
-  .contact-heading-2 {
-    font-size: 1.2em;
+  .contact-heading {
+    font-size: 1.9em;
+    padding: 1em 0 2em;
   }
 
   .form-control {
@@ -795,8 +791,8 @@ h1 {
   }
 
   .project-description {
-    font-size: 1.2em;
-    padding: 1em;
+    font-size: 1.1em;
+    padding: 0.2em;
   }
 
   .modal-content {
@@ -817,14 +813,7 @@ h1 {
 
   .contact-heading {
     padding: 0.5em 0;
-  }
-
-  .contact-heading-1 {
     font-size: 1.5em;
-  }
-
-  .contact-heading-2 {
-    font-size: 1.1em;
   }
 
   .form-control {
