@@ -46,12 +46,12 @@ function shrinkNavbar() {
 // Get each project modal
 const tCModal = document.getElementById("temp-converter-modal");
 const dCModal = document.getElementById("digital-clock-modal");
-const wAModal = document.getElementById("weather-app-modal");
+const wAModal = document.getElementById("wedding-website-modal");
 
 // Get each project
 const openTCModal = document.getElementById("open-tc-modal");
 const openDCModal = document.getElementById("open-dc-modal");
-const openWAModal = document.getElementById("open-wa-modal");
+const openWAModal = document.getElementById("open-ww-modal");
 
 // When the user clicks each project, open the modal for each one, prevent scrolling of the body, and add padding-right to body
 openTCModal.onclick = function () {
@@ -120,7 +120,7 @@ window.onkeyup = function (event) {
   if (event.key = 27) {
     document.getElementById('temp-converter-modal').style.display = 'none';
     document.getElementById('digital-clock-modal').style.display = 'none';
-    document.getElementById('weather-app-modal').style.display = 'none';
+    document.getElementById('wedding-website-modal').style.display = 'none';
     document.body.style.overflowY = '';
     document.body.style.paddingRight = '';
     document.getElementById('navigation').style.paddingRight = '';
@@ -128,7 +128,7 @@ window.onkeyup = function (event) {
   } else {
     document.getElementById('temp-converter-modal').style.display = '';
     document.getElementById('digital-clock-modal').style.display = '';
-    document.getElementById('weather-app-modal').style.display = '';
+    document.getElementById('wedding-website-modal').style.display = '';
   }
 };
 

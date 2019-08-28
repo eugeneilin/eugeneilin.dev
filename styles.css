@@ -301,8 +301,9 @@ h1 {
   background-size: 148% 70%;
 }
 
-.weather-app {
-  background-color: lightblue;
+.wedding-website {
+  background-image: url(img/wedd-web.PNG);
+  background-size: 105% 70%;
 }
 
 .modal-content {
@@ -343,7 +344,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-#weather-app-modal {
+#wedding-website-modal {
   display: none;
   position: fixed;
   z-index: 10;
