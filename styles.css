@@ -273,6 +273,8 @@ h1 {
   cursor: pointer;
   color: #393f4d;
   border: 1px solid #6b592e;
+  height: 100%;
+  position: relative;
 }
 
 .project:hover {
@@ -280,30 +282,18 @@ h1 {
   transition: .4s ease-in-out;
 }
 
-.project-logo {
-  height: 70%;
-}
-
 .project-description {
   background-color: white;
   height: 30%;
   padding-top: 5px;
   font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.temp-converter {
-  background-image: url(img/temp-conv.png);
-  background-size: 105% 70%;
-}
-
-.digital-clock {
-  background-image: url(img/digi-clock.png);
-  background-size: 148% 70%;
-}
-
-.wedding-website {
-  background-image: url(img/wedd-web.PNG);
-  background-size: 105% 70%;
+.project-logo {
+  height: 70%;
 }
 
 .modal-content {
