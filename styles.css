@@ -398,16 +398,15 @@ h1 {
 }
 
 .project-modal-select-view-links {
-  background-color: rgba(254, 218, 106, 1);
-  color: rgba(57, 63, 77, 0.85);
+  background-color: #836d39;
+  color: white;
   padding: 0.3em;
   text-decoration: none;
 }
 
 .project-modal-select-view-links:hover {
-  background-color: rgba(254, 218, 106, 0.53);
-  color: rgba(57, 63, 77, 1);
-  border: 1px solid #1d1e22;
+  background-color: #feda6a;
+  color: #393f4d;
   box-shadow: 0 0 5px #1d1e22;
   transition: ease-in-out .4s;
 }
@@ -469,6 +468,8 @@ h1 {
   background: #feda6a;
   border: none;
   color: #393f4d;
+  box-shadow: 0 0 5px #1d1e22;
+  transition: ease-in-out .4s;
 }
 
 .alert {
