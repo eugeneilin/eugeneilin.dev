@@ -293,7 +293,9 @@ h1 {
 }
 
 .project-logo {
-  height: 70%;
+  height: 45vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .modal-content {
