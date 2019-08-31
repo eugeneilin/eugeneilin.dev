@@ -132,6 +132,23 @@ window.onkeyup = function (event) {
   }
 };
 
+// Display different footer text
+const copyright = document.getElementById('copyright');
+const author = document.getElementById('author');
+
+function displayAuthor() {
+  if ((copyright.style.display = 'block') && (author.style.display = 'none')) {
+    copyright.style.display = 'none';
+    author.style.display = 'block';
+  }
+}
+function displayCopyright() {
+  if ((copyright.style.display = 'none') && (author.style.display = 'block')) {
+    copyright.style.display = 'block';
+    author.style.display = 'none';
+  }
+}
+
 // Firebase
 // Reference messages collection
 const messagesRef = firebase.database().ref('messages');
