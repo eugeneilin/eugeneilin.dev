@@ -292,8 +292,35 @@ h1 {
   width: 100%;
 }
 
-.project-logo {
-  height: 45vh;
+.project-wedd-web-img {
+  background-image: url(img/wedd-web.PNG);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-temp-conv-img {
+  background-image: url(img/temp-conv.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-digi-clock-img {
+  background-image: url(img/digi-clock.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -618,6 +645,10 @@ h1 {
     margin: 7% 10% 0;
   }
 
+  .project-wedd-web-img {
+    height: 80%;
+  }
+
   .project-modal-description {
     padding: 1.7em 0;
     line-height: 2em;
@@ -725,6 +756,10 @@ h1 {
     height: 73vh;
   }
 
+  .project-wedd-web-img, .project-temp-conv-img, .project-digi-clock-img {
+    height: 70%;
+  }
+
   .project-description {
     font-size: 1.2em;
   }
@@ -821,7 +856,7 @@ h1 {
 
   .projects {
     margin: 1em 9%;
-    height: 65vh;
+    height: 65%;
   }
 
   .project-description {
