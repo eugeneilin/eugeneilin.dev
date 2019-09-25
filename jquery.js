@@ -24,20 +24,18 @@ $(document).ready(function () {
       $('.navigation-link').removeClass('active');
     }
   });
-  //
-  // // close project info with esc key and off click
-  // const project = $('#project-info')[0];
-  //
-  // $(document).on('click', function (e) {
-  //   if ($(e.target).closest(project).length === 0) {
-  //     $(project).hide();
-  //   }
-  // });
-  //
-  // $(document).on('keydown', function (e) {
-  //   if (e.key === 27) {
-  //     $(project).hide();
-  //   }
-  // });
+
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight() + 250;
+    $(".fade").each(function() {
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      if (objectBottom < windowBottom) {
+        if ($(this).css("opacity")==0) {$(this).fadeTo(1500,1);}
+      } else {
+        if ($(this).css("opacity")==1) {$(this).fadeTo(1500,0);}
+      }
+    });
+  }).scroll();
 
 });
