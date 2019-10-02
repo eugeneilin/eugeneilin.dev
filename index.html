@@ -1,175 +1,233 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Eugene Ilin</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="jquery.js"></script>
-</head>
+  <head>
+    <title>Eugene Ilin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+  </head>
 
-<body onload="myLoader()">
-<div class="background">
+  <body onload="myLoader()">
+    <div class="background">
+      <div id="loader"></div>
 
-  <div id="loader"></div>
+      <header>
+        <div id="navbar">
+          <nav id="navigation">
+            <a class="navigation-link scroll" href="#about">About</a>
+            <a class="navigation-link scroll" href="#portfolio">Portfolio</a>
+            <a class="navigation-link scroll" href="#contact">Contact</a>
+            <div class="line" id="line"></div>
+          </nav>
+        </div>
 
-  <header>
-    <div id="navbar">
-      <nav id="navigation">
-        <a class="navigation-link scroll" href="#about">About</a>
-        <a class="navigation-link scroll" href="#portfolio">Portfolio</a>
-        <a class="navigation-link scroll" href="#contact">Contact</a>
-        <div class="line" id="line"></div>
-      </nav>
+        <div id="intro">
+          <h1 class="name">EUGENE ILIN</h1>
+          <h3 class="title">Front-End Developer</h3>
+        </div>
+      </header>
+
+      <div id="main">
+        <section class="tile-wrapper" id="about">
+          <div class="tile">
+            <h2 class="tile-header">About</h2>
+            <p class="tile-headline">
+              Front-end developer with a passion for creation and innovation.
+            </p>
+            <p class="tile-body">
+              As a web developer, I'm always interested in opportunities where I
+              can use my coding skills to help others and solve problems. I find
+              much joy in connecting my love for creating meaningful things with
+              my obsessive attention to the smallest details.
+            </p>
+          </div>
+        </section>
+
+        <section class="tile-wrapper" id="portfolio">
+          <div class="tile fade">
+            <h2 class="tile-header">Portfolio</h2>
+            <div class="projects">
+              <div class="project" id="open-ww-modal">
+                <div class="project-gh-finder-img"></div>
+                <div class="project-description">
+                  <h3>GitHub Finder</h3>
+                </div>
+              </div>
+
+              <div class="project" id="open-pa-modal">
+                <div class="project-pavel-and-anna-img"></div>
+                <div class="project-description">
+                  <h3>Pavel & Anna</h3>
+                </div>
+              </div>
+
+              <div class="project" id="open-dc-modal">
+                <div class="project-digi-clock-img"></div>
+                <div class="project-description">
+                  <h3>Digi-Clock</h3>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <!-- Modal content for the projects -->
+
+              <div id="github-finder-modal">
+                <div class="modal-content github-finder-modal-content">
+                  <div class="project-modal-content-wrapper">
+                    <span class="close">&times;</span>
+                    <h1 class="project-modal-content-header">GitHub Finder</h1>
+                    <div class="project-modal-description">
+                      Built with the latest React, this dynamic web app features
+                      well-built and arranged components, with props and state.
+                      The highlight of this project is React Hooks and Context
+                      API.
+                    </div>
+                    <div class="project-modal-content-links">
+                      <a
+                        href="https://githubfinder.eugeneilin.dev"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in browser</a
+                      >
+                      <a
+                        href="https://github.com/eugeneilin/github-finder"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="pavel-and-anna-modal">
+                <div class="modal-content pavel-and-anna-modal-content">
+                  <div class="project-modal-content-wrapper">
+                    <span class="close">&times;</span>
+                    <h1 class="project-modal-content-header">Pavel & Anna</h1>
+                    <div class="project-modal-description">
+                      An RSVP website that accomodates all your wedding needs.
+                      Built from scratch with a responsive and sleek design to
+                      give the user a simple yet delightful experience.
+                    </div>
+                    <div class="project-modal-content-links">
+                      <a
+                        href="https://pavelandanna.com"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in browser</a
+                      >
+                      <a
+                        href="https://github.com/eugeneilin/pavel-and-anna"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="digital-clock-modal">
+                <div class="modal-content digital-clock-modal-content">
+                  <div class="project-modal-content-wrapper">
+                    <span class="close">&times;</span>
+                    <h1 class="project-modal-content-header">Digi-Clock</h1>
+                    <div class="project-modal-description">
+                      With a customized word of welcome, Digi-Clock is here to
+                      greet you at your time of day with your favorite digital
+                      font. HTML, CSS, and JavaScript functions make this clock
+                      a timely tool.
+                    </div>
+                    <div class="project-modal-content-links">
+                      <a
+                        href="https://digi-clock.eugeneilin.dev/"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in browser</a
+                      >
+                      <a
+                        href="https://github.com/eugeneilin/digital-clock"
+                        target="_blank"
+                        class="project-modal-select-view-links"
+                        >View in GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tile-wrapper" id="contact">
+          <div class="tile fade">
+            <h2 class="tile-header">Contact</h2>
+            <div class="contact-heading">Email</div>
+            <div class="alert">Your message has been sent</div>
+            <div class="contact-form">
+              <form id="contact-form" method="post" action="">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                  id="name"
+                />
+                <br />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                  id="email"
+                />
+                <br />
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Enter message here..."
+                  rows="4"
+                  required
+                  id="message"
+                ></textarea>
+                <br />
+                <input
+                  type="submit"
+                  class="form-control submit"
+                  value="SEND MESSAGE"
+                />
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <a onclick="backToTop()" title="Go to top">
+          <img
+            src="img/back-to-top-btn.png"
+            class="back-to-top-btn"
+            id="back-to-top-btn"
+          />
+        </a>
+
+        <footer class="footer">
+          <div onclick="displayAuthor()" id="copyright">
+            Copyright &copy; 2019 All Rights Reserved.
+          </div>
+          <div onclick="displayCopyright()" id="author">
+            Developed and designed by Eugene Ilin.
+          </div>
+        </footer>
+      </div>
     </div>
 
-    <div id="intro">
-      <h1 class="name">EUGENE ILIN</h1>
-      <h3 class="title">Front-End Developer</h3>
-    </div>
-  </header>
-
-  <div id="main">
-    <section class="tile-wrapper" id="about">
-      <div class="tile fade">
-        <h2 class="tile-header">About</h2>
-        <p class="tile-headline">Front-end developer with a passion for creation and innovation.</p>
-        <p class="tile-body">As a web developer, I'm always interested in opportunities where I can use my coding skills
-          to help others and solve problems. I find much joy in connecting my love for creating meaningful things with
-          my obsessive attention to the smallest details.</p>
-      </div>
-    </section>
-
-    <section class="tile-wrapper" id="portfolio">
-      <div class="tile fade">
-        <h2 class="tile-header">Portfolio</h2>
-        <div class="projects">
-
-          <div class="project" id="open-ww-modal">
-            <div class="project-wedd-web-img"></div>
-            <div class="project-description">
-              <h3>Wedding Website</h3>
-            </div>
-          </div>
-
-          <div class="project" id="open-pa-modal">
-            <div class="project-pavel-and-anna-img"></div>
-            <div class="project-description">
-              <h3>Pavel & Anna</h3>
-            </div>
-          </div>
-
-          <div class="project" id="open-dc-modal">
-            <div class="project-digi-clock-img"></div>
-            <div class="project-description">
-              <h3>Digital Clock</h3>
-            </div>
-          </div>
-        </div>
-
-        <div> <!-- Modal content for the projects -->
-
-          <div id="wedding-website-modal">
-            <div class="modal-content wedding-website-modal-content">
-              <div class="project-modal-content-wrapper">
-                <span class="close">&times;</span>
-                <h1 class="project-modal-content-header">Wedding Website</h1>
-                <div class="project-modal-description">A wedding invitation in a website link. Here you have it all:
-                  time and location, registry details, and a form for your family and friends to RSVP.
-                </div>
-                <div class="project-modal-content-links">
-                  <a href="https://wedding-website.eugeneilin.dev" target="_blank"
-                     class="project-modal-select-view-links">View in browser</a>
-                  <a href="https://github.com/eugeneilin/wedding-website" target="_blank"
-                     class="project-modal-select-view-links">View in GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="pavel-and-anna-modal">
-            <div class="modal-content pavel-and-anna-modal-content">
-              <div class="project-modal-content-wrapper">
-                <span class="close">&times;</span>
-                <h1 class="project-modal-content-header">Pavel & Anna</h1>
-                <div class="project-modal-description">An RSVP website that
-                  accomodates all your wedding needs. Built from
-                  scratch with a responsive and sleek design to give the user a
-                  simple yet delightful experience.
-                </div>
-                <div class="project-modal-content-links">
-                  <a href="https://pavelandanna.com" target="_blank"
-                     class="project-modal-select-view-links">View in
-                    browser</a>
-                  <a href="https://github.com/eugeneilin/pavel-and-anna" target="_blank"
-                     class="project-modal-select-view-links">View in GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="digital-clock-modal">
-            <div class="modal-content digital-clock-modal-content">
-              <div class="project-modal-content-wrapper">
-                <span class="close">&times;</span>
-                <h1 class="project-modal-content-header">Digi-Clock</h1>
-                <div class="project-modal-description">With a customized word of welcome, Digi-Clock is here
-                  to greet you at your time of day with your favorite digital font. HTML, CSS, and JavaScript functions
-                  make this clock a timely tool.
-                </div>
-                <div class="project-modal-content-links">
-                  <a href="https://digi-clock.eugeneilin.dev/" target="_blank"
-                     class="project-modal-select-view-links">View in
-                    browser</a>
-                  <a href="https://github.com/eugeneilin/digital-clock" target="_blank"
-                     class="project-modal-select-view-links">View
-                    in GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="tile-wrapper" id="contact">
-      <div class="tile fade">
-        <h2 class="tile-header">Contact</h2>
-        <div class="contact-heading">Email</div>
-        <div class="alert">Your message has been sent</div>
-        <div class="contact-form">
-          <form id="contact-form" method="post" action="">
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required id="name">
-            <br>
-            <input name="email" type="email" class="form-control" placeholder="Your Email" required id="email">
-            <br>
-            <textarea name="message" class="form-control" placeholder="Enter message here..." rows="4"
-                      required id="message"></textarea>
-            <br>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <a onclick="backToTop()" title="Go to top">
-      <img src="img/back-to-top-btn.png" class="back-to-top-btn" id="back-to-top-btn"/>
-    </a>
-
-    <footer class="footer">
-      <div onclick="displayAuthor()" id="copyright">Copyright &copy; 2019 All Rights Reserved.</div>
-      <div onclick="displayCopyright()" id="author">Developed and designed by Eugene Ilin.</div>
-    </footer>
-  </div>
-</div>
-
-<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
-<script src="main.js"></script>
-
-</body>
-
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
