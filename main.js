@@ -48,12 +48,12 @@ function shrinkNavbar() {
 
 // Get each project modal
 const pAModal = document.getElementById('pavel-and-anna-modal');
-const dCModal = document.getElementById('digital-clock-modal');
+const hEModal = document.getElementById('html-email-modal');
 const gHFModal = document.getElementById('github-finder-modal');
 
 // Get each project
 const openPAModal = document.getElementById('open-pa-modal');
-const openDCModal = document.getElementById('open-dc-modal');
+const openHEModal = document.getElementById('open-he-modal');
 const openGHFModal = document.getElementById('open-ww-modal');
 
 // When the user clicks each project, open the modal for each one, prevent
@@ -65,8 +65,8 @@ openPAModal.onclick = function() {
   document.getElementById('navigation').style.paddingRight = '10px';
 };
 
-openDCModal.onclick = function() {
-  dCModal.style.display = 'block';
+openHEModal.onclick = function() {
+  hEModal.style.display = 'block';
   document.body.style.overflowY = 'hidden';
   document.body.style.paddingRight = '10px';
   document.getElementById('navigation').style.paddingRight = '10px';
@@ -100,8 +100,8 @@ pAModal.onclick = function() {
   document.getElementById('navigation').style.paddingRight = '';
 };
 
-dCModal.onclick = function() {
-  dCModal.style.display = 'none';
+hEModal.onclick = function() {
+  hEModal.style.display = 'none';
   document.body.style.overflowY = '';
   document.body.style.paddingRight = '';
   document.getElementById('navigation').style.paddingRight = '';
@@ -141,14 +141,14 @@ window.onscroll = function() {
 window.onkeyup = function(event) {
   if ((event.key = 27)) {
     document.getElementById('pavel-and-anna-modal').style.display = 'none';
-    document.getElementById('digital-clock-modal').style.display = 'none';
+    document.getElementById('html-email-modal').style.display = 'none';
     document.getElementById('github-finder-modal').style.display = 'none';
     document.body.style.overflowY = '';
     document.body.style.paddingRight = '';
     document.getElementById('navigation').style.paddingRight = '';
   } else {
     document.getElementById('pavel-and-anna-modal').style.display = '';
-    document.getElementById('digital-clock-modal').style.display = '';
+    document.getElementById('html-email-modal').style.display = '';
     document.getElementById('github-finder-modal').style.display = '';
   }
 };
