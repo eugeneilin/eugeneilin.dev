@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
   outline: none;
   min-width: 320px; /* built with iPhone 5/SE dimensions */
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -272,7 +272,7 @@ h1 {
 .projects {
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
   margin: 5% 10%;
   text-align: center;
   text-decoration: none;
@@ -344,6 +344,18 @@ h1 {
   opacity: 0.95;
 }
 
+.project-mern-stack-app-img {
+  background-image: url(img/mern-stack-app.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.95;
+}
+
 .modal-content {
   background-color: white;
   padding: 1.2em 1.5em;
@@ -383,6 +395,18 @@ h1 {
 }
 
 #github-finder-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#mern-stack-app-modal {
   display: none;
   position: fixed;
   z-index: 10;
@@ -491,7 +515,7 @@ h1 {
   margin-bottom: 0.9em;
   padding: 0.4em 1em;
   resize: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -783,6 +807,10 @@ h1 {
 
   .project-html-email-img {
     background-image: url(img/html-email-1.png);
+  }
+
+  .project-mern-stack-app-img {
+    background-image: url(img/mern-stack-app-1.png);
   }
 
   .project-description {
