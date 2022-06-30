@@ -100,7 +100,14 @@
     <section id="contact" class="text-center bg-secondary">
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form
+          name="contact"
+          method="POST"
+          action="#"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <input type="hidden" name="subject" value="Reaching out to you from EugeneIlin.dev" />
           <div class="text-fields">
             <input
               type="text"
