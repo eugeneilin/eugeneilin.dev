@@ -1,0 +1,11 @@
+span {
+  color: var(--primary-color);
+}
+
+#about h4 {
+  margin: -2rem 0 3rem;
+}
+
+#about p {
+  margin-bottom: 3rem;
+}

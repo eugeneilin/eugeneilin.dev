@@ -1,0 +1,16 @@
+section {
+  height: 100vh;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  section {
+    margin-left: 17rem;
+    padding: 3rem;
+  }
+}

@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.footer .fa-2x {
+  padding: 0.5rem;
+  color: var(--third-color);
+}
+
+.footer .fa-2x:hover {
+  color: var(--primary-color);
+  transition: color 0.4s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-left: 17rem;
+  }
+}

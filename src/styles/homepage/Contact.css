@@ -1,0 +1,66 @@
+.success {
+  padding: 1rem;
+  background-color: var(--success-color);
+  border-radius: 15px;
+  border: rgb(139, 230, 139) 1px solid;
+  margin: 1rem 0;
+  width: 100%;
+  color: var(--secondary-color);
+  display: none;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  position: relative;
+  border: 0;
+  outline: 0;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--fourth-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+::placeholder {
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-bottom: 1px solid var(--primary-color);
+  transition: border-bottom 0.4s;
+}
+
+form button {
+  background: var(--third-color);
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem 1rem;
+  outline: 0;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto 1rem;
+}
+
+form button:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+form button span {
+  color: white;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}

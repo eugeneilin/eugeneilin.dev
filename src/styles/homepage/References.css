@@ -1,0 +1,139 @@
+#references {
+  height: unset;
+}
+
+#references > div {
+  margin-left: -1rem;
+}
+
+.references-container {
+  height: 100%;
+  /* height: 20rem; */
+  /* overflow-y: scroll; */
+  padding: 0 1rem;
+  margin: 0 -1rem;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0;
+}
+
+.tab-item label {
+  display: flex;
+  flex-direction: row;
+  padding: 0.4rem;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.tab-item label:hover {
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tab-item label:hover h4 {
+  color: var(--primary-color);
+  transition: color 0.4s ease-in-out;
+}
+
+.tab-item-toggler {
+  display: none;
+}
+
+.tab-item-toggler:checked .tab-item label {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tab-item-toggler:checked ~ .recommendations-container {
+  display: block;
+}
+
+.tab-item-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 0.7rem;
+  box-shadow: 0 0 0px 4px var(--fourth-color);
+  aspect-ratio: 1 / 1;
+}
+
+.tab-item-info > * {
+  display: block;
+  color: var(--third-color);
+}
+
+.recommendations-container {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.4s;
+  display: none;
+}
+
+.recommendations-container i {
+  color: var(--fourth-color);
+  font-size: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-left: -1rem;
+  margin-top: -2rem;
+}
+
+.recommendations-container p {
+  width: 100%;
+  margin: 1rem auto 0;
+  padding: 1.2rem;
+}
+
+.recommendations-container .citation {
+  padding: 1rem 0;
+  margin: 0;
+  text-align: right;
+  width: 95%;
+}
+
+.recommendations-container .citation span {
+  color: var(--third-color);
+}
+
+.recommendations-container .citation span:hover {
+  color: var(--primary-color);
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .recommendations-container i {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .tab-item-img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #references > div {
+    display: flex;
+  }
+
+  .references-container {
+    margin: 0;
+    border-right: 1px solid var(--primary-color);
+  }
+
+  .tab-item {
+    width: 30vw;
+  }
+
+  .tab-item label {
+    padding: 1rem;
+  }
+}

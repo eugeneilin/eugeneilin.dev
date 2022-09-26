@@ -1,0 +1,89 @@
+.project {
+  margin-left: 0 !important;
+  justify-content: unset;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.project-img {
+  background: no-repeat center / cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.project-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  box-shadow: 0 0 5rem 1rem var(--secondary-color);
+  border-radius: 15px;
+}
+
+.project-content h3 {
+  color: var(--primary-color);
+}
+
+.project .links {
+  display: flex;
+}
+
+.project .links .link {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.project .link i {
+  padding: 0;
+}
+
+.project .link:hover i,
+.project .link:hover h5 {
+  color: var(--primary-color);
+  transition: color 0.4s ease-in-out;
+}
+
+.project .fa-2x {
+  color: var(--secondary-color);
+}
+
+.project .info {
+  border-left: 1px solid var(--primary-color);
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.project .info-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tools {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.devicon,
+.tools > * {
+  color: var(--secondary-color);
+  font-size: 1.9rem;
+  padding: 0.4rem;
+  transition: color 0.4s;
+}
+
+.tools .devicon {
+  color: var(--third-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+    min-height: 100vh;
+  }
+}
