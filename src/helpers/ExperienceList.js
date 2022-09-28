@@ -1,14 +1,15 @@
-import Project1 from '../assets/Project1.jpeg';
-import Project2 from '../assets/Project2.jpeg';
-import Project3 from '../assets/Project3.jpeg';
-import Project4 from '../assets/Project4.jpeg';
-import Project5 from '../assets/Project5.jpeg';
+import churchDirectory from '../assets/church-directory.jpeg';
+import musiciansWebsite from '../assets/musicians-website.jpeg';
+import passwordGenerator from '../assets/password-generator.jpeg';
+import portfolio from '../assets/portfolio.jpeg';
+import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
+import rsvpWebsite from '../assets/rsvp-website.jpeg';
 
 export const ExperienceList = [
   {
     name: 'Church Directory',
     highlight: 'Express and MongoDB',
-    image: Project2,
+    image: churchDirectory,
     code: 'https://github.com/eugeneilin/church-directory',
     demo: 'https://enigmatic-island-99499.herokuapp.com/',
     overview:
@@ -33,7 +34,7 @@ export const ExperienceList = [
   {
     name: 'Personal Portfolio',
     highlight: 'React and Firebase',
-    image: Project1,
+    image: portfolio,
     code: 'https://github.com/eugeneilin/eugeneilin.dev',
     demo: 'https://eugeneilin.dev/',
     overview:
@@ -46,9 +47,24 @@ export const ExperienceList = [
     tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
   },
   {
+    name: 'Password Generator',
+    highlight: 'JavaScript and CSS',
+    image: passwordGenerator,
+    code: 'https://github.com/eugeneilin/password-generator',
+    demo: 'https://www.eternalsecuritypasswords.com/',
+    overview:
+      'Too many password generators today charge you or ask you to create an account. Here is a custom random passwords generator you will actually like.',
+    highlights: [
+      'Intuitive UI/UX',
+      'Completely responsive',
+      'Latest JavaScript practices and use of higher-order functions',
+    ],
+    tools: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
     name: 'RSVP Website for Family',
     highlight: 'jQuery and Firebase',
-    image: Project3,
+    image: rsvpForFamily,
     code: 'https://github.com/eugeneilin/pavel-and-anna',
     demo: 'https://pavelandanna.eugeneilin.dev/',
     overview:
@@ -69,7 +85,7 @@ export const ExperienceList = [
   {
     name: 'Music Artist Website',
     highlight: 'Sass and JS',
-    image: Project4,
+    image: musiciansWebsite,
     code: 'https://github.com/eugeneilin/eugeneilin.com',
     demo: 'https://eugeneilin.com/',
     overview:
@@ -89,7 +105,7 @@ export const ExperienceList = [
   {
     name: 'RSVP Website',
     highlight: 'Cross Browser Compatibility',
-    image: Project5,
+    image: rsvpWebsite,
     code: 'https://github.com/eugeneilin/wedding-website',
     demo: 'https://wedding-website.eugeneilin.dev/',
     overview:
