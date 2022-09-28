@@ -7,6 +7,17 @@ const ProjectDisplay = () => {
   const { id } = useParams();
   const project = ExperienceList[id];
 
+  let displayHighlights = project.highlights.map((highlight) => {
+    return (
+      <div>
+        <span>
+          <i class='fa-solid fa-check'></i>
+        </span>
+        {highlight}
+      </div>
+    );
+  });
+
   let toolList = project.tools.map((index) => {
     return <i className={index}></i>;
   });
@@ -18,25 +29,29 @@ const ProjectDisplay = () => {
         <h3>{project.name}</h3>
         <div className='links'>
           <div className='link'>
-            <Link to={{ pathname: project.code }} target='_blank'>
-              <i className='devicon-github-original devicon'></i>
-              <h5>View Code</h5>
+            <Link to='/#experience' smooth>
+              <i class='fa-solid fa-chevron-left fa-2x'></i>
+              <h5>Go Back</h5>
             </Link>
           </div>
           <div className='link'>
-            <Link to={{ pathname: project.demo }} target='_blank'>
-              <i className='fa-solid fa-play fa-2x'></i>
-              <h5>View Demo</h5>
-            </Link>
+            <a href={project.code} target='_blank'>
+              <i class='fa-solid fa-code fa-2x'></i> <h5>View Code</h5>
+            </a>
+          </div>
+          <div className='link'>
+            <a href={project.demo} target='_blank'>
+              <i class='fa-solid fa-chevron-right fa-2x'></i> <h5>View Demo</h5>
+            </a>
           </div>
         </div>
         <div className='info'>
-          <h4>Overview:</h4>
+          <h4> General Overview:</h4>
           <p>{project.overview}</p>
         </div>
         <div className='info'>
-          <h4>Highlights:</h4>
-          <p>{project.highlights}</p>
+          <h4>Technical Highlights:</h4>
+          {displayHighlights}
         </div>
         <div className='tools'>{toolList}</div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReferenceMenu = ({ id, image, name, position, company }) => {
+const ReferenceMenu = ({ id, image, name }) => {
   return (
     <ul className='tab-list'>
       <li className='tab-item'>
@@ -11,9 +11,6 @@ const ReferenceMenu = ({ id, image, name, position, company }) => {
           ></div>
           <span className='tab-item-info'>
             <h4>{name}</h4>
-            <p>
-              {position} at {company}
-            </p>
           </span>
         </label>
       </li>

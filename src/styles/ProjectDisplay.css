@@ -1,8 +1,12 @@
 .project {
   margin-left: 0 !important;
+  height: unset;
   justify-content: unset;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: none;
+  padding: 0;
+  color: var(--secondary-color);
+  min-height: 100vh;
 }
 
 .project-img {
@@ -20,10 +24,10 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.85);
   z-index: 1;
   box-shadow: 0 0 5rem 1rem var(--secondary-color);
-  border-radius: 15px;
+  min-height: 100vh;
 }
 
 .project-content h3 {
@@ -59,6 +63,10 @@
   margin: 1rem 0;
 }
 
+.project span {
+  padding: 0 0.4rem 0;
+}
+
 .project .info-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,12 +86,17 @@
   transition: color 0.4s;
 }
 
-.tools .devicon {
+.tools > * {
   color: var(--third-color);
 }
 
 @media only screen and (min-width: 768px) {
   .project {
-    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .project-content {
+    border-radius: 15px;
+    min-height: unset;
   }
 }

@@ -11,13 +11,12 @@
   /* height: 20rem; */
   /* overflow-y: scroll; */
   padding: 0 1rem;
-  margin: 0 -1rem;
 }
 
 .tab-list {
   display: flex;
   flex-direction: column;
-  padding: 0.3rem 0;
+  align-items: center;
 }
 
 .tab-item label {
@@ -26,6 +25,7 @@
   padding: 0.4rem;
   border-radius: 15px;
   align-items: center;
+  width: 15rem;
 }
 
 .tab-item label:hover {
@@ -52,8 +52,8 @@
 }
 
 .tab-item-img {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   margin: 0 0.7rem;
   box-shadow: 0 0 0px 4px var(--fourth-color);
@@ -63,6 +63,11 @@
 .tab-item-info > * {
   display: block;
   color: var(--third-color);
+}
+
+.tab-item-info:hover * {
+  color: var(--primary-color);
+  transition: color 0.4s;
 }
 
 .recommendations-container {
@@ -79,8 +84,8 @@
   top: 0;
   left: 0;
   z-index: -1;
-  margin-left: -1rem;
-  margin-top: -2rem;
+  margin-left: 0.5rem;
+  margin-top: -1.5rem;
 }
 
 .recommendations-container p {
@@ -96,11 +101,11 @@
   width: 95%;
 }
 
-.recommendations-container .citation span {
+.recommendations-container .citation a {
   color: var(--third-color);
 }
 
-.recommendations-container .citation span:hover {
+.recommendations-container .citation a:hover {
   color: var(--primary-color);
   transition: color 0.4s;
   cursor: pointer;
@@ -108,32 +113,35 @@
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  .recommendations-container i {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .tab-item-img {
-    width: 4rem;
-    height: 4rem;
-  }
 }
 
 @media only screen and (min-width: 992px) {
+  #references {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   #references > div {
     display: flex;
   }
 
   .references-container {
     margin: 0;
-    border-right: 1px solid var(--primary-color);
   }
 
   .tab-item {
-    width: 30vw;
+    width: 25vw;
   }
 
-  .tab-item label {
-    padding: 1rem;
+  .recommendations-container i {
+    margin-left: 0.5rem;
+    margin-top: -3rem;
+  }
+
+  .recommendations-container p {
+    margin: 0;
+    border-left: 1px solid var(--primary-color);
+
+    padding: 0 1.2rem;
   }
 }

@@ -1,3 +1,16 @@
+.title * {
+  display: inline-block;
+}
+
+.title > h1 {
+  padding-right: 1rem;
+}
+
+.lastName {
+  color: var(--primary-color);
+  margin-top: -3rem;
+}
+
 span {
   color: var(--primary-color);
 }

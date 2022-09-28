@@ -1,9 +1,10 @@
-/* .mobile-navbar-wrap {
+.mobile-navbar-wrap {
   margin-bottom: 4.5rem;
-} */
+}
 
 .mobile-navbar {
-  position: sticky;
+  position: fixed;
+  z-index: 5;
   top: 0;
   width: 100vw;
   border-bottom: 1px solid var(--primary-color);
@@ -19,6 +20,8 @@
 
 .mobile-logo {
   color: white;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
 }
 
 .toggler {
@@ -28,7 +31,7 @@
   z-index: 3;
   cursor: pointer;
   width: 6rem;
-  height: 6rem;
+  height: 4.5rem;
   opacity: 0;
 }
 
@@ -211,6 +214,10 @@
   border-radius: 50%;
   box-shadow: 0 0 0px 7px rgba(255, 255, 255, 0.3);
   margin-bottom: 7px;
+}
+
+.active {
+  color: red;
 }
 
 /* Media Queries */

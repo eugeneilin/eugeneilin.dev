@@ -5,9 +5,10 @@ import '../../styles/homepage/About.css';
 const About = () => {
   return (
     <section id='about'>
-      <h1>
-        Eugene <span>Ilin</span>
-      </h1>
+      <div className='title'>
+        <h1>Eugene</h1>
+        <h1 className='lastName'>Ilin</h1>
+      </div>
       <h4>
         <span>Front End</span> Web Developer with experience in <span>React</span>
       </h4>

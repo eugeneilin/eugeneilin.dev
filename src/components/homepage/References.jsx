@@ -18,6 +18,7 @@ const References = () => {
                 position={reference.position}
                 image={reference.image}
                 company={reference.company}
+                defaultChecked={reference.defaultChecked} // fix
               />
             );
           })}
@@ -32,6 +33,8 @@ const References = () => {
                 position={reference.position}
                 company={reference.company}
                 recommendation={reference.recommendation}
+                linkedIn={reference.linkedIn}
+                companyUrl={reference.companyUrl}
               />
             );
           })}

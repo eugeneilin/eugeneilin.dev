@@ -1,17 +1,37 @@
 import React from 'react';
 
-const Recommendation = ({ id, name, position, company, recommendation }) => {
+const Recommendation = ({
+  id,
+  defaultChecked, // fix
+  name,
+  position,
+  company,
+  recommendation,
+  linkedIn,
+  companyUrl,
+}) => {
   return (
     <div>
-      <input id={id} type='radio' name='radio' className='tab-item-toggler' />
+      <input
+        id={id}
+        type='radio'
+        name='radio'
+        className='tab-item-toggler'
+        defaultChecked={defaultChecked} // fix
+      />
       <div className='recommendations-container'>
-        {/* <i class='fa-solid fa-quote-left'></i> */}
+        <i class='fa-solid fa-quote-left'></i>
         <p>&quot;{recommendation}&quot;</p>
         <div className='citation'>
-          &#8212; <span>{name}</span>
+          &#8212;{' '}
+          <a href={linkedIn} target='_blank'>
+            {name}
+          </a>
           <div>
-            {position} at
-            <span> {company}</span>
+            {position} at{' '}
+            <a href={companyUrl} target='_blank'>
+              {company}
+            </a>
           </div>
         </div>
       </div>

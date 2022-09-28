@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [expandMobileMenu, setExpandMenu] = useState(false);
+
+  const [checked, setChecked] = useState(false);
 
   const location = useLocation();
 
@@ -16,12 +18,14 @@ const Navbar = () => {
     <div>
       <div className='mobile-navbar-wrap' id={expandMobileMenu ? 'open' : ''}>
         <div className='mobile-navbar'>
-          <HashLink className='link' to='/#about' smooth>
+          <Link className='link' to='/#about' smooth>
             <h2 className='mobile-logo'>EI</h2>
-          </HashLink>
+          </Link>
           <input
             type='checkbox'
             className='toggler'
+            checked={checked}
+            onChange={(e) => setChecked(e.target.checked)}
             onClick={() => {
               setExpandMenu((prev) => !prev);
             }}
@@ -31,21 +35,24 @@ const Navbar = () => {
           </div>
           <div className='mobile-overlay'>
             <div className='links'>
-              <HashLink to='/#about' smooth>
+              <Link to='/#about' smooth onClick={() => setChecked((c) => !c)}>
                 About
-              </HashLink>
-              <HashLink to='/#experience' smooth>
+              </Link>
+              <Link to='/#experience' smooth onClick={() => setChecked((c) => !c)}>
                 Experience
-              </HashLink>
-              <HashLink to='/#skills' smooth>
+              </Link>
+              <Link to='/#skills' smooth onClick={() => setChecked((c) => !c)}>
                 Skills
-              </HashLink>
-              <HashLink to='/#references' smooth>
+              </Link>
+              <Link to='/#references' smooth onClick={() => setChecked((c) => !c)}>
                 References
-              </HashLink>
-              <HashLink to='/#contact' smooth>
+              </Link>
+              {/* <Link to='/#my-story' smooth onClick={() => setChecked((c) => !c)}>
+                My Story
+              </Link> */}
+              <Link to='/#contact' smooth onClick={() => setChecked((c) => !c)}>
                 Contact
-              </HashLink>
+              </Link>
             </div>
           </div>
         </div>
@@ -53,23 +60,26 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
       <aside className='desktop-nav'>
-        <HashLink to='/#about' smooth className='avatar'></HashLink>
+        <Link to='/#about' smooth className='avatar'></Link>
         <div className='links'>
-          <HashLink to='/#about' smooth>
+          <Link to='/#about' smooth>
             About
-          </HashLink>
-          <HashLink to='/#experience' smooth>
+          </Link>
+          <Link to='/#experience' smooth>
             Experience
-          </HashLink>
-          <HashLink to='/#skills' smooth>
+          </Link>
+          <Link to='/#skills' smooth>
             Skills
-          </HashLink>
-          <HashLink to='/#references' smooth>
+          </Link>
+          <Link to='/#references' smooth>
             References
-          </HashLink>
-          <HashLink to='/#contact' smooth>
+          </Link>
+          {/* <Link to='/#my-story' smooth>
+            My Story
+          </Link> */}
+          <Link to='/#contact' smooth>
             Contact
-          </HashLink>
+          </Link>
         </div>
       </aside>
     </div>

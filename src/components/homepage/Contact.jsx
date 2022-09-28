@@ -60,6 +60,7 @@ const Contact = () => {
             placeholder='Full Name'
             onChange={(e) => handleInputChange(e)}
             value={name}
+            required
           />
           <input
             id='phoneNumber'
@@ -67,6 +68,7 @@ const Contact = () => {
             placeholder='Phone Number'
             onChange={(e) => handleInputChange(e)}
             value={phoneNumber}
+            required
           />
           <input
             id='email'
@@ -74,6 +76,7 @@ const Contact = () => {
             placeholder='Email Address'
             onChange={(e) => handleInputChange(e)}
             value={email}
+            required
           />
           <textarea
             id='message'
@@ -81,6 +84,7 @@ const Contact = () => {
             placeholder='Message'
             onChange={(e) => handleInputChange(e)}
             value={message}
+            required
           ></textarea>
           <button>
             <p>
