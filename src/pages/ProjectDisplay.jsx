@@ -19,7 +19,11 @@ const ProjectDisplay = () => {
   });
 
   let toolList = project.tools.map((index) => {
-    return <i className={index}></i>;
+    return (
+      <i className={index}>
+        <p>{index.split('-')[1]}</p>
+      </i>
+    );
   });
 
   return (

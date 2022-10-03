@@ -5,7 +5,11 @@ import '../../styles/homepage/Skills.css';
 const Skills = () => {
   const acumen = SkillList.acumen;
   let displayAcumen = acumen.map((skill) => {
-    return <i className={skill}></i>;
+    return (
+      <i className={skill}>
+        <p>{skill.split('-')[1]}</p>
+      </i>
+    );
   });
 
   const competencies = SkillList.competencies;
