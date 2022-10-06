@@ -3,7 +3,6 @@ import musiciansWebsite from '../assets/musicians-website.jpeg';
 import passwordGenerator from '../assets/password-generator.jpeg';
 import portfolio from '../assets/portfolio.jpeg';
 import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
-import rsvpWebsite from '../assets/rsvp-website.jpeg';
 import mufflerShop from '../assets/muffler-shop.jpeg';
 
 export const ExperienceList = [
@@ -84,7 +83,7 @@ export const ExperienceList = [
       'Latest Bootstrap was used to create a simple but intuitive layout and design.',
       'Client-side validation as well as schema validation before uploading to database are only a few highlights of this project, along with the use of cookies, session, and flash messages.',
       'Authentication is done through Passport, images are uploaded to and served from Cloudinary, and the dynamic cluster map is done with Mapbox.',
-      'Security concerns have been addressed by sanitizing HTML with JOI, hiding sensitive information from errors, cookies, and sessions, as well as securing the app using Helmet HTTP headers.',
+      'Security concerns have been addressed by preventing Mongo injection, sanitizing HTML with JOI, hiding sensitive information from errors, cookies, and sessions, as well as securing the app using Helmet HTTP headers.',
     ],
     tools: [
       'devicon-express-original',
@@ -114,19 +113,5 @@ export const ExperienceList = [
       'devicon-nodejs-plain',
       'devicon-javascript-plain',
     ],
-  },
-  {
-    name: 'RSVP Website',
-    highlight: 'Cross Browser Compatibility',
-    image: rsvpWebsite,
-    code: 'https://github.com/eugeneilin/wedding-website',
-    demo: 'https://wedding-website.eugeneilin.dev/',
-    overview:
-      'This website is also one of the first. It looks simple but has some intricate designs that I spent time on and got experience in.',
-    highlights: [
-      'Because this design has very detailed aspects, this project is where I first got a sense of Cross-Browser Compatibility.',
-      'The logo is designed purely in CSS, and so are the section frames.',
-    ],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
 ];
