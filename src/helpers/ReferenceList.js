@@ -1,10 +1,23 @@
 import SFursov from '../assets/S-Fursov.jpeg';
 import BYurkin from '../assets/B-Yurkin.jpeg';
+import JVoronin from '../assets/J-Voronin.jpeg';
 import ProfilePic from '../assets/no-profile-picture-icon.webp';
 
 export const ReferenceList = [
   {
     id: 1,
+    defaultChecked: false, // fix
+    name: 'Jacob Voronin',
+    position: 'Senior Software Engineer',
+    company: 'Confluent',
+    image: JVoronin,
+    recommendation:
+      'I know Eugene personally for many years and can recommend him as a hard-working man. I had an opportunity to work with him on multiple projects, and one of the best abilities Eugene has is being able to adapt to a change and master new skill.',
+    linkedIn: 'https://www.linkedin.com/in/jacobvoronin/',
+    companyUrl: 'https://www.confluent.io/',
+  },
+  {
+    id: 2,
     defaultChecked: true, // fix
     name: 'Slavik Fursov',
     position: 'Software Engineer',
@@ -16,7 +29,7 @@ export const ReferenceList = [
     companyUrl: 'https://www.oracle.com/',
   },
   {
-    id: 2,
+    id: 3,
     defaultChecked: false, // fix
     name: 'Stepan Misiruk',
     position: 'Senior Test Automation Engineer',
@@ -28,7 +41,7 @@ export const ReferenceList = [
     companyUrl: 'https://www.accenture.com/us-en',
   },
   {
-    id: 3,
+    id: 4,
     defaultChecked: false, // fix
     name: 'Ben Yurkin',
     position: 'Test Engineering Manager',
