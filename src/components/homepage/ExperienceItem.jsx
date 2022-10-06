@@ -11,7 +11,9 @@ const ExperienceItem = ({ image, name, highlight, id }) => {
         navigate(`/experience/${id}`);
       }}
     >
-      <div style={{ backgroundImage: `url(${image})` }} className='bgImage' />
+      <div className='img-wrap'>
+        <div style={{ backgroundImage: `url(${image})` }} className='bgImage' />
+      </div>
       <div className='text'>
         <h3>{name}</h3>
         <h4>{highlight}</h4>
