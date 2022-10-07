@@ -217,7 +217,11 @@
 }
 
 .active {
-  color: red;
+  color: white;
+}
+
+.inactive {
+  color: var(--light-color);
 }
 
 /* Media Queries */
