@@ -1,85 +1,110 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-  const [expandMobileMenu, setExpandMenu] = useState(false);
+  const [expandMobileMenu, setExpandMobileMenu] = useState(false);
 
   const [checked, setChecked] = useState(false);
 
-  const location = useLocation();
+  let location = useLocation();
 
   useEffect(() => {
-    setExpandMenu(false);
+    setExpandMobileMenu(false);
   }, [location]);
+
+  const links = ['about', 'experience', 'skills', 'references', 'contact'];
+
+  // ----- Option 1 -----
+  const [index, setIndex] = useState(false);
+
+  const handleClick = (i) => {
+    setIndex(i);
+  };
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -72;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
+  const mbNav = links.map((link, i) => {
+    return (
+      <NavHashLink
+        smooth
+        scroll={scrollWithOffset}
+        to={`/#${link}`}
+        key={i}
+        onClick={() => {
+          handleClick(i);
+          setChecked((c) => !c);
+        }}
+        className={i === index ? 'active' : 'inactive'}
+      >
+        {link}
+      </NavHashLink>
+    );
+  });
+
+  const dtNav = links.map((link, i) => {
+    return (
+      <NavHashLink
+        smooth
+        to={`/#${link}`}
+        key={i}
+        onClick={() => handleClick(i)}
+        className={i === index ? 'active' : 'inactive'}
+      >
+        {link}
+      </NavHashLink>
+    );
+  });
 
   return (
     <div>
       <div className='mobile-navbar-wrap' id={expandMobileMenu ? 'open' : ''}>
         <div className='mobile-navbar'>
-          <Link className='link' to='/#about' smooth>
+          <NavHashLink className='link' to='/#about' smooth>
             <h2 className='mobile-logo'>EI</h2>
-          </Link>
+          </NavHashLink>
           <input
             type='checkbox'
             className='toggler'
             checked={checked}
             onChange={(e) => setChecked(e.target.checked)}
             onClick={() => {
-              setExpandMenu((prev) => !prev);
+              setExpandMobileMenu((prev) => !prev);
             }}
           />
           <div className='menu-btn'>
             <div></div>
           </div>
           <div className='mobile-overlay'>
-            <div className='links'>
-              <Link to='/#about' smooth onClick={() => setChecked((c) => !c)}>
-                About
-              </Link>
-              <Link to='/#experience' smooth onClick={() => setChecked((c) => !c)}>
-                Experience
-              </Link>
-              <Link to='/#skills' smooth onClick={() => setChecked((c) => !c)}>
-                Skills
-              </Link>
-              <Link to='/#references' smooth onClick={() => setChecked((c) => !c)}>
-                References
-              </Link>
-              {/* <Link to='/#my-story' smooth onClick={() => setChecked((c) => !c)}>
-                My Story
-              </Link> */}
-              <Link to='/#contact' smooth onClick={() => setChecked((c) => !c)}>
-                Contact
-              </Link>
-            </div>
+            <div className='links'>{mbNav}</div>
           </div>
         </div>
       </div>
 
       {/* Desktop Nav */}
       <aside className='desktop-nav'>
-        <Link to='/#about' smooth className='avatar'></Link>
+        <NavHashLink smooth to='/#about' className='avatar'></NavHashLink>
         <div className='links'>
-          <Link to='/#about' smooth>
-            About
-          </Link>
-          <Link to='/#experience' smooth>
-            Experience
-          </Link>
-          <Link to='/#skills' smooth>
-            Skills
-          </Link>
-          <Link to='/#references' smooth>
-            References
-          </Link>
-          {/* <Link to='/#my-story' smooth>
-            My Story
-          </Link> */}
-          <Link to='/#contact' smooth>
-            Contact
-          </Link>
+          {/* --- Option 1 Rendered ---  */}
+          {dtNav}
+
+          {/* --- Option 2 Rendered ---
+          {links.map((link) => {
+            return (
+              <NavHashLink
+                smooth
+                to={`/#${link}`}
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                {link}
+              </NavHashLink>
+            );
+          })} */}
         </div>
       </aside>
     </div>

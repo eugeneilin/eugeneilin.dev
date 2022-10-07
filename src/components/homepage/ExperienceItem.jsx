@@ -8,7 +8,7 @@ const ExperienceItem = ({ image, name, highlight, id }) => {
     <div
       className='experienceItem'
       onClick={() => {
-        navigate(`/experience/${id}`);
+        navigate(`/experience/${id}/`);
       }}
     >
       <div className='img-wrap'>
