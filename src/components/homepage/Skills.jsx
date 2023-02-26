@@ -15,7 +15,7 @@ const Skills = () => {
   const competencies = SkillList.competencies;
   let displayCompetencies = competencies.map((competency) => {
     return (
-      <p className='competency'>
+      <p className='list-item'>
         <span>
           <i class='fa-solid fa-check'></i>
         </span>
@@ -27,7 +27,7 @@ const Skills = () => {
   const values = SkillList.values;
   let displayValues = values.map((value) => {
     return (
-      <p className='value'>
+      <p className='list-item'>
         <span>
           <i class='fa-solid fa-check'></i>
         </span>
@@ -39,27 +39,23 @@ const Skills = () => {
   return (
     <section id='skills'>
       <h2>Skills</h2>
-      <div className='skill-set'>
+      <div>
         <h4>
           Acquired <span>technical acumen</span>:
         </h4>
         <div className='acumen'>{displayAcumen}</div>
       </div>
-      <div className='skill-set'>
+      <div className='pt-1'>
         <h4>
           Developed <span>core competencies</span>:
         </h4>
-        <div>
-          <div>{displayCompetencies}</div>
-        </div>
+        <div>{displayCompetencies}</div>
       </div>
-      <div className='skill-set'>
+      <div className='pt-1'>
         <h4>
           Demonstrated <span>values</span> and <span>soft skills</span>:
         </h4>
-        <div>
-          <div>{displayValues}</div>
-        </div>
+        <div>{displayValues}</div>
       </div>
     </section>
   );

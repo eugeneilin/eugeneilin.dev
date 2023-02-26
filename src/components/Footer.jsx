@@ -12,7 +12,7 @@ const Footer = () => {
           <i className='fab fa-linkedin-in fa-2x'></i>
         </a>
       </div>
-      <p>&copy; 2022 Eugene Ilin.</p>
+      <p>&copy; 2019-2023 Eugene Ilin.</p>
     </div>
   );
 };

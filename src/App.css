@@ -10,6 +10,7 @@
   --hover-color: white;
   --light-color: rgba(255, 255, 255, 0.5);
   --success-color: #d2ffd2;
+  --transition: 0.4s;
   font-size: 16px;
 }
 
@@ -94,14 +95,8 @@ h5 {
   font-size: 1.2rem;
 }
 
-.fa-2x {
-  color: var(--third-color);
-  padding: 0.5rem 2rem 0.5rem 0;
-}
-
-.fa-2x:hover {
+span {
   color: var(--primary-color);
-  transition: color 0.4s;
 }
 
 /* Scrollbar Styling */
@@ -116,6 +111,22 @@ h5 {
 }
 
 /* Icon Styling */
+.fa-2x {
+  color: var(--third-color);
+  padding: 0.5rem 2rem 0.5rem 0;
+}
+
+.fa-2x:hover {
+  color: var(--primary-color);
+  transition: color 0.4s;
+}
+
+.devicon {
+  color: var(--secondary-color);
+  font-size: 1.9rem;
+  padding: 0.4rem;
+  transition: color var(--transition);
+}
 
 .devicon-react-original:hover {
   color: #61dbfb;
@@ -177,12 +188,83 @@ h5 {
   color: #ffcb2b;
 }
 
+.education-icons {
+  height: 2.5rem;
+  width: 5rem;
+  margin: 0 0.7rem;
+  transition: all var(--transition) ease-in-out;
+}
+
+.truecoders {
+  background: url('/src/assets/truecoders-faded.png') no-repeat center / contain;
+}
+
+.truecoders:hover {
+  background-image: url('/src/assets/truecoders.png');
+}
+
+.udemy {
+  background: url('/src/assets/udemy-faded.png') no-repeat center / contain;
+}
+
+.udemy:hover {
+  background-image: url('/src/assets/udemy.png');
+}
+
+.codecademy {
+  background: url('/src/assets/codecademy-faded.png') no-repeat center / contain;
+}
+
+.codecademy:hover {
+  background-image: url('/src/assets/codecademy.png');
+}
+
+.youtube {
+  background: url('/src/assets/youtube-faded.png') no-repeat center / contain;
+}
+
+.youtube:hover {
+  background-image: url('/src/assets/youtube.png');
+}
+
+.icons-bottom {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-bottom i {
+  font-size: 2.5rem;
+  color: var(--third-color);
+  transition: color var(--transition);
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.icons-bottom i p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+
 /* Utilities */
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .line {
   height: 1px;
   width: 12rem;
   background-color: var(--primary-color);
   margin: 1rem auto;
+}
+
+.list-item span {
+  padding: 0 0.4rem 0;
 }
 
 /* Media Queries */

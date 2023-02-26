@@ -2,7 +2,7 @@
   margin-left: 0 !important;
   height: unset;
   justify-content: unset;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   border-bottom: none;
   padding: 0;
   color: var(--secondary-color);
@@ -50,7 +50,7 @@
 .project .link:hover i,
 .project .link:hover h5 {
   color: var(--primary-color);
-  transition: color 0.4s ease-in-out;
+  transition: color var(--transition) ease-in-out;
 }
 
 .project .fa-2x {
@@ -70,41 +70,6 @@
 .project .info-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.tools {
-  margin-top: auto;
-  text-align: center;
-  padding-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.tools i {
-  font-size: 2.5rem;
-  transition: color 0.4s;
-  padding: 0.4rem;
-  text-align: center;
-}
-
-.tools i p {
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 0.3rem;
-}
-
-.devicon,
-.tools > * {
-  color: var(--secondary-color);
-  font-size: 1.9rem;
-  padding: 0.4rem;
-  transition: color 0.4s;
-}
-
-.tools > * {
-  color: var(--third-color);
 }
 
 @media only screen and (min-width: 768px) {
