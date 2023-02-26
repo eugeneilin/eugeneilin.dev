@@ -23,13 +23,13 @@ export const SkillList = {
     'UI / UX design',
   ],
   values: [
+    'Creative and critical thinking',
+    'Emotional intelligence',
+    'Growth mindset',
     'Effective communication',
     'Open-mindedness and adaptability',
     'Cross-functional collaboration',
     'Time management and organization',
     'Servant leadership',
-    'Critical thinking',
-    'Emotional intelligence',
-    'Growth mindset',
   ],
 };

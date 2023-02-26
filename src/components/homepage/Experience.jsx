@@ -7,6 +7,9 @@ const Experience = () => {
   return (
     <section id='experience'>
       <h2>Experience</h2>
+      <h4>
+        Samples of <span>what I do</span>
+      </h4>
       <div className='projects'>
         {ExperienceList.map((project, index) => {
           return (

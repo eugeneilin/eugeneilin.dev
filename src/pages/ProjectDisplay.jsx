@@ -31,6 +31,7 @@ const ProjectDisplay = () => {
       <div className='project-img' style={{ backgroundImage: `url(${project.image})` }}></div>
       <div className='project-content'>
         <h3>{project.name}</h3>
+        <p className='subname'>{project.subname}</p>
         <div className='links'>
           <div className='link'>
             <Link to='/#experience' smooth>
@@ -39,25 +40,25 @@ const ProjectDisplay = () => {
             </Link>
           </div>
           <div className='link'>
-            <a href={project.code} target='_blank'>
+            <a href={project.code} rel='noreferrer' target='_blank'>
               <i class='fa-solid fa-code fa-2x'></i> <h5>View Code</h5>
             </a>
           </div>
           <div className='link'>
-            <a href={project.demo} target='_blank'>
+            <a href={project.demo} rel='noreferrer' target='_blank'>
               <i class='fa-solid fa-chevron-right fa-2x'></i> <h5>View Demo</h5>
             </a>
           </div>
         </div>
         <div className='info'>
-          <h4> General Overview:</h4>
+          <h4>Overview:</h4>
           <p>{project.overview}</p>
         </div>
         <div className='info'>
           <h4>Technical Highlights:</h4>
           {displayHighlights}
         </div>
-        <div className='tools'>{toolList}</div>
+        <div className='icons-bottom'>{toolList}</div>
       </div>
     </section>
   );
