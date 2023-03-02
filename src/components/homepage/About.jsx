@@ -12,10 +12,7 @@ const About = () => {
         Full Stack <span>React</span> Developer
       </h4>
       <p className='pt-1'>
-        Dynamic and creative web developer with 3+ years of experience building quality websites and
-        applications. Excellent problem-solving skills and ability to perform well on a team. Adept
-        at working in diverse environments and establishing rapport with various professionals from
-        all levels and backgrounds.
+        Dynamic and creative full stack web developer specializing in JavaScript, React, and UI/UX.
       </p>
       <div className='pt-1'>
         <a href='https://github.com/eugeneilin' target='_blank'>

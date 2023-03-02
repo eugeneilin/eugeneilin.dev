@@ -9,6 +9,7 @@ export const SkillList = {
     'devicon-html5-plain',
     'devicon-css3-plain',
     'devicon-sass-original',
+    'devicon-less-plain-wordmark',
     'devicon-jquery-plain',
     'devicon-bootstrap-plain',
     'devicon-wordpress-plain',

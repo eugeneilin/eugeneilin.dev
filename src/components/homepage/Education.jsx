@@ -1,7 +1,7 @@
 import React from 'react';
 import { EducationList } from '../../helpers/EducationList';
 // import { ExperienceList } from '../../helpers/ExperienceList';
-// import '../../styles/homepage/Education.css';
+import '../../styles/homepage/Education.css';
 
 const Education = () => {
   const TrueCoders = EducationList.TrueCoders;
@@ -48,11 +48,10 @@ const Education = () => {
         and studying diligently on top of my full-time jobs.
       </p>
       <p className='pt-1'>
-        Throughout this period of time, my self-education took place on CodeCademy, Udemy, and
-        YouTube. It also happened through many interactions with my developer friends, reviewing and
-        commenting on my code, explaining best practices and guiding me to the best learning path.
-        The necessary practice of Googling and researching the best solution has been an integral
-        part of my growth.
+        Throughout this period of time, my self-education took place on Udemy and YouTube. I also
+        learned a lot from mentors and friends, reviewing and commenting on my code, explaining best
+        practices and guiding me to the best learning path. The necessary practice of Googling and
+        researching the best solution has been an integral part of my growth.
       </p>
       <p className='pt-1'>
         Currently, I'm in bootcamp full-time until end of April, to solidify my knowledge and
@@ -61,7 +60,6 @@ const Education = () => {
       <div className='icons-bottom'>
         <div className='education-icons truecoders'></div>
         <div className='education-icons udemy'></div>
-        <div className='education-icons codecademy'></div>
         <div className='education-icons youtube'></div>
       </div>
     </section>

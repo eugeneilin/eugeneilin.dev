@@ -164,6 +164,10 @@ span {
   color: #cd6799;
 }
 
+.devicon-less-plain-wordmark:hover {
+  color: #1d365d;
+}
+
 .devicon-npm-original-wordmark:hover {
   color: #cc3534;
 }
@@ -188,6 +192,10 @@ span {
   color: #ffcb2b;
 }
 
+.devicon-github-original:hover {
+  color: #24292f;
+}
+
 .education-icons {
   height: 2.5rem;
   width: 5rem;
@@ -209,14 +217,6 @@ span {
 
 .udemy:hover {
   background-image: url('/src/assets/udemy.png');
-}
-
-.codecademy {
-  background: url('/src/assets/codecademy-faded.png') no-repeat center / contain;
-}
-
-.codecademy:hover {
-  background-image: url('/src/assets/codecademy.png');
 }
 
 .youtube {
@@ -253,7 +253,8 @@ span {
 
 /* Utilities */
 .pt-1 {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; /* to fix */
 }
 
 .line {
