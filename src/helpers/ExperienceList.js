@@ -4,15 +4,15 @@ import portfolio from '../assets/portfolio.jpeg';
 import churchDirectory from '../assets/church-directory.jpeg';
 import musiciansWebsite from '../assets/musicians-website.jpeg';
 import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
-import favRecipes from '../assets/fav-recipes.jpg';
-import githubFinder from '../assets/github-finder.jpg';
-import liyasBakery from '../assets/liyas-bakery.jpg';
-import liz from '../assets/photo-with-liz.jpg';
-import todo from '../assets/todo.jpg';
-import mufflerShop from '../assets/muffler-shop.jpg';
-import blCafe from '../assets/bagel-lovers-cafe.jpg';
-import valPro from '../assets/valpro.jpg';
-import vineyard from '../assets/vineyard.jpg';
+import favRecipes from '../assets/fav-recipes.jpeg';
+import githubFinder from '../assets/github-finder.jpeg';
+import liyasBakery from '../assets/liyas-bakery.jpeg';
+import liz from '../assets/photo-with-liz.jpeg';
+import todo from '../assets/todo.jpeg';
+import mufflerShop from '../assets/muffler-shop.jpeg';
+import blCafe from '../assets/bagel-lovers-cafe.jpeg';
+import valPro from '../assets/valpro.jpeg';
+import vineyard from '../assets/vineyard.jpeg';
 
 export const ExperienceList = [
   {
