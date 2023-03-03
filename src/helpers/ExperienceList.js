@@ -5,7 +5,7 @@ import churchDirectory from '../assets/church-directory.jpeg';
 import musiciansWebsite from '../assets/musicians-website.jpeg';
 import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
 import favRecipes from '../assets/fav-recipes.jpeg';
-import githubFinder from '../assets/github-finder.jpeg';
+import gitTheUsers from '../assets/git-the-users.jpeg';
 import liyasBakery from '../assets/liyas-bakery.jpeg';
 import liz from '../assets/photo-with-liz.jpeg';
 import todo from '../assets/todo.jpeg';
@@ -35,23 +35,6 @@ export const ExperienceList = [
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
   {
-    name: 'Recipe Collection',
-    highlight: 'React and Firebase',
-    subtitle: 'WORK IN PROGRESS',
-    image: favRecipes,
-    code: 'https://github.com/eugeneilin/fav-recipes',
-    demo: 'https://fav-recipes.eugeneilin.dev/',
-    overview:
-      'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
-    highlights: [
-      'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
-      'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
-      "Additionally, I'd like to allow users to share recipes within the app.",
-      'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
-    ],
-    tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
-  },
-  {
     name: 'Personal Portfolio',
     highlight: 'React and Firebase',
     subtitle: 'My portfolio website',
@@ -69,12 +52,12 @@ export const ExperienceList = [
   {
     name: 'Church Directory',
     highlight: 'Express and MongoDB',
-    subtitle: 'This was a very MAJOR project I developed',
+    subtitle: 'This is a very MAJOR project I developed',
     image: churchDirectory,
     code: 'https://github.com/eugeneilin/church-directory',
     demo: 'https://enigmatic-island-99499.herokuapp.com/',
     overview:
-      "NOTE: Unfortunately this app is down due to Heroku's discontinuation of their free plan. Please view the code... Built with a modern and simple look, the main idea of this web app is to view churches as a list as well as plotted on a map. Each individual church is clickable and takes you to a new page with more detailed information. Only admins have the rights to add, edit, and delete data through the admin panel.",
+      'Built with a modern and simple look, the main idea of this web app is to view churches as a list as well as plotted on a map. Each individual church is clickable and takes you to a new page with more detailed information. Only admins have the rights to add, edit, and delete data through the admin panel.',
     highlights: [
       'Web pages in this app are served through Express, with EJS to dynamically generate HTML.',
       'The database lives on MongoDB Atlas, and is connected through Mongoose.',
@@ -93,12 +76,29 @@ export const ExperienceList = [
     ],
   },
   {
-    name: 'Github Users Search',
+    name: 'Recipe Collection',
+    highlight: 'React and Firebase',
+    subtitle: 'WORK IN PROGRESS',
+    image: favRecipes,
+    code: 'https://github.com/eugeneilin/fav-recipes',
+    demo: 'https://fav-recipes.eugeneilin.dev/',
+    overview:
+      'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
+    highlights: [
+      'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
+      'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
+      "Additionally, I'd like to allow users to share recipes within the app.",
+      'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
+    ],
+    tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: "'Git' The Users",
     highlight: 'React',
     subtitle: 'A website using Github API',
-    image: githubFinder,
+    image: gitTheUsers,
     code: 'https://github.com/eugeneilin/github-finder',
-    demo: 'https://githubfinder.eugeneilin.dev/',
+    demo: 'https://gitTheUsers.eugeneilin.dev/',
     overview:
       'In the search bar, you can search up any user from Github and see their name, profile pic, whether they are hireable or not, their last 5 repositories, and more. Really cool, check it out.',
     highlights: [
@@ -107,6 +107,7 @@ export const ExperienceList = [
     ],
     tools: ['devicon-react-original', 'devicon-github-original'],
   },
+
   {
     name: 'Password Generator',
     highlight: 'JavaScript and CSS',
