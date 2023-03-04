@@ -1,29 +1,16 @@
 import React from 'react';
 import { EducationList } from '../../helpers/EducationList';
-// import { ExperienceList } from '../../helpers/ExperienceList';
 import '../../styles/homepage/Education.css';
 
 const Education = () => {
-  const TrueCoders = EducationList.TrueCoders;
-  let displayTrueCoders = TrueCoders.map((TrueCodersItem) => {
+  const whatDoesSelfTaughtMean = EducationList.whatDoesSelfTaughtMean;
+  let displayMeaningOfSelfTaught = whatDoesSelfTaughtMean.map((Meaning) => {
     return (
       <p className='list-item'>
         <span>
           <i class='fa-solid fa-check'></i>
         </span>
-        {TrueCodersItem}
-      </p>
-    );
-  });
-
-  const Certifications = EducationList.Certifications;
-  let displayCertifications = Certifications.map((Certification) => {
-    return (
-      <p className='list-item'>
-        <span>
-          <i class='fa-solid fa-check'></i>
-        </span>
-        {Certification}
+        {Meaning}
       </p>
     );
   });
@@ -31,34 +18,25 @@ const Education = () => {
   return (
     <section id='education'>
       <h2>Education</h2>
-      <div>
+      <div className='pt-1'>
         <h4>
-          <span>True Coders Bootcamp</span> Certificate of Completion
+          I am a <span>Self-Taught</span> Developer
         </h4>
-        <div>{displayTrueCoders}</div>
+        <p>
+          Over 4 years ago, I began coding. I studied through Udemy, YouTube, and my mentors.
+          Thousands of lines of code later, I have acquired the necessary technical skills and
+          resilient dedication to take on any project.
+        </p>
       </div>
-      {/* <div className='pt-1'>
+      <div className='pt-1'>
         <h4>
-          Other <span>Certifications</span>
+          What this <span>journey</span> has looked like for me
         </h4>
-        <div>{displayCertifications}</div>
-      </div> */}
-      <p className='pt-1'>
-        4+ years ago I began my journey as a self-taught developer, working on projects for people
-        and studying diligently on top of my full-time jobs.
-      </p>
-      <p className='pt-1'>
-        Throughout this period of time, my self-education took place on Udemy and YouTube. I also
-        learned a lot from mentors and friends, reviewing and commenting on my code, explaining best
-        practices and guiding me to the best learning path. The necessary practice of Googling and
-        researching the best solution has been an integral part of my growth.
-      </p>
-      <p className='pt-1'>
-        Currently, I'm in bootcamp full-time until end of April, to solidify my knowledge and
-        application of programming, as well as build a broader network of passionate developers.
-      </p>
+        <div>
+          <div>{displayMeaningOfSelfTaught}</div>
+        </div>
+      </div>
       <div className='icons-bottom'>
-        <div className='education-icons truecoders'></div>
         <div className='education-icons udemy'></div>
         <div className='education-icons youtube'></div>
       </div>

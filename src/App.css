@@ -113,7 +113,7 @@ span {
 /* Icon Styling */
 .fa-2x {
   color: var(--third-color);
-  padding: 0.5rem 2rem 0.5rem 0;
+  padding: 0 2rem 0.5rem 0;
 }
 
 .fa-2x:hover {
@@ -203,14 +203,6 @@ span {
   transition: all var(--transition) ease-in-out;
 }
 
-.truecoders {
-  background: url('/src/assets/truecoders-faded.png') no-repeat center / contain;
-}
-
-.truecoders:hover {
-  background-image: url('/src/assets/truecoders.png');
-}
-
 .udemy {
   background: url('/src/assets/udemy-faded.png') no-repeat center / contain;
 }
@@ -253,8 +245,8 @@ span {
 
 /* Utilities */
 .pt-1 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; /* to fix */
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem; /* to fix */
 }
 
 .line {
