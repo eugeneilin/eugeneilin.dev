@@ -9,7 +9,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 2rem;
+  padding-top: 1rem;
   gap: 1rem;
 }
 

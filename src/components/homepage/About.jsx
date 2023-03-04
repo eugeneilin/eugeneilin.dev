@@ -9,11 +9,12 @@ const About = () => {
         <h1 className='lastName'>Ilin</h1>
       </div>
       <h4>
-        Full Stack <span>React</span> Developer
+        <span>Full Stack</span> Web Developer
       </h4>
-      <p className='pt-1'>
-        Dynamic and creative full stack web developer specializing in JavaScript, React, and UI/UX.
-      </p>
+      <div className='pt-1'>
+        <p>Dynamic and creative web developer, specializing in the MERN stack.</p>
+        <p>Charlotte, North Carolina</p>
+      </div>
       <div className='pt-1'>
         <a href='https://github.com/eugeneilin' target='_blank'>
           <i className='fab fa-github fa-2x'></i>
