@@ -1,3 +1,4 @@
+import contactAccess from '../assets/contact-access.jpeg';
 import fairviewContainers from '../assets/fairview-containers.jpeg';
 import passwordGenerator from '../assets/password-generator.jpeg';
 import portfolio from '../assets/portfolio.jpeg';
@@ -16,43 +17,9 @@ import vineyard from '../assets/vineyard.jpeg';
 
 export const ExperienceList = [
   {
-    name: 'Dumpster Rentals',
-    subtitle: 'JUST FINISHED for a client in MA',
-    highlight: 'Modern design',
-    image: fairviewContainers,
-    code: 'https://github.com/eugeneilin/fairview-containers',
-    demo: 'https://fairviewcontainersllc.com/',
-    overview:
-      'This project has so much of my passion and creativity in it. I was given a logo and a task, "Hey, can you make me a website?" And out came this fully responsive, modern beauty. The design is all completely original, utilizing semantic HTML, latest CSS with animations and transitions, and a touch of JavaScript to enhance the overall user experience. The layout of the website and the text as well as the graphic icons all had to be composed from scratch. Images have been optimized for speedy loading, and design tested on different browsers. Form submits through Netlify, redirecting user to confirmation page, upon which Zapier steps in to notify business owner of new order. The business model may involve trash, but I promise the website is nothing like it!',
-    highlights: [
-      'Intuitive UI/UX',
-      'Responsive design',
-      'CSS animations',
-      'Mobile-first',
-      'Contact form',
-      'Article writing',
-    ],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
-  },
-  {
-    name: 'Personal Portfolio',
-    highlight: 'React and Firebase',
-    subtitle: 'My portfolio website',
-    image: portfolio,
-    code: 'https://github.com/eugeneilin/eugeneilin.dev',
-    demo: 'https://eugeneilin.dev/',
-    overview: 'This is a little about the website you are on right now.',
-    highlights: [
-      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
-      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
-      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
-    ],
-    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
-  },
-  {
     name: 'Church Directory',
     highlight: 'Express and MongoDB',
-    subtitle: 'This is a very MAJOR project I developed',
+    subtitle: 'This is an Express app',
     image: churchDirectory,
     code: 'https://github.com/eugeneilin/church-directory',
     demo: 'https://enigmatic-island-99499.herokuapp.com/',
@@ -74,6 +41,40 @@ export const ExperienceList = [
       'devicon-npm-original-wordmark',
       'devicon-heroku-original',
     ],
+  },
+  {
+    name: 'Personal Portfolio',
+    highlight: 'React and Firebase',
+    subtitle: 'My portfolio website',
+    image: portfolio,
+    code: 'https://github.com/eugeneilin/eugeneilin.dev',
+    demo: 'https://eugeneilin.dev/',
+    overview: 'This is a little about the website you are on right now.',
+    highlights: [
+      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
+      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
+      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
+    ],
+    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
+  },
+  {
+    name: 'Dumpster Rentals',
+    subtitle: 'JUST FINISHED for a client in MA',
+    highlight: 'Modern design',
+    image: fairviewContainers,
+    code: 'https://github.com/eugeneilin/fairview-containers',
+    demo: 'https://fairviewcontainersllc.com/',
+    overview:
+      'This project has so much of my passion and creativity in it. I was given a logo and a task, "Hey, can you make me a website?" And out came this fully responsive, modern beauty. The design is all completely original, utilizing semantic HTML, latest CSS with animations and transitions, and a touch of JavaScript to enhance the overall user experience. The layout of the website and the text as well as the graphic icons all had to be composed from scratch. Images have been optimized for speedy loading, and design tested on different browsers. Form submits through Netlify, redirecting user to confirmation page, upon which Zapier steps in to notify business owner of new order. The business model may involve trash, but I promise the website is nothing like it!',
+    highlights: [
+      'Intuitive UI/UX',
+      'Responsive design',
+      'CSS animations',
+      'Mobile-first',
+      'Contact form',
+      'Article writing',
+    ],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
   {
     name: 'Recipe Collection',
@@ -107,7 +108,29 @@ export const ExperienceList = [
     ],
     tools: ['devicon-react-original', 'devicon-github-original'],
   },
-
+  {
+    name: 'Contact Access',
+    highlight: 'MERN app',
+    subtitle: 'PLEASE NOTE: This app WILL BE LIVE SOON.',
+    image: contactAccess,
+    code: 'https://github.com/eugeneilin/contact-access',
+    demo: 'https://contact-access.herokuapp.com/',
+    overview:
+      'This is a full-stack MERN app for storing contact information. Users create an account, then are able to add, view, edit, and delete their contacts. Users are only able to access their own contacts.',
+    highlights: [
+      'Express dynamically serving pages to the browser.',
+      'Users and contacts are stored on MongoDB Atlas.',
+      'Authentication is done using JSON Web Tokens.',
+    ],
+    tools: [
+      'devicon-react-original',
+      'devicon-express-original',
+      'devicon-mongodb-plain',
+      'devicon-nodejs-plain',
+      'devicon-npm-original-wordmark',
+      'devicon-heroku-original',
+    ],
+  },
   {
     name: 'Password Generator',
     highlight: 'JavaScript and CSS',
