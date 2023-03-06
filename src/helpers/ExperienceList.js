@@ -94,6 +94,29 @@ export const ExperienceList = [
     tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
   },
   {
+    name: 'Contact Access',
+    highlight: 'MERN app',
+    subtitle: 'MERN stack app',
+    image: contactAccess,
+    code: 'https://github.com/eugeneilin/contact-access',
+    demo: 'https://contact-access-real.herokuapp.com/',
+    overview:
+      'This is a full-stack MERN application for storing contact information. Users create an account, then are able to add, view, edit, and delete their contacts. Users are only able to access their own contacts. Just create an account and enjoy :)',
+    highlights: [
+      'Express API dynamically serving our routes.',
+      'Users and contacts are stored on MongoDB Atlas.',
+      'Authentication is done using JSON Web Tokens.',
+    ],
+    tools: [
+      'devicon-react-original',
+      'devicon-express-original',
+      'devicon-mongodb-plain',
+      'devicon-nodejs-plain',
+      'devicon-npm-original-wordmark',
+      'devicon-heroku-original',
+    ],
+  },
+  {
     name: "'Git' The Users",
     highlight: 'React',
     subtitle: 'A website using Github API',
@@ -107,29 +130,6 @@ export const ExperienceList = [
       'Components were dynamically displayed using React.',
     ],
     tools: ['devicon-react-original', 'devicon-github-original'],
-  },
-  {
-    name: 'Contact Access',
-    highlight: 'MERN app',
-    subtitle: 'PLEASE NOTE: This app WILL BE LIVE SOON.',
-    image: contactAccess,
-    code: 'https://github.com/eugeneilin/contact-access',
-    demo: 'https://contact-access.herokuapp.com/',
-    overview:
-      'This is a full-stack MERN app for storing contact information. Users create an account, then are able to add, view, edit, and delete their contacts. Users are only able to access their own contacts.',
-    highlights: [
-      'Express dynamically serving pages to the browser.',
-      'Users and contacts are stored on MongoDB Atlas.',
-      'Authentication is done using JSON Web Tokens.',
-    ],
-    tools: [
-      'devicon-react-original',
-      'devicon-express-original',
-      'devicon-mongodb-plain',
-      'devicon-nodejs-plain',
-      'devicon-npm-original-wordmark',
-      'devicon-heroku-original',
-    ],
   },
   {
     name: 'Password Generator',
