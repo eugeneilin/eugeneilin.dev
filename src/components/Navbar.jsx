@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ hashUrl }) => {
   const [expandMobileMenu, setExpandMobileMenu] = useState(false);
   const [checked, setChecked] = useState(false);
 
@@ -44,12 +44,21 @@ const Navbar = () => {
     setIndex(i);
   };
 
+  useEffect(() => {
+    const activeIndex = links.findIndex((link) => link === hashUrl);
+    // console.log(activeIndex);
+    if (activeIndex || activeIndex === 0) {
+      setIndex(activeIndex);
+    }
+  }, [hashUrl]);
+
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -72;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
 
+  // Mobile nav
   const mbNav = links.map((link, i) => {
     return (
       <NavHashLink
@@ -68,6 +77,7 @@ const Navbar = () => {
     );
   });
 
+  // Desktop nav
   const dtNav = links.map((link, i) => {
     return (
       <NavHashLink

@@ -23,9 +23,9 @@ const Education = () => {
           I am a <span>Self-Taught</span> Developer
         </h4>
         <p>
-          Over 4 years ago, I began coding. I studied through Udemy, YouTube, and my mentors.
-          Thousands of lines of code later, I have acquired the necessary technical skills and
-          resilient dedication to take on any project.
+          Over 4 years ago, I began coding. I studied through Udemy, YouTube, and my mentors. Many
+          lines of code later, I have not only the necessary technical skills to build full stack
+          applications, but also resilience and dedication.
         </p>
       </div>
       <div className='pt-1'>
