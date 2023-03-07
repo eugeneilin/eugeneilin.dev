@@ -37,6 +37,8 @@ const ProjectDisplay = () => {
             <Link to='/#experience' smooth>
               <i class='fa-solid fa-chevron-left fa-2x'></i>
               <h5>Go Back</h5>
+              {/* Look at last position of page, and go there instead of reloading the entire Home
+              component when "Go Back" is clicked */}
             </Link>
           </div>
           <div className='link'>
