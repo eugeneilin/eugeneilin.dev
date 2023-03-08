@@ -31,7 +31,7 @@ const ProjectDisplay = () => {
       <div className='project-img' style={{ backgroundImage: `url(${project.image})` }}></div>
       <div className='project-content'>
         <h3>{project.name}</h3>
-        <p className='pt-1'>{project.subtitle}</p>
+        <p className='py-1'>{project.subtitle}</p>
         <div className='links'>
           <div className='link'>
             <Link to='/#experience' smooth>

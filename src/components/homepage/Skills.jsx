@@ -45,13 +45,13 @@ const Skills = () => {
         </h4>
         <div className='acumen'>{displayAcumen}</div>
       </div>
-      <div className='pt-1'>
+      <div className='py-1'>
         <h4>
           Developed <span>core competencies</span>:
         </h4>
         <div>{displayCompetencies}</div>
       </div>
-      <div className='pt-1'>
+      <div className='py-1'>
         <h4>
           Demonstrated <span>values</span> and <span>soft skills</span>:
         </h4>

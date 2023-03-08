@@ -11,7 +11,7 @@ const References = () => {
       <h4>
         Quick <span>word of recommendation</span>
       </h4>
-      <div className='pt-1'>
+      <div className='py-1'>
         <div className='references-container'>
           {ReferenceList.map((reference) => {
             return (
