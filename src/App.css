@@ -244,9 +244,13 @@ span {
 }
 
 /* Utilities */
+.py-1 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
 .pt-1 {
   padding-top: 0.8rem;
-  padding-bottom: 0.8rem; /* to fix */
 }
 
 .line {

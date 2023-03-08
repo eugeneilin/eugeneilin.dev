@@ -11,11 +11,11 @@ const About = () => {
       <h4>
         <span>Full Stack</span> Web Developer
       </h4>
-      <div className='pt-1'>
+      <div className='py-1'>
         <p>Dynamic and creative web developer, specializing in the MERN stack.</p>
         <p>Charlotte, North Carolina</p>
       </div>
-      <div className='pt-1'>
+      <div className='py-1'>
         <a href='https://github.com/eugeneilin' target='_blank'>
           <i className='fab fa-github fa-2x'></i>
         </a>

@@ -1,6 +1,6 @@
 export const EducationList = {
   whatDoesSelfTaughtMean: [
-    'Teaching myself code entailed coding project after project, doing lots of research, and drinking lots of coffee :)',
+    'Teaching myself code included project after project, lots of research, and lots of coffee.',
     'Being a self-taught developer means I am comfortable reading documentation and endless community threads in the debugging process.',
     'Learning on my own meant being proactive about reaching out to mentors and tutors, talking through my code, and applying best practices.',
     'It means I have developed a curious mindset, always learning, and not being afraid of asking questions.',
