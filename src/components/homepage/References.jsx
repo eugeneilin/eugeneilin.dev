@@ -36,7 +36,7 @@ const References = () => {
                 position={reference.position}
                 company={reference.company}
                 recommendation={reference.recommendation}
-                linkedIn={reference.linkedIn}
+                contactUrl={reference.contactUrl}
                 companyUrl={reference.companyUrl}
               />
             );

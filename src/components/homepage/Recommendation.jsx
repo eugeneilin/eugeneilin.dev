@@ -7,7 +7,7 @@ const Recommendation = ({
   position,
   company,
   recommendation,
-  linkedIn,
+  contactUrl,
   companyUrl,
 }) => {
   return (
@@ -24,7 +24,7 @@ const Recommendation = ({
         <p>&quot;{recommendation}&quot;</p>
         <div className='citation'>
           &#8212;{' '}
-          <a href={linkedIn} target='_blank'>
+          <a href={contactUrl} target='_blank'>
             {name}
           </a>
           <div>
