@@ -7,7 +7,7 @@ const ReferenceMenu = ({ id, image, name }) => {
         <label htmlFor={id}>
           <div
             className='tab-item-img'
-            style={{ background: `url(${image}) no-repeat center / cover` }}
+            style={{ background: `url(${image}) no-repeat center / contain` }}
           ></div>
           <span className='tab-item-info'>
             <h4>{name}</h4>
