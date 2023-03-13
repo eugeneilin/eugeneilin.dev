@@ -14,41 +14,25 @@ import mufflerShop from '../assets/muffler-shop.jpeg';
 import blCafe from '../assets/bagel-lovers-cafe.jpeg';
 import valPro from '../assets/valpro.jpeg';
 import vineyard from '../assets/vineyard.jpeg';
+import kingJS from '../assets/king-javascript.jpeg';
 
 export const ExperienceList = [
   {
     name: 'Dumpster Rentals',
-    subtitle: 'JUST FINISHED for a client in MA',
+    subtitle: 'Recently completed website for client',
     highlight: 'Modern design',
     image: fairviewContainers,
     code: 'https://github.com/eugeneilin/fairview-containers',
     demo: 'https://fairviewcontainersllc.com/',
     overview:
-      'This project has so much of my passion and creativity in it. I was given a logo and a task, "Hey, can you make me a website?" And out came this fully responsive, modern beauty. The design is all completely original, utilizing semantic HTML, latest CSS with animations and transitions, and a touch of JavaScript to enhance the overall user experience. The layout of the website and the text as well as the graphic icons all had to be composed from scratch. Images have been optimized for speedy loading, and design tested on different browsers. Form submits through Netlify, redirecting user to confirmation page, upon which Zapier steps in to notify business owner of new order. The business model may involve trash, but I promise the website is nothing like it!',
+      'Modern business website featuring a polished design and user-friendly interface. Site creatively showcases the necessary information for potential customers to book services, using animations that activate as users scroll through the site. Additionally, the site includes various calls to action, along with a booking form that automatically alerts the business owner of any new reservations. Additional skills involved include article writing, page design, image editing, and graphic creation.',
     highlights: [
-      'Intuitive UI/UX',
-      'Responsive design',
-      'CSS animations',
-      'Mobile-first',
-      'Contact form',
-      'Article writing',
+      'Design is completely original and employs semantic HTML, as well as the latest CSS with animations and transitions.',
+      'Images have been optimized for quick loading',
+      'Design has been thoroughly tested on various browsers to ensure compatibility.',
+      "The website' form submissions are handled through Netlify, which redirects the user to a confirmation page.",
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
-  },
-  {
-    name: 'Personal Portfolio',
-    highlight: 'React and Firebase',
-    subtitle: 'My portfolio website',
-    image: portfolio,
-    code: 'https://github.com/eugeneilin/eugeneilin.dev',
-    demo: 'https://eugeneilin.dev/',
-    overview: 'This is a little about the website you are on right now.',
-    highlights: [
-      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
-      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
-      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
-    ],
-    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
   },
   {
     name: 'Church Directory',
@@ -58,7 +42,7 @@ export const ExperienceList = [
     code: 'https://github.com/eugeneilin/church-directory',
     demo: 'https://enigmatic-island-99499.herokuapp.com/',
     overview:
-      'Built with a modern and simple look, the main idea of this web app is to view churches as a list as well as plotted on a map. Each individual church is clickable and takes you to a new page with more detailed information. Only admins have the rights to add, edit, and delete data through the admin panel.',
+      'This primary purpose of this application is to display a list of churches and show their locations on a map. Each church on the list is clickable, leading to a new page with more information. The cluster map is an interactive feature that automatically updates itself based on the data provided from each church. Only administrators have permission to add, modify, and delete data using the admin panel.',
     highlights: [
       'Web pages in this app are served through Express, with EJS to dynamically generate HTML.',
       'The database lives on MongoDB Atlas, and is connected through Mongoose.',
@@ -75,6 +59,25 @@ export const ExperienceList = [
       'devicon-npm-original-wordmark',
       'devicon-heroku-original',
     ],
+  },
+  {
+    name: 'King JavaScript',
+    highlight: 'E-Commerce',
+    subtitle: 'Lion Art E-commerce Website',
+    image: kingJS,
+    code: 'https://github.com/eugeneilin/king-javascript',
+    demo: 'https://king-javascript.eugeneilin.dev/',
+    overview:
+      "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
+    highlights: [
+      'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
+      'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
+      "Local storage, ensuring that the user's cart remains updated even after reloading the page",
+      'JSON data, fetched and displayed in the UI',
+      'Mobile-first responsive design, built with CSS Grid and FlexBox, producing a clean UI and an intuitive UX.',
+      ,
+    ],
+    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
   {
     name: 'Recipe Collection',
@@ -139,7 +142,7 @@ export const ExperienceList = [
     code: 'https://github.com/eugeneilin/password-generator',
     demo: 'https://www.eternalsecuritypasswords.com/',
     overview:
-      'Hey! If you want a custom password made the way you want, try this website. Just check the right boxes, click "Generate", and copy the password.',
+      'If you want a custom password made the way you want, try this website. Just check the right boxes, click "Generate", and copy the password.',
     highlights: ['Simple design', 'Latest JavaScript practices and use of higher-order functions'],
     tools: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
   },
@@ -285,5 +288,20 @@ export const ExperienceList = [
     overview: 'This is an email with integrated images, perfectly responsive.',
     highlights: ['Knowledge of HTML tables', 'Inline CSS'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Personal Portfolio',
+    highlight: 'React and Firebase',
+    subtitle: 'My portfolio website',
+    image: portfolio,
+    code: 'https://github.com/eugeneilin/eugeneilin.dev',
+    demo: 'https://eugeneilin.dev/',
+    overview: 'This is a little about the website you are on right now.',
+    highlights: [
+      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
+      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
+      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
+    ],
+    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
   },
 ];
