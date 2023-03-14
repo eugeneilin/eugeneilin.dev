@@ -19,7 +19,9 @@ export const SkillList = {
   ],
   competencies: [
     'Mobile-first responsive design',
+    'Object-oriented programming',
     'Cross-browser compatibility',
+    'DOM Manipulation',
     'Testing and debugging',
     'UI / UX design',
     'Database management',

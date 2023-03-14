@@ -4,6 +4,7 @@ import '../../styles/homepage/About.css';
 const About = () => {
   return (
     <section id='about'>
+      <div className='avatar'></div>
       <div className='title'>
         <h1>Eugene</h1>
         <h1 className='lastName'>Ilin</h1>
@@ -12,8 +13,8 @@ const About = () => {
         <span>Full Stack</span> Web Developer
       </h4>
       <div className='py-1'>
-        <p>Dynamic and creative web developer, specializing in the MERN stack.</p>
-        <p>Charlotte, North Carolina</p>
+        <p>I build full-stack websites and apps from design to database to deployment.</p>
+        <p className='pt-1'>Charlotte, North Carolina</p>
       </div>
       <div className='py-1'>
         <a href='https://github.com/eugeneilin' target='_blank'>
