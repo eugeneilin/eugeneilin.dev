@@ -113,7 +113,7 @@ span {
 /* Icon Styling */
 .fa-2x {
   color: var(--third-color);
-  padding: 0 2rem 0.5rem 0;
+  padding: 0 1rem;
 }
 
 .fa-2x:hover {
@@ -262,6 +262,15 @@ span {
 
 .list-item span {
   padding: 0 0.4rem 0;
+}
+
+.avatar {
+  background: no-repeat center / cover url('assets/avatar.jpeg');
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0px 7px #528eb8;
+  margin-bottom: 7px;
 }
 
 /* Media Queries */
