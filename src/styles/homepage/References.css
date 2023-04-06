@@ -127,6 +127,7 @@
 
   .references-container {
     margin: 0;
+    border-right: 1px solid var(--primary-color);
   }
 
   .tab-item {
@@ -140,8 +141,6 @@
 
   .recommendations-container p {
     margin: 0;
-    border-left: 1px solid var(--primary-color);
-
     padding: 0 1.2rem;
   }
 }

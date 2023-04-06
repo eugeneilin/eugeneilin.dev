@@ -3,6 +3,7 @@ import BYurkin from '../assets/B-Yurkin.jpeg';
 import JVoronin from '../assets/J-Voronin.jpeg';
 import ProfilePic from '../assets/no-profile-picture-icon.webp';
 import FC from '../assets/FC.jpeg';
+import OTuleja from '../assets/O-Tuleja.jpeg';
 
 export const ReferenceList = [
   {
@@ -64,5 +65,17 @@ export const ReferenceList = [
       'I recommend Eugene for the position of Web Developer. I know Eugene as a very responsible, energetic and dependable person. He is a quick learner and shows great leadership skills. As a Software Engineer for Oracle CX Marketing myself, I know anyone would be thrilled to have Eugene on their team.',
     contactUrl: 'https://www.linkedin.com/in/slavikf/',
     companyUrl: 'https://www.oracle.com/',
+  },
+  {
+    id: 6,
+    defaultChecked: false, // fix
+    name: 'Owen Tuleja',
+    position: 'Junior Software Developer',
+    company: 'CollegePlannerPro',
+    image: OTuleja,
+    recommendation:
+      'I had the opportunity to have a few one-on-one teaching sessions with Eugene in order to optimize some aspects of a couple of web apps he was working on. He has a solid understanding of JavaScript and capably manages the state of his web application in React. When we moved to the deployment process, he asked relevant questions and understood the meaning of each step we took. I would recommend him for any front-end developer job and for a full-stack job that uses node.',
+    contactUrl: 'https://www.linkedin.com/in/owen-tuleja-3b723498/',
+    companyUrl: 'https://www.collegeplannerpro.com/',
   },
 ];

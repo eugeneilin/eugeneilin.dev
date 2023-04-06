@@ -9,7 +9,7 @@ const References = () => {
     <section id='references'>
       <h2>References</h2>
       <h4>
-        Quick <span>word of recommendation</span>
+        Word of <span>recommendation</span>
       </h4>
       <div className='py-1'>
         <div className='references-container'>

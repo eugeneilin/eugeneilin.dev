@@ -5,7 +5,7 @@ import portfolio from '../assets/portfolio.jpeg';
 import churchDirectory from '../assets/church-directory.jpeg';
 import musiciansWebsite from '../assets/musicians-website.jpeg';
 import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
-import favRecipes from '../assets/fav-recipes.jpeg';
+// import favRecipes from '../assets/fav-recipes.jpeg';
 import gitTheUsers from '../assets/git-the-users.jpeg';
 import liyasBakery from '../assets/liyas-bakery.jpeg';
 import liz from '../assets/photo-with-liz.jpeg';
@@ -15,6 +15,7 @@ import blCafe from '../assets/bagel-lovers-cafe.jpeg';
 import valPro from '../assets/valpro.jpeg';
 import vineyard from '../assets/vineyard.jpeg';
 import kingJS from '../assets/king-javascript.jpeg';
+import pageTurners from '../assets/page-turners.jpeg';
 
 export const ExperienceList = [
   {
@@ -61,41 +62,34 @@ export const ExperienceList = [
     ],
   },
   {
-    name: 'King JavaScript',
-    highlight: 'E-Commerce',
-    subtitle: 'Lion Art E-commerce Website',
-    image: kingJS,
-    code: 'https://github.com/eugeneilin/king-javascript',
-    demo: 'https://king-javascript.eugeneilin.dev/',
+    name: 'PageTurners Library',
+    highlight: 'JavaScript and CSS',
+    subtitle: 'Advanced JS app',
+    image: pageTurners,
+    code: 'https://github.com/eugeneilin/page-turners-library',
+    demo: 'https://page-turners-library.eugeneilin.dev/',
     overview:
-      "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
-    highlights: [
-      'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
-      'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
-      "Local storage, ensuring that the user's cart remains updated even after reloading the page",
-      'JSON data, fetched and displayed in the UI',
-      'Mobile-first responsive design, built with CSS Grid and FlexBox, producing a clean UI and an intuitive UX.',
-      ,
-    ],
+      'This is an interactive library management application that enables users to add, delete, and mark books as read. The app is designed with a user-friendly interface, where the form to add books is placed conveniently below the table displaying the list of books added. Additionally, the app includes a basic form validation feature that restricts users from adding empty book entries.',
+    highlights: ['Modern design', 'Object-oriented programming', 'Latest JavaScript practices'],
     tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
-  {
-    name: 'Recipe Collection',
-    highlight: 'React and Firebase',
-    subtitle: 'WORK IN PROGRESS',
-    image: favRecipes,
-    code: 'https://github.com/eugeneilin/fav-recipes',
-    demo: 'https://fav-recipes.eugeneilin.dev/',
-    overview:
-      'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
-    highlights: [
-      'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
-      'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
-      "Additionally, I'd like to allow users to share recipes within the app.",
-      'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
-    ],
-    tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
-  },
+  // {
+  //   name: 'Recipe Collection',
+  //   highlight: 'React and Firebase',
+  //   subtitle: 'WORK IN PROGRESS',
+  //   image: favRecipes,
+  //   code: 'https://github.com/eugeneilin/fav-recipes',
+  //   demo: 'https://fav-recipes.eugeneilin.dev/',
+  //   overview:
+  //     'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
+  //   highlights: [
+  //     'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
+  //     'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
+  //     "Additionally, I'd like to allow users to share recipes within the app.",
+  //     'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
+  //   ],
+  //   tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
+  // },
   {
     name: 'Contact Access',
     highlight: 'MERN app',
@@ -133,6 +127,25 @@ export const ExperienceList = [
       'Components were dynamically displayed using React.',
     ],
     tools: ['devicon-react-original', 'devicon-github-original'],
+  },
+  {
+    name: 'King JavaScript',
+    highlight: 'E-Commerce UI',
+    subtitle: 'Lion Art E-commerce UI',
+    image: kingJS,
+    code: 'https://github.com/eugeneilin/king-javascript',
+    demo: 'https://king-javascript.eugeneilin.dev/',
+    overview:
+      "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
+    highlights: [
+      'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
+      'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
+      "Local storage, ensuring that the user's cart remains updated even after reloading the page",
+      'JSON data, fetched and displayed in the UI',
+      'Mobile-first responsive design, built with CSS Grid and FlexBox, producing a clean UI and an intuitive UX.',
+      ,
+    ],
+    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
   {
     name: 'Password Generator',
