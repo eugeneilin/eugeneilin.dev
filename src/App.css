@@ -203,20 +203,20 @@ span {
   transition: all var(--transition) ease-in-out;
 }
 
+.truecoders {
+  background: url('/src/assets/truecoders-faded.png') no-repeat center / contain;
+}
+
+.truecoders:hover {
+  background-image: url('/src/assets/truecoders.png');
+}
+
 .udemy {
   background: url('/src/assets/udemy-faded.png') no-repeat center / contain;
 }
 
 .udemy:hover {
   background-image: url('/src/assets/udemy.png');
-}
-
-.youtube {
-  background: url('/src/assets/youtube-faded.png') no-repeat center / contain;
-}
-
-.youtube:hover {
-  background-image: url('/src/assets/youtube.png');
 }
 
 .icons-bottom {
@@ -251,6 +251,10 @@ span {
 
 .pt-1 {
   padding-top: 0.8rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.8rem;
 }
 
 .line {
