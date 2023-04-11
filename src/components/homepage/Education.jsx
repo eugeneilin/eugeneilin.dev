@@ -1,66 +1,69 @@
 import React from 'react';
-import { EducationList } from '../../helpers/EducationList';
+import { EducationDetails } from '../../helpers/EducationDetails';
 import '../../styles/homepage/Education.css';
 
 const Education = () => {
-  const whatDoesSelfTaughtMean = EducationList.whatDoesSelfTaughtMean;
-  let displayMeaningOfSelfTaught = whatDoesSelfTaughtMean.map((Meaning) => {
+  const trueCodersInfo = EducationDetails.trueCoders;
+  const udemyInfo = EducationDetails.udemy;
+  const moreInfo = EducationDetails.more;
+  const storyInfo = EducationDetails.myStory;
+
+  const trueCodersDOM = trueCodersInfo.map((p) => {
+    return <p className='pt-1'>{p}</p>;
+  });
+
+  const udemyCerts = udemyInfo.certs.map((li) => {
     return (
       <p className='list-item'>
         <span>
           <i class='fa-solid fa-check'></i>
         </span>
-        {Meaning}
+        {li}
       </p>
     );
+  });
+
+  const moreCerts = moreInfo.certs.map((li) => {
+    return (
+      <p className='list-item'>
+        <span>
+          <i class='fa-solid fa-check'></i>
+        </span>
+        {li}
+      </p>
+    );
+  });
+
+  const myStory = storyInfo.map((p) => {
+    return <p className='pt-1'>{p}</p>;
   });
 
   return (
     <section id='education'>
       <h2>Education</h2>
-      <div className='pt-1'>
+      <div id='education-details' className='pt-1'>
         <h4>
-          I am a <span>Self-Taught</span> Developer
+          <span>TrueCoders</span> Bootcamp
         </h4>
-        <p className='pt-1'>
-          More than four years ago, I embarked on a journey to become a full stack web developer,
-          with the help of Udemy, YouTube, and the guidance of my mentors. Through countless hours
-          of studying and writing code, I have not only acquired the technical skills required to
-          build complex applications, but also developed a deep sense of resilience and dedication.
-        </p>
-        <p className='pt-1'>
-          Over the course of my journey, I faced numerous challenges, from debugging complex code to
-          managing project timelines and communication with clients. However, through perseverance
-          and a passion for the craft, I was able to overcome any obstacles and push myself to
-          become a skilled and confident developer.
-        </p>
-        <p className='pt-1'>
-          What sets me apart from others in the field is my ability to learn and adapt quickly,
-          whether it is through attending coding meetups or reading up on the latest industry trends
-          and best practices. I am committed to continuously improving my skills and knowledge
-          through online courses and tutorials.
-        </p>
-        <p className='pt-1'>
-          Beyond my technical skills, my journey as a self-taught developer has taught me the value
-          of collaboration and mentorship. I am always eager to learn from others and share my own
-          experiences with aspiring developers.
-        </p>
-        <p className='pt-1'>
-          Overall, I am grateful for the opportunity to pursue my passion for web development and
-          look forward to continuing to grow and learn in this dynamic and exciting field.
-        </p>
-      </div>
-      <div className='pt-1'>
-        <h4>
-          What this <span>journey</span> has looked like for me
+        <div className='pb-1'>{trueCodersDOM}</div>
+        <h4 className='pt-1'>
+          <span>Udemy</span> Courses
         </h4>
-        <div>
-          <div>{displayMeaningOfSelfTaught}</div>
-        </div>
+        <div className='pb-1'>{udemyInfo.p}</div>
+        <div className='pb-1'>{udemyCerts}</div>
+        <h4 className='pt-1'>
+          <span>Additional</span> Courses
+        </h4>
+        <div className='pb-1'>{moreInfo.p}</div>
+        <div className='pb-1'>{moreCerts}</div>
+        <h4 className='pt-1'>
+          My <span>Story</span>
+        </h4>
+        <div className='pb-1'>{myStory}</div>
       </div>
       <div className='icons-bottom'>
+        <div className='education-icons truecoders'></div>
         <div className='education-icons udemy'></div>
-        <div className='education-icons youtube'></div>
       </div>
     </section>
   );
