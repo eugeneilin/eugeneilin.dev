@@ -269,7 +269,7 @@ span {
 }
 
 .avatar {
-  background: no-repeat center / cover url('assets/avatar.jpeg');
+  background: no-repeat center -5px / 107% url('assets/headshot.png');
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
