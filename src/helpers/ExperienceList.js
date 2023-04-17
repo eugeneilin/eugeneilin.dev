@@ -16,6 +16,7 @@ import valPro from '../assets/valpro.jpeg';
 import vineyard from '../assets/vineyard.jpeg';
 import kingJS from '../assets/king-javascript.jpeg';
 import pageTurners from '../assets/page-turners.jpeg';
+import reactRecall from '../assets/react-recall.jpeg';
 
 export const ExperienceList = [
   {
@@ -34,6 +35,18 @@ export const ExperienceList = [
       "The website' form submissions are handled through Netlify, which redirects the user to a confirmation page.",
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+  {
+    name: 'Memory Game',
+    subtitle: 'React app',
+    highlight: 'React and CSS',
+    image: reactRecall,
+    code: 'https://github.com/eugeneilin/react-recall',
+    demo: 'https://react-recall.eugeneilin.dev/',
+    overview:
+      "This responsive React app is built with a modern, user-friendly interface. Player's score is shown on the top and is saved to Local Storage. When game is over, player can choose to play again or reset the game.",
+    highlights: ['React Props and state', 'Local storage'],
+    tools: ['devicon-react-original', 'devicon-css3-plain'],
   },
   {
     name: 'Church Directory',
@@ -219,7 +232,7 @@ export const ExperienceList = [
     highlights: [
       'Completely responsive',
       'CSS transitions and some JavaScript',
-      'Working contact form  thrugh Netlify',
+      'Working contact form  through Netlify',
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
