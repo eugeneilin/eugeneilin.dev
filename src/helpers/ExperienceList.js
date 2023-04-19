@@ -17,12 +17,30 @@ import vineyard from '../assets/vineyard.jpeg';
 import kingJS from '../assets/king-javascript.jpeg';
 import pageTurners from '../assets/page-turners.jpeg';
 import reactRecall from '../assets/react-recall.jpeg';
+import reactTypecart from '../assets/react-typecart.jpeg';
 
 export const ExperienceList = [
   {
+    name: "Chef's Magic Pens",
+    subtitle: 'E-commerce store',
+    highlight: 'React and TypeScript',
+    image: reactTypecart,
+    code: 'https://github.com/eugeneilin/reactful-typecart',
+    demo: 'https://reactful-typecart.eugeneilin.dev/',
+    overview:
+      'E-commerce store listing inventory and allowing users to add items to cart. Once items are added to cart, user can add, subtract, or remove items. Upon refreshing the page, cart items are saved and displayed. The app is built with a modern, user-friendly interface, and works well across all devices.',
+    highlights: [
+      'React hooks and custom hooks are used to manage state and lifecycle methods.',
+      'Items are saved to and retrieved from Local Storage.',
+      'TypeScript is used to ensure type safety and prevent bugs.',
+      'React Bootstrap components are used to create a simple but intuitive layout and design.',
+    ],
+    tools: ['devicon-react-original', 'devicon-typescript-plain', 'devicon-bootstrap-plain'],
+  },
+  {
     name: 'Dumpster Rentals',
     subtitle: 'Recently completed website for client',
-    highlight: 'Modern design',
+    highlight: 'Client website',
     image: fairviewContainers,
     code: 'https://github.com/eugeneilin/fairview-containers',
     demo: 'https://fairviewcontainersllc.com/',
