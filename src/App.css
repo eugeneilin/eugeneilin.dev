@@ -132,6 +132,10 @@ span {
   color: #61dbfb;
 }
 
+.devicon-nextjs-original:hover {
+  color: #000000;
+}
+
 .devicon-css3-plain:hover {
   color: #264de4;
 }
@@ -150,6 +154,10 @@ span {
 
 .devicon-javascript-plain:hover {
   color: #f7df1e;
+}
+
+.devicon-typescript-plain:hover {
+  color: #3178c6;
 }
 
 .devicon-mongodb-plain:hover {

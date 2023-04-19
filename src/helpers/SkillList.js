@@ -1,13 +1,15 @@
 export const SkillList = {
   acumen: [
-    'devicon-react-original',
+    'devicon-html5-plain',
+    'devicon-css3-plain',
     'devicon-javascript-plain',
+    'devicon-typescript-plain',
+    'devicon-react-original',
+    'devicon-nextjs-original',
     'devicon-nodejs-plain',
     'devicon-express-original',
     'devicon-mongodb-plain',
     'devicon-firebase-plain',
-    'devicon-html5-plain',
-    'devicon-css3-plain',
     'devicon-sass-original',
     'devicon-less-plain-wordmark',
     'devicon-jquery-plain',
