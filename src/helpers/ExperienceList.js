@@ -1,33 +1,40 @@
-import contactAccess from '../assets/contact-access.jpeg';
-import fairviewContainers from '../assets/fairview-containers.jpeg';
-import passwordGenerator from '../assets/password-generator.jpeg';
-import portfolio from '../assets/portfolio.jpeg';
-import churchDirectory from '../assets/church-directory.jpeg';
-import musiciansWebsite from '../assets/musicians-website.jpeg';
-import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
-// import favRecipes from '../assets/fav-recipes.jpeg';
-import gitTheUsers from '../assets/git-the-users.jpeg';
-import liyasBakery from '../assets/liyas-bakery.jpeg';
-import liz from '../assets/photo-with-liz.jpeg';
-import todo from '../assets/todo.jpeg';
-import mufflerShop from '../assets/muffler-shop.jpeg';
-import blCafe from '../assets/bagel-lovers-cafe.jpeg';
-import valPro from '../assets/valpro.jpeg';
-import kingJS from '../assets/king-javascript.jpeg';
-import pageTurners from '../assets/page-turners.jpeg';
-import reactRecall from '../assets/react-recall.jpeg';
 import reactTypecart from '../assets/react-typecart.jpeg';
+import reactRecall from '../assets/react-recall.jpeg';
+import sunnySide from '../assets/sunny-side.jpeg';
+import pageTurners from '../assets/page-turners.jpeg';
+import kenKen from '../assets/ken-ken.jpeg';
+import fairviewContainers from '../assets/fairview-containers.jpeg';
+import kingJS from '../assets/king-javascript.jpeg';
+import churchDirectory from '../assets/church-directory.jpeg';
+import passwordGenerator from '../assets/password-generator.jpeg';
+import contactAccess from '../assets/contact-access.jpeg';
+import gitTheUsers from '../assets/git-the-users.jpeg';
+import valPro from '../assets/valpro.jpeg';
+import liyasBakery from '../assets/liyas-bakery.jpeg';
+import mufflerShop from '../assets/muffler-shop.jpeg';
+import liz from '../assets/photo-with-liz.jpeg';
+import edgeLedger from '../assets/edge-ledger.jpeg';
+import loanCalculator from '../assets/loan-calculator.jpeg';
+import todo from '../assets/todo.jpeg';
+import designerPortfolio from '../assets/designer-portfolio.jpeg';
+import newsGrid from '../assets/news-grid.jpeg';
+import knowledgeResume from '../assets/knowledge-resume.jpeg';
 import navigationEffects from '../assets/navigation-effects.jpeg';
 import presentation from '../assets/presentation.jpeg';
 import hotelBT from '../assets/hotel-bt.jpeg';
+import rsvpForFamily from '../assets/rsvp-for-family.jpeg';
 import piano from '../assets/piano.jpeg';
 import vineyard from '../assets/vineyard.jpeg';
 import blog from '../assets/blog.jpeg';
 import rsvp from '../assets/rsvp.jpeg';
 import tempVerter from '../assets/temp-verter.jpeg';
 import digiClock from '../assets/digi-clock.jpeg';
+import portfolio from '../assets/portfolio.jpeg';
+// import favRecipes from '../assets/fav-recipes.jpeg';
+// import musiciansWebsite from '../assets/musicians-website.jpeg';
 
 export const ExperienceList = [
+  // Chef's Magic Pens
   {
     name: "Chef's Magic Pens",
     subtitle: 'E-commerce store',
@@ -45,9 +52,66 @@ export const ExperienceList = [
     ],
     tools: ['devicon-react-original', 'devicon-typescript-plain', 'devicon-bootstrap-plain'],
   },
+
+  // Memory Game
   {
-    name: 'Dumpster Rentals',
-    subtitle: 'Recently completed website for client',
+    name: 'Memory Game',
+    subtitle: 'React app',
+    highlight: 'React and CSS',
+    image: reactRecall,
+    code: 'https://github.com/eugeneilin/react-recall',
+    demo: 'https://react-recall.eugeneilin.dev/',
+    overview:
+      "This responsive React app is built with a modern, user-friendly interface. Player's score is shown on the top and is saved to Local Storage. When game is over, player can choose to play again or reset the game.",
+    highlights: ['React Props and state', 'Local storage'],
+    tools: ['devicon-react-original', 'devicon-css3-plain'],
+  },
+
+  // Sunny Side Weather
+  {
+    name: 'Sunny Side Weather',
+    subtitle: 'JavaScript weather app',
+    highlight: 'Fetch API',
+    image: sunnySide,
+    code: 'https://github.com/eugeneilin/sunny-side-weather',
+    demo: 'https://sunny-side-weather.eugeneilin.dev/',
+    overview:
+      'Interactive weather app fetching current weather data from openweathermap.org and displaying it to the user. User can save certain cities to favorites and get current data when they click on re-run. User can also toggle between Celsius and Fahrenheit.',
+    highlights: ['Fetch API calls', 'Background color changes based on temperature', 'CSS Flexbox'],
+    tools: ['devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+
+  // Page Turners Library
+  {
+    name: 'PageTurners Library',
+    highlight: 'JavaScript and CSS',
+    subtitle: 'Advanced JS app',
+    image: pageTurners,
+    code: 'https://github.com/eugeneilin/page-turners-library',
+    demo: 'https://page-turners-library.eugeneilin.dev/',
+    overview:
+      'This is an interactive library management application that enables users to add, delete, and mark books as read. The app is designed with a user-friendly interface, where the form to add books is placed conveniently below the table displaying the list of books added. Additionally, the app includes a basic form validation feature that restricts users from adding empty book entries.',
+    highlights: ['Modern design', 'Object-oriented programming', 'Latest JavaScript practices'],
+    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
+  },
+
+  // KenKen Game
+  {
+    name: 'KenKen Game',
+    subtitle: 'CSS Grid and FlexBox',
+    highlight: 'CSS Grid and FlexBox',
+    image: kenKen,
+    code: 'https://github.com/eugeneilin/CSS-KenKen',
+    demo: 'https://ken-ken.eugeneilin.dev/',
+    overview: 'This is a KenKen challenge in the browser.',
+    highlights: ['CSS Grid and FlexBox', 'Responsive design'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+
+  // Fairview Containers
+  {
+    name: 'Fairview Containers',
+    subtitle: 'Dumpster rentals client website',
     highlight: 'Client website',
     image: fairviewContainers,
     code: 'https://github.com/eugeneilin/fairview-containers',
@@ -62,18 +126,29 @@ export const ExperienceList = [
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
+
+  // King JavaScript
   {
-    name: 'Memory Game',
-    subtitle: 'React app',
-    highlight: 'React and CSS',
-    image: reactRecall,
-    code: 'https://github.com/eugeneilin/react-recall',
-    demo: 'https://react-recall.eugeneilin.dev/',
+    name: 'King JavaScript',
+    highlight: 'E-Commerce UI',
+    subtitle: 'Lion Art E-commerce UI',
+    image: kingJS,
+    code: 'https://github.com/eugeneilin/king-javascript',
+    demo: 'https://king-javascript.eugeneilin.dev/',
     overview:
-      "This responsive React app is built with a modern, user-friendly interface. Player's score is shown on the top and is saved to Local Storage. When game is over, player can choose to play again or reset the game.",
-    highlights: ['React Props and state', 'Local storage'],
-    tools: ['devicon-react-original', 'devicon-css3-plain'],
+      "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
+    highlights: [
+      'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
+      'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
+      "Local storage, ensuring that the user's cart remains updated even after reloading the page",
+      'JSON data, fetched and displayed in the UI',
+      'Mobile-first responsive design, built with CSS Grid and FlexBox, producing a clean UI and an intuitive UX.',
+      ,
+    ],
+    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
+
+  // Church Directory
   {
     name: 'Church Directory',
     highlight: 'Express and MongoDB',
@@ -100,35 +175,22 @@ export const ExperienceList = [
       'devicon-heroku-original',
     ],
   },
+
+  // Eternal Security
   {
-    name: 'PageTurners Library',
+    name: 'Eternal Security',
     highlight: 'JavaScript and CSS',
-    subtitle: 'Advanced JS app',
-    image: pageTurners,
-    code: 'https://github.com/eugeneilin/page-turners-library',
-    demo: 'https://page-turners-library.eugeneilin.dev/',
+    subtitle: 'Responsive JavaScript app',
+    image: passwordGenerator,
+    code: 'https://github.com/eugeneilin/password-generator',
+    demo: 'https://www.eternalsecuritypasswords.com/',
     overview:
-      'This is an interactive library management application that enables users to add, delete, and mark books as read. The app is designed with a user-friendly interface, where the form to add books is placed conveniently below the table displaying the list of books added. Additionally, the app includes a basic form validation feature that restricts users from adding empty book entries.',
-    highlights: ['Modern design', 'Object-oriented programming', 'Latest JavaScript practices'],
-    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
+      'If you want a custom password made the way you want, try this website. Just check the right boxes, click "Generate", and copy the password.',
+    highlights: ['Simple design', 'Latest JavaScript practices and use of higher-order functions'],
+    tools: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
   },
-  // {
-  //   name: 'Recipe Collection',
-  //   highlight: 'React and Firebase',
-  //   subtitle: 'WORK IN PROGRESS',
-  //   image: favRecipes,
-  //   code: 'https://github.com/eugeneilin/fav-recipes',
-  //   demo: 'https://fav-recipes.eugeneilin.dev/',
-  //   overview:
-  //     'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
-  //   highlights: [
-  //     'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
-  //     'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
-  //     "Additionally, I'd like to allow users to share recipes within the app.",
-  //     'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
-  //   ],
-  //   tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
-  // },
+
+  // Contact Access
   {
     name: 'Contact Access',
     highlight: 'MERN app',
@@ -152,6 +214,8 @@ export const ExperienceList = [
       'devicon-heroku-original',
     ],
   },
+
+  // Git The Users
   {
     name: "'Git' The Users",
     highlight: 'React',
@@ -167,37 +231,38 @@ export const ExperienceList = [
     ],
     tools: ['devicon-react-original', 'devicon-github-original'],
   },
+
+  // Val Pro Services
   {
-    name: 'King JavaScript',
-    highlight: 'E-Commerce UI',
-    subtitle: 'Lion Art E-commerce UI',
-    image: kingJS,
-    code: 'https://github.com/eugeneilin/king-javascript',
-    demo: 'https://king-javascript.eugeneilin.dev/',
+    name: 'Val Pro Services',
+    subtitle: 'Sample website for remodeling business',
+    highlight: 'CSS Grid and FlexBox',
+    image: valPro,
+    code: 'https://github.com/eugeneilin/val-salagornik-business',
+    demo: 'https://valproservices.eugeneilin.dev/',
     overview:
-      "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
+      'This sample website features a straight-forward design sharing the necessary information to guide potential client to the contact form.',
+    highlights: ['Responsive design', 'CSS and JavaScript transitions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+
+  // Bakery Website
+  {
+    name: 'Bakery Website',
+    highlight: 'Less',
+    subtitle: 'A website using Less',
+    image: liyasBakery,
+    code: 'https://github.com/eugeneilin/wifeys-website',
+    demo: 'https://wifeys-business.eugeneilin.dev/',
+    overview: 'Food ordering website for a local bakery, attempting to setup a macaroon business.',
     highlights: [
-      'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
-      'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
-      "Local storage, ensuring that the user's cart remains updated even after reloading the page",
-      'JSON data, fetched and displayed in the UI',
-      'Mobile-first responsive design, built with CSS Grid and FlexBox, producing a clean UI and an intuitive UX.',
-      ,
+      'This was a fun little experience learning Less.',
+      'The contact form works through Netlify, notifying owner of new order.',
     ],
-    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
+    tools: ['devicon-html5-plain', 'devicon-less-plain-wordmark'],
   },
-  {
-    name: 'Password Generator',
-    highlight: 'JavaScript and CSS',
-    subtitle: 'Responsive JavaScript app',
-    image: passwordGenerator,
-    code: 'https://github.com/eugeneilin/password-generator',
-    demo: 'https://www.eternalsecuritypasswords.com/',
-    overview:
-      'If you want a custom password made the way you want, try this website. Just check the right boxes, click "Generate", and copy the password.',
-    highlights: ['Simple design', 'Latest JavaScript practices and use of higher-order functions'],
-    tools: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain'],
-  },
+
+  // Muffler Shop
   {
     name: 'Muffler Shop',
     subtitle: 'Sample website for local shop',
@@ -210,6 +275,169 @@ export const ExperienceList = [
     highlights: ['Intuitive UI/UX', 'Responsive design', 'CSS animations', 'Mobile-first'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
+
+  // Photography Website
+  {
+    name: 'Photography Website',
+    highlight: 'CSS FlexBox',
+    subtitle: 'Designed completely from scratch',
+    image: liz,
+    code: 'https://github.com/eugeneilin/liz-website',
+    demo: 'https://photowithliz.eugeneilin.dev/',
+    overview:
+      'Sample website showcasing new local photography services with a functional booking form.',
+    highlights: [
+      'Completely responsive',
+      'CSS transitions and some JavaScript',
+      'Working contact form  through Netlify',
+    ],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+
+  // Edge Ledger
+  {
+    name: 'Edge Ledger',
+    highlight: 'CSS Grid and FlexBox',
+    subtitle: 'Business website',
+    image: edgeLedger,
+    code: 'https://github.com/eugeneilin/edgeledger',
+    demo: 'https://edgeledger.eugeneilin.dev/',
+    overview:
+      'Responsive business website, featuring business services, leadership, latest blog posts, and more. Separate pages for blog posts, with a contact form.',
+    highlights: [
+      'Custom CSS, utilizing borth CSS Grid and FlexBox',
+      'jQuery smooth scrolling effect',
+      'JavaScript for navigation effects',
+      'PHP for contact form',
+    ],
+    tools: [
+      'devicon-html5-plain',
+      'devicon-css3-plain',
+      'devicon-javascript-plain',
+      'devicon-jquery-plain',
+      'devicon-php-plain',
+    ],
+  },
+
+  // Loan Calculator
+  {
+    name: 'Loan Calculator',
+    highlight: 'JavaScript and Bootstrap',
+    subtitle: 'JavaScript loan calculator',
+    image: loanCalculator,
+    code: 'https://github.com/eugeneilin/loan-calculator',
+    demo: 'https://loan-calculator.eugeneilin.dev/',
+    overview:
+      'A simple loan calculator app in the browser, where user can calculate monthly payments.',
+    highlights: ['User interface built with Bootstrap', 'New tasks are stored in local storage'],
+    tools: ['devicon-html5-plain', 'devicon-javascript-plain', 'devicon-bootstrap-plain'],
+  },
+
+  // Todo List
+  {
+    name: 'Todo list',
+    highlight: 'JavaScript and Materialize',
+    subtitle: 'Todo list app utilizing DOM manipulation',
+    image: todo,
+    code: 'https://github.com/eugeneilin/todo-app',
+    demo: 'https://todo-app.eugeneilin.dev/',
+    overview: 'A todo list app in the browser, where user can add/delete and complete tasks.',
+    highlights: [
+      'Design built with Materialize',
+      'New tasks are stored in local storage',
+      'JavaScript DOM manipulation',
+    ],
+    tools: ['devicon-html5-plain', 'devicon-javascript-plain'],
+  },
+
+  // Designer Portfolio
+  {
+    name: 'Designer Portfolio',
+    subtitle: 'Example of a portfolio website',
+    highlight: 'CSS Grid',
+    image: designerPortfolio,
+    code: 'https://github.com/eugeneilin/portfolio-website',
+    demo: 'https://portfolio-website.eugeneilin.dev/',
+    overview:
+      'Clean and modern portfolio website for a designer, featuring a responsive design and a grid of projects. ',
+    highlights: ['CSS Grid and FlexBox', 'Typewriter effect using JavaScript'],
+    tools: [
+      'devicon-html5-plain',
+      'devicon-css3-plain',
+      'devicon-javascript-plain',
+      'devicon-sass-original',
+    ],
+  },
+
+  // News Grid
+  {
+    name: 'NewsGrid',
+    subtitle: 'News website',
+    highlight: 'CSS Grid',
+    image: newsGrid,
+    code: 'https://github.com/eugeneilin/newsgrid',
+    demo: 'https://newsgrid.eugeneilin.dev/',
+    overview:
+      'This is a sample news website, featuring a section for top news, as well as articles.',
+    highlights: ['Thorough implementation of CSS Grid', 'Netlify form integration'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+
+  // Knowledge Resume
+  {
+    name: 'Knowledge Resume',
+    subtitle: 'Timeline scroll-through',
+    highlight: 'CSS and JavaScript',
+    image: knowledgeResume,
+    code: 'https://github.com/eugeneilin/knowledge-resume',
+    demo: 'https://knowledge-resume.eugeneilin.dev/',
+    overview: 'This is a website displaying skills as they are scrolled into the viewport.',
+    highlights: ['CSS transitions', 'JavaScript event listeners'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+
+  // Animated Navigation
+  {
+    name: 'Animated Navigation',
+    subtitle: 'Navigation with overlay effects',
+    highlight: 'CSS',
+    image: navigationEffects,
+    code: 'https://github.com/eugeneilin/hamburger-overlay-menu',
+    demo: 'https://hamburger-overlay-menu.eugeneilin.dev/',
+    overview:
+      'Responsive navigation overlay component using CSS FlexBox and transitions (no JavaScript).',
+    highlights: ['CSS FlexBox', 'CSS transitions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+
+  // Presentation Website
+  {
+    name: 'Presentation Website',
+    subtitle: 'Presentation website with animations',
+    highlight: 'CSS',
+    image: presentation,
+    code: 'https://github.com/eugeneilin/presentation-website',
+    demo: 'https://presentation-website.eugeneilin.dev/',
+    overview:
+      'This is a website for presenting a project. It has animations and transitions between slides.',
+    highlights: ['CSS Floats', 'CSS animations and transitions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+
+  // Hotel BT
+  {
+    name: 'Hotel BT',
+    subtitle: 'Business website',
+    highlight: 'CSS Floats',
+    image: hotelBT,
+    code: 'https://github.com/eugeneilin/hotel-website',
+    demo: 'https://hotelbt.eugeneilin.dev/',
+    overview: '3-page website for a hotel business.',
+    highlights: ['CSS Floats', 'Responsive design'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+
+  // RSVP Website
   {
     name: 'RSVP Website',
     highlight: 'jQuery and Firebase',
@@ -232,154 +460,8 @@ export const ExperienceList = [
       'devicon-firebase-plain',
     ],
   },
-  {
-    name: 'Bakery Website',
-    highlight: 'Less',
-    subtitle: 'A website using Less',
-    image: liyasBakery,
-    code: 'https://github.com/eugeneilin/wifeys-website',
-    demo: 'https://wifeys-business.eugeneilin.dev/',
-    overview: 'Food ordering website for a local bakery, attempting to setup a macaroon business.',
-    highlights: [
-      'This was a fun little experience learning Less.',
-      'The contact form works through Netlify, notifying owner of new order.',
-    ],
-    tools: ['devicon-html5-plain', 'devicon-less-plain-wordmark'],
-  },
-  {
-    name: 'Photography Website',
-    highlight: 'Simple design',
-    subtitle: 'Designed completely from scratch',
-    image: liz,
-    code: 'https://github.com/eugeneilin/liz-website',
-    demo: 'https://photowithliz.eugeneilin.dev/',
-    overview:
-      'Sample website showcasing new local photography services with a functional booking form.',
-    highlights: [
-      'Completely responsive',
-      'CSS transitions and some JavaScript',
-      'Working contact form  through Netlify',
-    ],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
-  },
-  {
-    name: 'Cafe Website',
-    highlight: 'Sass, JavaScript, and Firebase',
-    subtitle: 'A REMAKE of an outdated website',
-    image: blCafe,
-    code: 'https://github.com/eugeneilin/bagel-lovers-cafe',
-    demo: 'https://bagelloverscafe.eugeneilin.dev/',
-    overview:
-      "This is a little cafe next door to where we used to live, that my wife and I absolutely loved. This is a redesign for their website, which was super outdated. Unfortunately, didn't finish this project, and we moved away, but this was a great learning experience.",
-    highlights: [
-      'This simple website is responsive, featuring different layouts for mobile and desktop',
-      'Menu search filter implemented with JavaScript',
-    ],
-    tools: [
-      'devicon-html5-plain',
-      'devicon-css3-plain',
-      'devicon-javascript-plain',
-      'devicon-sass-original',
-      'devicon-firebase-plain',
-    ],
-  },
-  {
-    name: 'Todo list',
-    highlight: 'JavaScript and Materialize',
-    subtitle: 'Todo list app utilizing DOM manipulation',
-    image: todo,
-    code: 'https://github.com/eugeneilin/todo-app',
-    demo: 'https://todo-app.eugeneilin.dev/',
-    overview: 'A todo list app in the browser, where user can add/delete and complete tasks.',
-    highlights: [
-      'Design built with Materialize',
-      'New tasks are stored in local storage',
-      'JavaScript DOM manipulation',
-    ],
-    tools: ['devicon-html5-plain', 'devicon-javascript-plain'],
-  },
-  {
-    name: 'Music Website',
-    highlight: 'Sass and JavaScript',
-    subtitle: 'A simple responsive website with integrations',
-    image: musiciansWebsite,
-    code: 'https://github.com/eugeneilin/eugeneilin.com',
-    demo: 'https://eugeneilin.com/',
-    overview:
-      'I am also a bit of a musician. So this is a place where I can develop my online presence as a musician.',
-    highlights: [
-      'Here I wanted to take a step ahead and use Sass to create a more efficient stylesheet.',
-      'This project taught me a lot about embedding 3rd party tools into code, like Spotify, Youtube, etc.',
-    ],
-    tools: [
-      'devicon-html5-plain',
-      'devicon-css3-plain',
-      'devicon-sass-original',
-      'devicon-javascript-plain',
-    ],
-  },
-  {
-    name: 'Contractor Website',
-    subtitle: 'Sample website for remodeling business',
-    highlight: 'Clean design',
-    image: valPro,
-    code: 'https://github.com/eugeneilin/val-salagornik-business',
-    demo: 'https://valproservices.eugeneilin.dev/',
-    overview:
-      'This sample website features a straight-forward design sharing the necessary information to guide potential client to the contact form.',
-    highlights: ['Responsive design', 'CSS and JavaScript transitions'],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
-  },
-  {
-    name: 'Personal Portfolio',
-    highlight: 'React and Firebase',
-    subtitle: 'My portfolio website',
-    image: portfolio,
-    code: 'https://github.com/eugeneilin/eugeneilin.dev',
-    demo: 'https://eugeneilin.dev/',
-    overview: 'This is a little about the website you are on right now.',
-    highlights: [
-      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
-      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
-      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
-    ],
-    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
-  },
-  {
-    name: 'Animated Navigation',
-    subtitle: 'Navigation with overlay effects',
-    highlight: 'CSS',
-    image: navigationEffects,
-    code: 'https://github.com/eugeneilin/hamburger-overlay-menu',
-    demo: 'https://hamburger-overlay-menu.eugeneilin.dev/',
-    overview:
-      'Responsive navigation overlay component using CSS FlexBox and transitions (no JavaScript).',
-    highlights: ['CSS FlexBox', 'CSS transitions'],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
-  },
-  {
-    name: 'Presentation Website',
-    subtitle: 'Presentation website with animations',
-    highlight: 'CSS',
-    image: presentation,
-    code: 'https://github.com/eugeneilin/presentation-website',
-    demo: 'https://presentation-website.eugeneilin.dev/',
-    overview:
-      'This is a website for presenting a project. It has animations and transitions between slides.',
-    highlights: ['CSS Floats', 'CSS animations and transitions'],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
-  },
-  {
-    name: 'Hotel BT',
-    subtitle: 'Business website',
-    highlight: 'CSS Floats',
-    image: hotelBT,
-    code: 'https://github.com/eugeneilin/hotel-website',
-    demo: 'https://hotelbt.eugeneilin.dev/',
-    overview: '3-page website for a hotel business.',
-    highlights: ['CSS Floats', 'Responsive design'],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
-  },
+
+  // Piano Email
   {
     name: 'Piano Email',
     subtitle: 'Email development',
@@ -391,6 +473,8 @@ export const ExperienceList = [
     highlights: ['Knowledge of HTML tables', 'Inline CSS'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain'],
   },
+
+  // Vineyard Email
   {
     name: 'Vineyard Email',
     subtitle: 'Email development',
@@ -402,6 +486,8 @@ export const ExperienceList = [
     highlights: ['Knowledge of HTML tables', 'Inline CSS'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain'],
   },
+
+  // Blog It
   {
     name: 'Blog It',
     highlight: 'CSS',
@@ -413,6 +499,8 @@ export const ExperienceList = [
     highlights: ['CSS Floats'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain'],
   },
+
+  // RSVP Site
   {
     name: 'RSVP Site',
     highlight: 'JS and Firebase',
@@ -424,6 +512,8 @@ export const ExperienceList = [
     highlights: ['Responsive design', 'custom CSS and jQuery', 'Firebase integration'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
+
+  // Temp Verter
   {
     name: 'Temp Verter',
     highlight: 'JavaScript',
@@ -436,6 +526,8 @@ export const ExperienceList = [
     highlights: ['Event listeners', 'DOM manipulation', 'Math functions'],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
+
+  // Digi Clock
   {
     name: 'Digi Clock',
     highlight: 'JavaScript',
@@ -451,4 +543,60 @@ export const ExperienceList = [
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
+
+  // Personal Portfolio
+  {
+    name: 'Personal Portfolio',
+    highlight: 'React and Firebase',
+    subtitle: 'My portfolio website',
+    image: portfolio,
+    code: 'https://github.com/eugeneilin/eugeneilin.dev',
+    demo: 'https://eugeneilin.dev/',
+    overview: 'This is a little about the website you are on right now.',
+    highlights: [
+      'Built with my favorite library, React, this website is fast and completely responsive, designed with mobile users first in mind.',
+      'The use of React Hooks has made this site very dynamic, and the reusable code from components made the heavy-lifting possible.',
+      'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
+    ],
+    tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
+  },
+
+  // {
+  //   name: 'Recipe Collection',
+  //   highlight: 'React and Firebase',
+  //   subtitle: 'WORK IN PROGRESS',
+  //   image: favRecipes,
+  //   code: 'https://github.com/eugeneilin/fav-recipes',
+  //   demo: 'https://fav-recipes.eugeneilin.dev/',
+  //   overview:
+  //     'This is an app inspired by my lovely wife, whom I adore, and whose life I want to make easier and more automated with this app <3',
+  //   highlights: [
+  //     'The idea here is to dynamically serve recipe name, image, ingredients, directions, and tags info from Firebase.',
+  //     'Working on setting up authorization and authentication to allow users to populate their own recipe collection.',
+  //     "Additionally, I'd like to allow users to share recipes within the app.",
+  //     'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
+  //   ],
+  //   tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
+  // },
+
+  // {
+  //   name: 'Music Website',
+  //   highlight: 'Sass and JavaScript',
+  //   subtitle: 'A simple responsive website with integrations',
+  //   image: musiciansWebsite,
+  //   code: 'https://github.com/eugeneilin/eugeneilin.com',
+  //   demo: 'https://eugeneilin.com/',
+  //   overview:
+  //     'I am also a bit of a musician. So this is a place where I can develop my online presence as a musician.',
+  //   highlights: [
+  //     'Here I wanted to take a step ahead and use Sass to create a more efficient stylesheet.',
+  //     'This project taught me a lot about embedding 3rd party tools into code, like Spotify, Youtube, etc.',
+  //   ],
+  //   tools: [
+  //     'devicon-html5-plain',
+  //     'devicon-css3-plain',
+  //     'devicon-sass-original',
+  //     'devicon-javascript-plain',
+  //   ],
+  // },
 ];

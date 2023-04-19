@@ -17,6 +17,8 @@ export const EducationDetails = {
     certs: [
       'AWS Certified Solutions Architect Associate Bootcamp 2023 (Go Cloud Architects)',
       'Learning the JavaScript Language (LinkedIn Learning)',
+      'Learning TypeScript (LinkedIn Learning)',
+      'Learning Next.js (LinkedIn Learning)',
     ],
   },
   myStory: [
