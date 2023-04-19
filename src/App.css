@@ -204,6 +204,10 @@ span {
   color: #24292f;
 }
 
+.devicon-php-plain:hover {
+  color: #777bb3;
+}
+
 .education-icons {
   height: 2.5rem;
   width: 5rem;
