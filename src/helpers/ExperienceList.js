@@ -13,11 +13,19 @@ import todo from '../assets/todo.jpeg';
 import mufflerShop from '../assets/muffler-shop.jpeg';
 import blCafe from '../assets/bagel-lovers-cafe.jpeg';
 import valPro from '../assets/valpro.jpeg';
-import vineyard from '../assets/vineyard.jpeg';
 import kingJS from '../assets/king-javascript.jpeg';
 import pageTurners from '../assets/page-turners.jpeg';
 import reactRecall from '../assets/react-recall.jpeg';
 import reactTypecart from '../assets/react-typecart.jpeg';
+import navigationEffects from '../assets/navigation-effects.jpeg';
+import presentation from '../assets/presentation.jpeg';
+import hotelBT from '../assets/hotel-bt.jpeg';
+import piano from '../assets/piano.jpeg';
+import vineyard from '../assets/vineyard.jpeg';
+import blog from '../assets/blog.jpeg';
+import rsvp from '../assets/rsvp.jpeg';
+import tempVerter from '../assets/temp-verter.jpeg';
+import digiClock from '../assets/digi-clock.jpeg';
 
 export const ExperienceList = [
   {
@@ -323,17 +331,6 @@ export const ExperienceList = [
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
   {
-    name: 'Vineyard Email',
-    subtitle: 'Email development',
-    highlight: 'HTML Email Marketing',
-    image: vineyard,
-    code: 'https://github.com/eugeneilin/our-vineyard',
-    demo: 'https://our-vineyard.eugeneilin.dev/',
-    overview: 'This is an email with integrated images, perfectly responsive.',
-    highlights: ['Knowledge of HTML tables', 'Inline CSS'],
-    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
-  },
-  {
     name: 'Personal Portfolio',
     highlight: 'React and Firebase',
     subtitle: 'My portfolio website',
@@ -347,5 +344,111 @@ export const ExperienceList = [
       'Firebase integration has been an integral part of the back-end, keeping the contact form submissions safe and readily available.',
     ],
     tools: ['devicon-react-original', 'devicon-css3-plain', 'devicon-firebase-plain'],
+  },
+  {
+    name: 'Animated Navigation',
+    subtitle: 'Navigation with overlay effects',
+    highlight: 'CSS',
+    image: navigationEffects,
+    code: 'https://github.com/eugeneilin/hamburger-overlay-menu',
+    demo: 'https://hamburger-overlay-menu.eugeneilin.dev/',
+    overview:
+      'Responsive navigation overlay component using CSS FlexBox and transitions (no JavaScript).',
+    highlights: ['CSS FlexBox', 'CSS transitions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Presentation Website',
+    subtitle: 'Presentation website with animations',
+    highlight: 'CSS',
+    image: presentation,
+    code: 'https://github.com/eugeneilin/presentation-website',
+    demo: 'https://presentation-website.eugeneilin.dev/',
+    overview:
+      'This is a website for presenting a project. It has animations and transitions between slides.',
+    highlights: ['CSS Floats', 'CSS animations and transitions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Hotel BT',
+    subtitle: 'Business website',
+    highlight: 'CSS Floats',
+    image: hotelBT,
+    code: 'https://github.com/eugeneilin/hotel-website',
+    demo: 'https://hotelbt.eugeneilin.dev/',
+    overview: '3-page website for a hotel business.',
+    highlights: ['CSS Floats', 'Responsive design'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Piano Email',
+    subtitle: 'Email development',
+    highlight: 'HTML Email Marketing',
+    image: piano,
+    code: 'https://piano-lessons.eugeneilin.dev/',
+    demo: 'https://github.com/eugeneilin/piano-lessons',
+    overview: 'Marketing email responsive for all devices.',
+    highlights: ['Knowledge of HTML tables', 'Inline CSS'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Vineyard Email',
+    subtitle: 'Email development',
+    highlight: 'HTML Email Marketing',
+    image: vineyard,
+    code: 'https://github.com/eugeneilin/our-vineyard',
+    demo: 'https://our-vineyard.eugeneilin.dev/',
+    overview: 'This is an email with integrated images, perfectly responsive.',
+    highlights: ['Knowledge of HTML tables', 'Inline CSS'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'Blog It',
+    highlight: 'CSS',
+    subtitle: 'Blog site',
+    image: blog,
+    code: 'https://github.com/eugeneilin/blog',
+    demo: 'https://blog.eugeneilin.dev/',
+    overview: 'This is a simple blog site, with a few posts.',
+    highlights: ['CSS Floats'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain'],
+  },
+  {
+    name: 'RSVP Site',
+    highlight: 'JS and Firebase',
+    subtitle: 'Temperature converter',
+    image: rsvp,
+    code: 'https://github.com/eugeneilin/wedding-website',
+    demo: 'https://wedding-website.eugeneilin.dev/',
+    overview: 'One page website with a simple RSVP form.',
+    highlights: ['Responsive design', 'custom CSS and jQuery', 'Firebase integration'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+  {
+    name: 'Temp Verter',
+    highlight: 'JavaScript',
+    subtitle: 'Temperature converter',
+    image: tempVerter,
+    code: 'https://github.com/eugeneilin/temperature-converter',
+    demo: 'https://temp-verter.eugeneilin.dev/',
+    overview:
+      'This app provides a simple and interactive way for users to convert temperatures between Celsius, Fahrenheit, and Kelvin.',
+    highlights: ['Event listeners', 'DOM manipulation', 'Math functions'],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
+  },
+  {
+    name: 'Digi Clock',
+    highlight: 'JavaScript',
+    subtitle: 'One of my very first projects',
+    image: digiClock,
+    code: 'https://github.com/eugeneilin/digital-clock',
+    demo: 'https://digi-clock.eugeneilin.dev/',
+    overview:
+      'This is a simple digital clock showing military time. Depending on the time of day, the logo will be switched out for a custom greeting.',
+    highlights: [
+      'Callback functions to update the time every second',
+      'DOM manipulation with JavaScript',
+    ],
+    tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
 ];
