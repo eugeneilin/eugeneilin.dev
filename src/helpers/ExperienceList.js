@@ -1,3 +1,4 @@
+import pokedex from '../assets/pokedex.jpeg';
 import reactTypecart from '../assets/react-typecart.jpeg';
 import reactRecall from '../assets/react-recall.jpeg';
 import sunnySide from '../assets/sunny-side.jpeg';
@@ -34,6 +35,25 @@ import portfolio from '../assets/portfolio.jpeg';
 // import musiciansWebsite from '../assets/musicians-website.jpeg';
 
 export const ExperienceList = [
+  // Pokedex
+  {
+    name: 'Pokedex Advanced Search',
+    subtitle: 'Search for Pokemon using API',
+    highlight: 'Fetch API, React, and Bootstrap',
+    image: pokedex,
+    code: 'https://github.com/eugeneilin/pokedex',
+    demo: 'https://pokedex.eugeneilin.dev/',
+    overview:
+      'This is a responsive React app that allows users to search for Pokemon by name or filter by type and weakness. This search app was built with user experience in mind, and features instant results as you type, messages to help user if no results are found, and a clear button to clear the search.',
+    highlights: [
+      'React hooks are used to manage state and lifecycle methods.',
+      'React Bootstrap components are used to display the fetched Pokemon data.',
+      'CSS animations and transitions are sprinkled throughout the app to make it more user-friendly.',
+      'And as always, the app is responsive and works well across all devices.',
+    ],
+    tools: ['devicon-react-original', 'devicon-bootstrap-plain'],
+  },
+
   // Chef's Magic Pens
   {
     name: "Chef's Magic Pens",
@@ -71,7 +91,7 @@ export const ExperienceList = [
   {
     name: 'Sunny Side Weather',
     subtitle: 'JavaScript weather app',
-    highlight: 'Fetch API',
+    highlight: 'Fetch API and JS',
     image: sunnySide,
     code: 'https://github.com/eugeneilin/sunny-side-weather',
     demo: 'https://sunny-side-weather.eugeneilin.dev/',
@@ -137,6 +157,7 @@ export const ExperienceList = [
     demo: 'https://king-javascript.eugeneilin.dev/',
     overview:
       "This website is an e-commerce platform developed using JavaScript. Users can explore a vast collection of wall art featuring majestic lions and add a sample piece of art to their shopping cart. The cart accurately displays the chosen item's quantity and total price, with the option to delete items or adjust the quantity as needed.",
+    // eslint-disable-next-line
     highlights: [
       'Object-oriented programming, separating functionality into distinct classes, making it more modular and easier to maintain.',
       'DOM manimpulation, dynamically generating HTML elements in response to user interactions, particularly from event listeners',
