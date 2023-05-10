@@ -4,8 +4,8 @@ import { ExperienceList } from '../helpers/ExperienceList';
 import '../styles/ProjectDisplay.css';
 
 const ProjectDisplay = () => {
-  const { id } = useParams();
-  const project = ExperienceList[id];
+  const { slug } = useParams();
+  const project = ExperienceList.find((p) => p.slug === slug);
 
   let displayHighlights = project.highlights.map((highlight) => {
     return (

@@ -19,7 +19,7 @@ const App = () => {
         <Wrapper>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/experience/:id' element={<ProjectDisplay />} />
+            <Route path='/experience/:slug' element={<ProjectDisplay />} />
           </Routes>
         </Wrapper>
       </Router>
