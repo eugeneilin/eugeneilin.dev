@@ -37,9 +37,11 @@ import portfolio from '../assets/portfolio.jpeg';
 export const ExperienceList = [
   // Pokedex
   {
+    slug: 'pokedex-advanced-search',
     name: 'Pokedex Advanced Search',
     subtitle: 'Search for Pokemon using API',
     highlight: 'Fetch API, React, and Bootstrap',
+    tag: 'TrueCoders',
     image: pokedex,
     code: 'https://github.com/eugeneilin/pokedex',
     demo: 'https://pokedex.eugeneilin.dev/',
@@ -56,9 +58,11 @@ export const ExperienceList = [
 
   // Chef's Magic Pens
   {
+    slug: 'chefs-magic-pens',
     name: "Chef's Magic Pens",
     subtitle: 'E-commerce store',
     highlight: 'React and TypeScript',
+    tag: '',
     image: reactTypecart,
     code: 'https://github.com/eugeneilin/reactful-typecart',
     demo: 'https://reactful-typecart.eugeneilin.dev/',
@@ -75,9 +79,11 @@ export const ExperienceList = [
 
   // Memory Game
   {
+    slug: 'memory-game',
     name: 'Memory Game',
     subtitle: 'React app',
     highlight: 'React and CSS',
+    tag: 'TrueCoders',
     image: reactRecall,
     code: 'https://github.com/eugeneilin/react-recall',
     demo: 'https://react-recall.eugeneilin.dev/',
@@ -89,9 +95,11 @@ export const ExperienceList = [
 
   // Sunny Side Weather
   {
+    slug: 'sunny-side-weather',
     name: 'Sunny Side Weather',
     subtitle: 'JavaScript weather app',
     highlight: 'Fetch API and JS',
+    tag: 'TrueCoders',
     image: sunnySide,
     code: 'https://github.com/eugeneilin/sunny-side-weather',
     demo: 'https://sunny-side-weather.eugeneilin.dev/',
@@ -103,9 +111,11 @@ export const ExperienceList = [
 
   // Page Turners Library
   {
+    slug: 'page-turners-library',
     name: 'PageTurners Library',
     highlight: 'JavaScript and CSS',
     subtitle: 'Advanced JS app',
+    tag: 'TrueCoders',
     image: pageTurners,
     code: 'https://github.com/eugeneilin/page-turners-library',
     demo: 'https://page-turners-library.eugeneilin.dev/',
@@ -117,9 +127,11 @@ export const ExperienceList = [
 
   // KenKen Game
   {
+    slug: 'kenken-game',
     name: 'KenKen Game',
     subtitle: 'CSS Grid and FlexBox',
     highlight: 'CSS Grid and FlexBox',
+    tag: 'TrueCoders',
     image: kenKen,
     code: 'https://github.com/eugeneilin/CSS-KenKen',
     demo: 'https://ken-ken.eugeneilin.dev/',
@@ -130,9 +142,11 @@ export const ExperienceList = [
 
   // Fairview Containers
   {
+    slug: 'fairview-containers',
     name: 'Fairview Containers',
     subtitle: 'Dumpster rentals client website',
     highlight: 'Client website',
+    tag: 'Client',
     image: fairviewContainers,
     code: 'https://github.com/eugeneilin/fairview-containers',
     demo: 'https://fairviewcontainersllc.com/',
@@ -149,9 +163,11 @@ export const ExperienceList = [
 
   // King JavaScript
   {
+    slug: 'king-javascript',
     name: 'King JavaScript',
     highlight: 'E-Commerce UI',
     subtitle: 'Lion Art E-commerce UI',
+    tag: '',
     image: kingJS,
     code: 'https://github.com/eugeneilin/king-javascript',
     demo: 'https://king-javascript.eugeneilin.dev/',
@@ -171,9 +187,11 @@ export const ExperienceList = [
 
   // Church Directory
   {
+    slug: 'church-directory',
     name: 'Church Directory',
     highlight: 'Express and MongoDB',
     subtitle: 'This is an Express app',
+    tag: '',
     image: churchDirectory,
     code: 'https://github.com/eugeneilin/church-directory',
     demo: 'https://enigmatic-island-99499.herokuapp.com/',
@@ -192,16 +210,16 @@ export const ExperienceList = [
       'devicon-bootstrap-plain',
       'devicon-mongodb-plain',
       'devicon-nodejs-plain',
-      'devicon-npm-original-wordmark',
-      'devicon-heroku-original',
     ],
   },
 
   // Eternal Security
   {
+    slug: 'eternal-security',
     name: 'Eternal Security',
     highlight: 'JavaScript and CSS',
     subtitle: 'Responsive JavaScript app',
+    tag: '',
     image: passwordGenerator,
     code: 'https://github.com/eugeneilin/password-generator',
     demo: 'https://www.eternalsecuritypasswords.com/',
@@ -213,9 +231,11 @@ export const ExperienceList = [
 
   // Contact Access
   {
+    slug: 'contact-access',
     name: 'Contact Access',
     highlight: 'MERN app',
     subtitle: 'MERN stack app',
+    tag: '',
     image: contactAccess,
     code: 'https://github.com/eugeneilin/contact-access',
     demo: 'https://contact-access-real.herokuapp.com/',
@@ -231,16 +251,16 @@ export const ExperienceList = [
       'devicon-express-original',
       'devicon-mongodb-plain',
       'devicon-nodejs-plain',
-      'devicon-npm-original-wordmark',
-      'devicon-heroku-original',
     ],
   },
 
   // Git The Users
   {
+    slug: 'git-the-users',
     name: "'Git' The Users",
     highlight: 'React',
     subtitle: 'A website using Github API',
+    tag: '',
     image: gitTheUsers,
     code: 'https://github.com/eugeneilin/github-finder',
     demo: 'https://gitTheUsers.eugeneilin.dev/',
@@ -250,14 +270,16 @@ export const ExperienceList = [
       "This was a fun project linking directly to Github's API.",
       'Components were dynamically displayed using React.',
     ],
-    tools: ['devicon-react-original', 'devicon-github-original'],
+    tools: ['devicon-react-original'],
   },
 
   // Val Pro Services
   {
+    slug: 'val-pro-services',
     name: 'Val Pro Services',
     subtitle: 'Sample website for remodeling business',
     highlight: 'CSS Grid and FlexBox',
+    tag: '',
     image: valPro,
     code: 'https://github.com/eugeneilin/val-salagornik-business',
     demo: 'https://valproservices.eugeneilin.dev/',
@@ -269,9 +291,11 @@ export const ExperienceList = [
 
   // Bakery Website
   {
+    slug: 'bakery-website',
     name: 'Bakery Website',
     highlight: 'Less',
     subtitle: 'A website using Less',
+    tag: '',
     image: liyasBakery,
     code: 'https://github.com/eugeneilin/wifeys-website',
     demo: 'https://wifeys-business.eugeneilin.dev/',
@@ -285,9 +309,11 @@ export const ExperienceList = [
 
   // Muffler Shop
   {
+    slug: 'muffler-shop',
     name: 'Muffler Shop',
     subtitle: 'Sample website for local shop',
     highlight: 'Modern design',
+    tag: '',
     image: mufflerShop,
     code: 'https://github.com/eugeneilin/muffler-shop',
     demo: 'https://mufflershop.eugeneilin.dev/',
@@ -299,9 +325,11 @@ export const ExperienceList = [
 
   // Photography Website
   {
+    slug: 'photography-website',
     name: 'Photography Website',
     highlight: 'CSS FlexBox',
     subtitle: 'Designed completely from scratch',
+    tag: '',
     image: liz,
     code: 'https://github.com/eugeneilin/liz-website',
     demo: 'https://photowithliz.eugeneilin.dev/',
@@ -317,9 +345,11 @@ export const ExperienceList = [
 
   // Edge Ledger
   {
+    slug: 'edge-ledger',
     name: 'Edge Ledger',
     highlight: 'CSS Grid and FlexBox',
     subtitle: 'Business website',
+    tag: '',
     image: edgeLedger,
     code: 'https://github.com/eugeneilin/edgeledger',
     demo: 'https://edgeledger.eugeneilin.dev/',
@@ -342,9 +372,11 @@ export const ExperienceList = [
 
   // Loan Calculator
   {
+    slug: 'loan-calculator',
     name: 'Loan Calculator',
     highlight: 'JavaScript and Bootstrap',
     subtitle: 'JavaScript loan calculator',
+    tag: '',
     image: loanCalculator,
     code: 'https://github.com/eugeneilin/loan-calculator',
     demo: 'https://loan-calculator.eugeneilin.dev/',
@@ -356,9 +388,11 @@ export const ExperienceList = [
 
   // Todo List
   {
+    slug: 'todo-list',
     name: 'Todo list',
     highlight: 'JavaScript and Materialize',
     subtitle: 'Todo list app utilizing DOM manipulation',
+    tag: '',
     image: todo,
     code: 'https://github.com/eugeneilin/todo-app',
     demo: 'https://todo-app.eugeneilin.dev/',
@@ -373,9 +407,11 @@ export const ExperienceList = [
 
   // Designer Portfolio
   {
+    slug: 'designer-portfolio',
     name: 'Designer Portfolio',
     subtitle: 'Example of a portfolio website',
     highlight: 'CSS Grid',
+    tag: '',
     image: designerPortfolio,
     code: 'https://github.com/eugeneilin/portfolio-website',
     demo: 'https://portfolio-website.eugeneilin.dev/',
@@ -392,9 +428,11 @@ export const ExperienceList = [
 
   // News Grid
   {
+    slug: 'news-grid',
     name: 'NewsGrid',
     subtitle: 'News website',
     highlight: 'CSS Grid',
+    tag: '',
     image: newsGrid,
     code: 'https://github.com/eugeneilin/newsgrid',
     demo: 'https://newsgrid.eugeneilin.dev/',
@@ -406,9 +444,11 @@ export const ExperienceList = [
 
   // Knowledge Resume
   {
+    slug: 'knowledge-resume',
     name: 'Knowledge Resume',
     subtitle: 'Timeline scroll-through',
     highlight: 'CSS and JavaScript',
+    tag: '',
     image: knowledgeResume,
     code: 'https://github.com/eugeneilin/knowledge-resume',
     demo: 'https://knowledge-resume.eugeneilin.dev/',
@@ -419,9 +459,11 @@ export const ExperienceList = [
 
   // Animated Navigation
   {
+    slug: 'animated-navigation',
     name: 'Animated Navigation',
     subtitle: 'Navigation with overlay effects',
     highlight: 'CSS',
+    tag: '',
     image: navigationEffects,
     code: 'https://github.com/eugeneilin/hamburger-overlay-menu',
     demo: 'https://hamburger-overlay-menu.eugeneilin.dev/',
@@ -433,9 +475,11 @@ export const ExperienceList = [
 
   // Presentation Website
   {
+    slug: 'presentation-website',
     name: 'Presentation Website',
     subtitle: 'Presentation website with animations',
     highlight: 'CSS',
+    tag: '',
     image: presentation,
     code: 'https://github.com/eugeneilin/presentation-website',
     demo: 'https://presentation-website.eugeneilin.dev/',
@@ -447,9 +491,11 @@ export const ExperienceList = [
 
   // Hotel BT
   {
+    slug: 'hotel-bt',
     name: 'Hotel BT',
     subtitle: 'Business website',
     highlight: 'CSS Floats',
+    tag: '',
     image: hotelBT,
     code: 'https://github.com/eugeneilin/hotel-website',
     demo: 'https://hotelbt.eugeneilin.dev/',
@@ -460,9 +506,11 @@ export const ExperienceList = [
 
   // RSVP Website
   {
+    slug: 'rsvp-website',
     name: 'RSVP Website',
     highlight: 'jQuery and Firebase',
     subtitle: 'Probably the very FIRST real-world website I built',
+    tag: 'Client',
     image: rsvpForFamily,
     code: 'https://github.com/eugeneilin/pavel-and-anna',
     demo: 'https://pavelandanna.eugeneilin.dev/',
@@ -484,9 +532,11 @@ export const ExperienceList = [
 
   // Piano Email
   {
+    slug: 'piano-email',
     name: 'Piano Email',
     subtitle: 'Email development',
     highlight: 'HTML Email Marketing',
+    tag: '',
     image: piano,
     code: 'https://piano-lessons.eugeneilin.dev/',
     demo: 'https://github.com/eugeneilin/piano-lessons',
@@ -497,9 +547,11 @@ export const ExperienceList = [
 
   // Vineyard Email
   {
+    slug: 'vineyard-email',
     name: 'Vineyard Email',
     subtitle: 'Email development',
     highlight: 'HTML Email Marketing',
+    tag: '',
     image: vineyard,
     code: 'https://github.com/eugeneilin/our-vineyard',
     demo: 'https://our-vineyard.eugeneilin.dev/',
@@ -510,9 +562,11 @@ export const ExperienceList = [
 
   // Blog It
   {
+    slug: 'blog-it',
     name: 'Blog It',
     highlight: 'CSS',
     subtitle: 'Blog site',
+    tag: '',
     image: blog,
     code: 'https://github.com/eugeneilin/blog',
     demo: 'https://blog.eugeneilin.dev/',
@@ -523,9 +577,11 @@ export const ExperienceList = [
 
   // RSVP Site
   {
+    slug: 'rsvp-site',
     name: 'RSVP Site',
     highlight: 'JS and Firebase',
-    subtitle: 'Temperature converter',
+    subtitle: 'Informational website with RSVP form',
+    tag: '',
     image: rsvp,
     code: 'https://github.com/eugeneilin/wedding-website',
     demo: 'https://wedding-website.eugeneilin.dev/',
@@ -536,9 +592,11 @@ export const ExperienceList = [
 
   // Temp Verter
   {
+    slug: 'temp-verter',
     name: 'Temp Verter',
     highlight: 'JavaScript',
     subtitle: 'Temperature converter',
+    tag: '',
     image: tempVerter,
     code: 'https://github.com/eugeneilin/temperature-converter',
     demo: 'https://temp-verter.eugeneilin.dev/',
@@ -550,9 +608,11 @@ export const ExperienceList = [
 
   // Digi Clock
   {
+    slug: 'digi-clock',
     name: 'Digi Clock',
     highlight: 'JavaScript',
     subtitle: 'One of my very first projects',
+    tag: '',
     image: digiClock,
     code: 'https://github.com/eugeneilin/digital-clock',
     demo: 'https://digi-clock.eugeneilin.dev/',
@@ -567,9 +627,11 @@ export const ExperienceList = [
 
   // Personal Portfolio
   {
+    slug: 'personal-portfolio',
     name: 'Personal Portfolio',
     highlight: 'React and Firebase',
     subtitle: 'My portfolio website',
+    tag: '',
     image: portfolio,
     code: 'https://github.com/eugeneilin/eugeneilin.dev',
     demo: 'https://eugeneilin.dev/',
@@ -583,10 +645,12 @@ export const ExperienceList = [
   },
 
   // {
+  //   slug: 'recipe-collection',
   //   name: 'Recipe Collection',
   //   highlight: 'React and Firebase',
   //   subtitle: 'WORK IN PROGRESS',
-  //   image: favRecipes,
+  //   tag: '',
+  // image: favRecipes,
   //   code: 'https://github.com/eugeneilin/fav-recipes',
   //   demo: 'https://fav-recipes.eugeneilin.dev/',
   //   overview:
@@ -598,12 +662,15 @@ export const ExperienceList = [
   //     'And another cool thing would be to suggest meals based on calorie count, last used, etc.',
   //   ],
   //   tools: ['devicon-react-original', 'devicon-firebase-plain', 'devicon-css3-plain'],
+
   // },
 
   // {
+  //   slug: 'music-website',
   //   name: 'Music Website',
   //   highlight: 'Sass and JavaScript',
   //   subtitle: 'A simple responsive website with integrations',
+  //   tag: '',
   //   image: musiciansWebsite,
   //   code: 'https://github.com/eugeneilin/eugeneilin.com',
   //   demo: 'https://eugeneilin.com/',
@@ -619,5 +686,6 @@ export const ExperienceList = [
   //     'devicon-sass-original',
   //     'devicon-javascript-plain',
   //   ],
+
   // },
 ];
