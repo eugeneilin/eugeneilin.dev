@@ -1,6 +1,6 @@
 import React from 'react';
-import { EducationDetails } from '../../helpers/EducationDetails';
-import '../../styles/homepage/Education.css';
+import { EducationDetails } from '../helpers/EducationDetails';
+import '../styles/Education.css';
 
 const Education = () => {
   const trueCodersInfo = EducationDetails.trueCoders;

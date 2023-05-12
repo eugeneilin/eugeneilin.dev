@@ -1,53 +1,39 @@
-.mobile-navbar-wrap {
-  margin-bottom: 4.5rem;
-}
-
-.mobile-navbar {
+.mobile-nav {
   position: fixed;
   z-index: 5;
-  top: 0;
-  width: 100vw;
-  border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.2);
   height: 4.5rem;
+  width: 4.5rem;
   text-transform: uppercase;
-  padding: 0 2rem;
   background: var(--primary-color);
   color: var(--primary-color);
-}
-
-.mobile-logo {
-  color: white;
-  font-size: 2.2rem;
-  letter-spacing: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggler {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
+  z-index: 6;
   cursor: pointer;
-  width: 6rem;
-  height: 4.5rem;
+  width: 100%;
+  height: 100%;
   opacity: 0;
 }
 
 .menu-btn {
   width: 2rem;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  z-index: 2;
+  z-index: 5;
 }
 
 .menu-btn > div {
   position: relative;
   width: 100%;
   height: 2px;
-  transition: all 0.4s ease;
+  transition: all var(--transition) ease;
   background-color: white;
 }
 
@@ -90,13 +76,14 @@
 }
 
 .mobile-overlay {
-  top: 0;
+  top: calc(-100vh + 5.5rem);
   position: absolute;
-  left: 0;
+  left: calc(-100vw + 5.5rem);
   right: 0;
   z-index: 1;
   padding-left: 8rem;
   height: 100vh;
+  width: 100vw;
   transform: translateX(100vw);
   transition: all 375ms;
   opacity: 0;
@@ -163,7 +150,7 @@
 }
 
 #open {
-  display: block;
+  display: flex;
 }
 
 #open .mobile-overlay {
@@ -217,11 +204,7 @@
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  .mobile-navbar-wrap {
-    margin-bottom: 0;
-  }
-
-  .mobile-navbar {
+  .mobile-nav {
     display: none;
   }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ExperienceItem from '../homepage/ExperienceItem';
-import { ExperienceList } from '../../helpers/ExperienceList';
-import '../../styles/homepage/Experience.css';
+import ExperienceItem from './ExperienceItem';
+import { ExperienceList } from '../helpers/ExperienceList';
+import '../styles//Experience.css';
 
 const Experience = () => {
   const filters = ExperienceList.reduce((acc, project) => {

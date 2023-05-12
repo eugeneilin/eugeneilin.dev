@@ -2,11 +2,12 @@
   margin-left: 0 !important;
   height: unset;
   justify-content: unset;
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
   border-bottom: none;
   padding: 0;
   color: var(--secondary-color);
   min-height: 100vh;
+  animation: darken 1s ease-in-out forwards 0.8s;
 }
 
 .project-img {
@@ -17,6 +18,8 @@
   top: 0;
   left: 0;
   z-index: -1;
+  scale: 1.1;
+  animation: zoomOut 1s ease-in-out forwards;
 }
 
 .project-content {
@@ -28,6 +31,9 @@
   z-index: 1;
   box-shadow: 0 0 5rem 1rem var(--secondary-color);
   min-height: 100vh;
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  animation: show var(--transition) forwards 1s;
 }
 
 .project-content h3 {

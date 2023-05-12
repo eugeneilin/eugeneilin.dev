@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { db } from '../../firebase';
+import { db } from '../firebase';
 import { ref, push, child, update } from 'firebase/database';
-import '../../styles/homepage/Contact.css';
+import '../styles//Contact.css';
 
 const Contact = () => {
   const [name, setName] = useState(null);
