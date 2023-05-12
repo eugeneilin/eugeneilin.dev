@@ -1,9 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ExperienceItem from './ExperienceItem';
 import { ExperienceList } from '../helpers/ExperienceList';
 import '../styles//Experience.css';
 
 const Experience = () => {
+  // States
+  const [filter, setFilter] = useState([]);
+
+  // Refs
+  const subtitleRef = useRef(null);
+  const filterHeadingRef = useRef(null);
+  const filterRef = useRef(null);
+  const projectsRef = useRef(null);
+
+  // Fade in elements one by one
+  useEffect(() => {
+    const refs = [
+      subtitleRef.current,
+      filterHeadingRef.current,
+      filterRef.current,
+      projectsRef.current,
+    ];
+    let delay = 0;
+    refs.forEach((ref) => {
+      ref.style.opacity = 0;
+      ref.style.transform = 'translateY(20px)';
+      ref.style.transition = 'opacity 1s ease, transform 1s ease';
+      ref.style.transitionDelay = `${delay}s`;
+      delay += 0.1;
+    });
+    const timeoutId = setTimeout(() => {
+      refs.forEach((ref) => {
+        ref.style.opacity = 1;
+        ref.style.transform = 'translateY(0)';
+      });
+    });
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+  // Get unique filters from helpers file
   const filters = ExperienceList.reduce((acc, project) => {
     project.tools.forEach((tool) => {
       if (!acc.includes(tool)) {
@@ -13,8 +50,7 @@ const Experience = () => {
     return acc;
   }, []);
 
-  const [filter, setFilter] = useState([]);
-
+  // Handle clicks on filters
   const handleCheckbox = (e) => {
     if (e.target.checked) {
       setFilter([...filter, e.target.value]);
@@ -23,6 +59,7 @@ const Experience = () => {
     }
   };
 
+  // Filter out projects based on filters selected
   const filteredProjects = ExperienceList.filter((project) => {
     if (filter.length === 0) {
       return true;
@@ -34,12 +71,14 @@ const Experience = () => {
   return (
     <section id='experience'>
       <h2>Experience</h2>
-      <h4>
+      <h4 ref={subtitleRef}>
         My <span>Projects</span>
       </h4>
 
-      <p className='pt-1'>Filter by Technologies</p>
-      <div id='project-filter'>
+      <p className='pt-1' ref={filterHeadingRef}>
+        Filter by Technologies
+      </p>
+      <div id='project-filter' ref={filterRef}>
         {filters.map((filter, index) => (
           <div key={index}>
             <input
@@ -53,7 +92,7 @@ const Experience = () => {
         ))}
       </div>
 
-      <div className='projects'>
+      <div className='projects' ref={projectsRef}>
         {filteredProjects.map((project, index) => {
           return (
             <ExperienceItem

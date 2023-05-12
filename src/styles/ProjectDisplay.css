@@ -49,6 +49,10 @@
   text-align: center;
 }
 
+.project .link h5 {
+  transition: color var(--transition) ease-in-out;
+}
+
 .project .link i {
   padding: 0;
   color: var(--third-color);

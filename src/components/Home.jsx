@@ -2,26 +2,31 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/Home.css';
 
 const Home = () => {
+  // Refs
   const subtitleRef = useRef(null);
   const locationRef = useRef(null);
   const linksRef = useRef(null);
 
+  // Fade in elements one by one
   useEffect(() => {
-    const elements = [subtitleRef.current, locationRef.current, linksRef.current];
+    const refs = [subtitleRef.current, locationRef.current, linksRef.current];
     let delay = 0;
-    elements.forEach((element) => {
-      element.style.opacity = 0;
-      element.style.transform = 'translateY(20px)';
-      element.style.transition = 'opacity 1s ease, transform 1s ease';
-      element.style.transitionDelay = `${delay}s`;
-      delay += 0.4;
+    refs.forEach((ref) => {
+      ref.style.opacity = 0;
+      ref.style.transform = 'translateY(20px)';
+      ref.style.transition = 'opacity 1s ease, transform 1s ease';
+      ref.style.transitionDelay = `${delay}s`;
+      delay += 0.3;
     });
-    setTimeout(() => {
-      elements.forEach((element) => {
-        element.style.opacity = 1;
-        element.style.transform = 'translateY(0)';
+    const timeoutId = setTimeout(() => {
+      refs.forEach((ref) => {
+        ref.style.opacity = 1;
+        ref.style.transform = 'translateY(0)';
       });
-    }, 100);
+    });
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   return (

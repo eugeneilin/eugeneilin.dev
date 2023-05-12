@@ -14,6 +14,7 @@ const ProjectDisplay = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
+  // Use slug from helpers file as url
   const { slug } = useParams();
   const project = ExperienceList.find((p) => p.slug === slug);
 
