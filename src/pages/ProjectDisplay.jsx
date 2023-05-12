@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ExperienceList } from '../helpers/ExperienceList';
 import '../styles/ProjectDisplay.css';
 
 const ProjectDisplay = () => {
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowContent(true);
+    }, 1000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const { slug } = useParams();
   const project = ExperienceList.find((p) => p.slug === slug);
 
@@ -29,12 +39,12 @@ const ProjectDisplay = () => {
   return (
     <section className='project'>
       <div className='project-img' style={{ backgroundImage: `url(${project.image})` }}></div>
-      <div className='project-content'>
+      <div className={`project-content ${showContent ? 'show' : ''}`}>
         <h3>{project.name}</h3>
         <p className='py-1'>{project.subtitle}</p>
         <div className='links'>
           <div className='link'>
-            <Link to='/#experience' smooth>
+            <Link to='/experience'>
               <i class='fa-solid fa-chevron-left fa-2x'></i>
               <h5>Go Back</h5>
               {/* Look at last position of page, and go there instead of reloading the entire Home

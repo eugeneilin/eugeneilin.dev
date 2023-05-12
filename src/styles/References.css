@@ -1,5 +1,6 @@
 #references {
   height: unset;
+  overflow-x: hidden;
 }
 
 #references > div {
@@ -26,17 +27,22 @@
   border-radius: 15px;
   align-items: center;
   width: 15rem;
+  transition: box-shadow var(--transition) ease-in-out;
 }
 
 .tab-item label:hover {
-  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow var(--transition) ease-in-out;
   cursor: pointer;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+.tab-item label h4 {
+  transition: color var(--transition) ease-in-out;
+}
+
 .tab-item label:hover h4 {
   color: var(--primary-color);
-  transition: color 0.4s ease-in-out;
+  transition: color var(--transition) ease-in-out;
 }
 
 .tab-item-toggler {
@@ -49,6 +55,7 @@
 
 .tab-item-toggler:checked ~ .recommendations-container {
   display: block;
+  animation: slideUp var(--transition) ease;
 }
 
 .tab-item-img {
@@ -56,7 +63,7 @@
   width: 2.5rem;
   border-radius: 50%;
   margin: 0 0.7rem;
-  box-shadow: 0 0 0px 4px var(--fourth-color);
+  box-shadow: 0 0 0px 3px var(--fourth-color);
   aspect-ratio: 1 / 1;
 }
 
@@ -67,13 +74,13 @@
 
 .tab-item-info:hover * {
   color: var(--primary-color);
-  transition: color 0.4s;
+  transition: color var(--transition);
 }
 
 .recommendations-container {
   position: relative;
   opacity: 1;
-  transition: opacity 0.4s;
+  transition: opacity var(--transition);
   display: none;
 }
 
@@ -107,7 +114,7 @@
 
 .recommendations-container .citation a:hover {
   color: var(--primary-color);
-  transition: color 0.4s;
+  transition: color var(--transition);
   cursor: pointer;
 }
 
@@ -142,5 +149,9 @@
   .recommendations-container p {
     margin: 0;
     padding: 0 1.2rem;
+  }
+
+  .tab-item-toggler:checked ~ .recommendations-container {
+    animation: slideLeft var(--transition) ease;
   }
 }

@@ -3,9 +3,9 @@
 
 /* Vars */
 :root {
-  --primary-color: #005c98;
+  --primary-color: #3a3a3a;
   --secondary-color: #343a40;
-  --third-color: #6f777e;
+  --third-color: #6d7c8b;
   --fourth-color: #e4eef5;
   --hover-color: white;
   --light-color: rgba(255, 255, 255, 0.5);
@@ -44,6 +44,7 @@ a {
 
 a:hover {
   color: var(--hover-color);
+  transition: color 0.3s ease;
 }
 
 h1,
@@ -99,21 +100,85 @@ span {
   color: var(--primary-color);
 }
 
+section {
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 6px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--third-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+/* Animations */
+
+@keyframes slideUp {
+  0% {
+    opacity: 0.2;
+    transform: translateY(7px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0.2;
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes darken {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* Icon Styling */
 .fa-2x {
   color: var(--third-color);
   padding: 0 1rem;
+  transition: color 0.4s;
 }
 
 .fa-2x:hover {
@@ -281,20 +346,40 @@ span {
 }
 
 .avatar {
-  background: no-repeat center -5px / 107% url('assets/headshot.png');
+  background: no-repeat center -5px / 107% url('assets/headshot2.png');
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  box-shadow: 0 0 0px 7px #528eb8;
+  box-shadow: 0 0 0px 5px var(--third-color);
   margin-bottom: 7px;
+}
+
+/* Sections */
+#experience,
+#skills,
+#education,
+#references {
+  margin-bottom: 5rem;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
+  section {
+    margin-left: 17rem;
+    padding: 3rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .line {
     display: none;
+  }
+
+  /* Sections */
+  #experience,
+  #skills,
+  #education,
+  #references {
+    margin-bottom: unset;
   }
 }

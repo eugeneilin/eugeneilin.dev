@@ -1,16 +1,39 @@
-section {
-  height: 100vh;
-  padding: 1.5rem;
-  border-bottom: 1px solid var(--fourth-color);
+#home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h4 {
+  margin: -0.7rem 0 0;
+}
+
+.title * {
+  display: inline-block;
+}
+
+.title > h1:first-of-type {
+  padding-right: 1rem;
+}
+
+.lastName {
+  color: var(--third-color);
+  margin-top: -3rem;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  section {
-    margin-left: 17rem;
-    padding: 3rem;
+  #home {
+    align-items: unset;
+    text-align: left;
+  }
+
+  #home .avatar {
+    display: none;
+  }
+
+  #home .fa-2x {
+    padding: 0 2rem 0 0;
   }
 }

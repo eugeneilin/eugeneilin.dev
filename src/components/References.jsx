@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReferenceList } from '../../helpers/ReferenceList';
-import ReferenceMenu from '../homepage/ReferenceMenu';
-import Recommendation from '../homepage/Recommendation';
-import '../../styles/homepage/References.css';
+import { ReferenceList } from '../helpers/ReferenceList';
+import ReferenceMenu from './ReferenceMenu';
+import Recommendation from './Recommendation';
+import '../styles/References.css';
 
 const References = () => {
   return (
