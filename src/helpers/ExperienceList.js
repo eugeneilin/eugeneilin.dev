@@ -156,7 +156,7 @@ export const ExperienceList = [
       'Design is completely original and employs semantic HTML, as well as the latest CSS with animations and transitions.',
       'Images have been optimized for quick loading',
       'Design has been thoroughly tested on various browsers to ensure compatibility.',
-      "The website' form submissions are handled through Netlify, which redirects the user to a confirmation page.",
+      "The website's form submissions are handled through Netlify, which redirects the user to a confirmation page.",
     ],
     tools: ['devicon-html5-plain', 'devicon-css3-plain', 'devicon-javascript-plain'],
   },
