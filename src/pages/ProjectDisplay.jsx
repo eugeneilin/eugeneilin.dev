@@ -43,6 +43,11 @@ const ProjectDisplay = () => {
       <div className={`project-content ${showContent ? 'show' : ''}`}>
         <h3>{project.name}</h3>
         <p className='py-1'>{project.subtitle}</p>
+        {project.tag ? (
+          <div className='tag'>
+            <p>#{project.tag}</p>
+          </div>
+        ) : null}
         <div className='links'>
           <div className='link'>
             <Link to='/experience'>

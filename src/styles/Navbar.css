@@ -146,7 +146,7 @@
 
 .mobile-overlay a:hover {
   color: white;
-  transition: color 0.4s !important;
+  transition: color var(--transition) !important;
 }
 
 #open {
@@ -166,6 +166,7 @@
 #open .mobile-overlay a > * {
   opacity: 1;
   transform: translateY(0);
+  transition: color var(--transition) !important;
 }
 
 /* Desktop Nav */
