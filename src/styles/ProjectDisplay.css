@@ -40,6 +40,18 @@
   color: var(--primary-color);
 }
 
+.project .tag {
+  position: absolute;
+  top: 2.8rem;
+  right: 2rem;
+  padding: 0.2rem 0.8rem;
+  background-color: var(--fourth-color);
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  color: var(--third-color);
+}
+
 .project .links {
   display: flex;
 }

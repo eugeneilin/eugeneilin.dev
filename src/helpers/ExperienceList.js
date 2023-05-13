@@ -1,8 +1,8 @@
+import pageTurners from '../assets/page-turners.jpeg';
 import pokedex from '../assets/pokedex.jpeg';
 import reactTypecart from '../assets/react-typecart.jpeg';
 import reactRecall from '../assets/react-recall.jpeg';
 import sunnySide from '../assets/sunny-side.jpeg';
-import pageTurners from '../assets/page-turners.jpeg';
 import kenKen from '../assets/ken-ken.jpeg';
 import fairviewContainers from '../assets/fairview-containers.jpeg';
 import kingJS from '../assets/king-javascript.jpeg';
@@ -35,6 +35,31 @@ import portfolio from '../assets/portfolio.jpeg';
 // import musiciansWebsite from '../assets/musicians-website.jpeg';
 
 export const ExperienceList = [
+  // Page Turners Library
+  {
+    slug: 'page-turners-library',
+    name: 'PageTurners Library',
+    highlight: 'TypeScript and CSS',
+    subtitle: 'Library management app',
+    tag: 'TrueCoders',
+    image: pageTurners,
+    code: 'https://github.com/eugeneilin/page-turners-library',
+    demo: 'https://page-turners-library.eugeneilin.dev/',
+    overview:
+      "This app has been refactored to TypeScript (initially built with JavaScript). This is an interactive library management application that enables users to add, delete, and mark books as read. The app is designed with a user-friendly interface, where the form to add books is placed conveniently below the table displaying the list of books added. Newly added functionality includes app's ability to recommend books to user.",
+    highlights: [
+      'Converted to TypeScript from JavaScript',
+      'Modern and intuitive UI',
+      'CSS transitions',
+    ],
+    tools: [
+      'devicon-typescript-plain',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+      'devicon-javascript-plain',
+    ],
+  },
+
   // Pokedex
   {
     slug: 'pokedex-advanced-search',
@@ -107,22 +132,6 @@ export const ExperienceList = [
       'Interactive weather app fetching current weather data from openweathermap.org and displaying it to the user. User can save certain cities to favorites and get current data when they click on re-run. User can also toggle between Celsius and Fahrenheit.',
     highlights: ['Fetch API calls', 'Background color changes based on temperature', 'CSS Flexbox'],
     tools: ['devicon-css3-plain', 'devicon-javascript-plain'],
-  },
-
-  // Page Turners Library
-  {
-    slug: 'page-turners-library',
-    name: 'PageTurners Library',
-    highlight: 'JavaScript and CSS',
-    subtitle: 'Advanced JS app',
-    tag: 'TrueCoders',
-    image: pageTurners,
-    code: 'https://github.com/eugeneilin/page-turners-library',
-    demo: 'https://page-turners-library.eugeneilin.dev/',
-    overview:
-      'This is an interactive library management application that enables users to add, delete, and mark books as read. The app is designed with a user-friendly interface, where the form to add books is placed conveniently below the table displaying the list of books added. Additionally, the app includes a basic form validation feature that restricts users from adding empty book entries.',
-    highlights: ['Modern design', 'Object-oriented programming', 'Latest JavaScript practices'],
-    tools: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
 
   // KenKen Game

@@ -47,10 +47,10 @@ const Home = () => {
         <p className='pt-1'>Charlotte, North Carolina</p>
       </div>
       <div className='py-1' ref={linksRef}>
-        <a href='https://github.com/eugeneilin' target='_blank'>
+        <a href='https://github.com/eugeneilin' target='_blank' rel='noreferrer'>
           <i className='fab fa-github fa-2x'></i>
         </a>
-        <a href='https://www.linkedin.com/in/eugene-ilin/' target='_blank'>
+        <a href='https://www.linkedin.com/in/eugene-ilin/' target='_blank' rel='noreferrer'>
           <i className='fab fa-linkedin-in fa-2x'></i>
         </a>
       </div>
